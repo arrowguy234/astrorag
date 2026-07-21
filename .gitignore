@@ -1,0 +1,54 @@
+# ── caches (LARGE — do not commit) ────────────────
+data/cache/
+data/bm25_cache/
+data/context_library.json.bak
+*.pkl
+*.npz
+
+# ── PDFs (LARGE — do not commit) ──────────────────
+pdfs/
+
+# ── logs ──────────────────────────────────────────
+logs/
+*.log
+
+# ── evaluation full traces (optional — keep out if too large) ─
+# results/eval_full.json
+# results/ablation_full/
+
+# ── env / secrets ─────────────────────────────────
+.env
+.env.local
+*.secret
+
+# ── python ────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# ── LaTeX intermediate ────────────────────────────
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.synctex.gz
+paper/*.fdb_latexmk
+paper/*.fls
+
+# ── IDE ───────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# ── streamlit UI folder (separate repo) ───────────
+astrorag_ui/
