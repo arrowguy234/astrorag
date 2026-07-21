@@ -1,0 +1,145 @@
+[build-system]
+requires      = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name            = "astrorag"
+version         = "1.0.0"
+description     = "Evidence-Aware Astrophysics Literature Retrieval — Graph-Augmented RAG over 408K arXiv papers"
+readme          = "README.md"
+license         = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Surinder Singh Chhabra", email = "schhabra@sdsu.edu" }
+]
+keywords = [
+    "retrieval-augmented generation",
+    "knowledge graphs",
+    "personalised pagerank",
+    "astrophysics",
+    "large language models",
+    "scientific literature retrieval",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+
+dependencies = [
+    # ── retrieval ──────────────────────────────────────
+    "rank-bm25>=0.2.2",
+
+    # ── graph ──────────────────────────────────────────
+    "networkx>=3.2.1",
+
+    # ── ML / numerical ─────────────────────────────────
+    "numpy>=1.26.0,<2.0.0",
+    "scipy>=1.11.4",
+    "scikit-learn>=1.4.0",
+    "pandas>=2.1.4",
+
+    # ── PDF extraction ─────────────────────────────────
+    "pymupdf>=1.23.14",
+    "pdfplumber>=0.10.3",
+    "pypdf>=4.0.1",
+    "pdfminer.six>=20221105",
+
+    # ── LLM API ────────────────────────────────────────
+    "groq>=0.9.0",
+
+    # ── HTTP ───────────────────────────────────────────
+    "requests>=2.31.0",
+    "urllib3>=2.1.0",
+
+    # ── configuration ──────────────────────────────────
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.5.3",
+    "pydantic-settings>=2.1.0",
+
+    # ── notebook display ───────────────────────────────
+    "ipywidgets>=8.1.1",
+    "ipython>=8.19.0",
+
+    # ── logging / progress ─────────────────────────────
+    "tqdm>=4.66.1",
+    "rich>=13.7.0",
+]
+
+[project.optional-dependencies]
+dense = [
+    # optional — for RAPTOR and dense retrieval
+    "sentence-transformers>=2.3.1",
+    "umap-learn>=0.5.5",
+    "torch>=2.1.2",
+    "transformers>=4.36.2",
+]
+
+nougat = [
+    # optional — for equation-preserving PDF extraction
+    "nougat-ocr>=0.1.17",
+]
+
+viz = [
+    # optional — for graph and result visualisation
+    "matplotlib>=3.8.2",
+    "seaborn>=0.13.1",
+    "plotly>=5.18.0",
+]
+
+experiments = [
+    # optional — for MLflow experiment tracking
+    "mlflow>=2.9.2",
+]
+
+dev = [
+    "pytest>=7.4.4",
+    "pytest-cov>=4.1.0",
+    "black>=23.12.1",
+    "ruff>=0.1.11",
+    "mypy>=1.8.0",
+    "jupyter>=1.0.0",
+    "jupyterlab>=4.0.10",
+]
+
+all = [
+    "astrorag[dense,viz,experiments,dev]",
+]
+
+[project.urls]
+Repository = "https://github.com/arrowguy234/astrorag"
+Issues     = "https://github.com/arrowguy234/astrorag/issues"
+
+[project.scripts]
+astrorag-validate = "astrorag.validate:main"
+
+[tool.setuptools.packages.find]
+where   = ["."]
+include = ["astrorag*"]
+exclude = ["tests*", "notebooks*", "docs*"]
+
+[tool.black]
+line-length = 88
+target-version = ["py310", "py311"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+extend-select = ["E", "F", "W", "I", "N", "UP", "B", "C4", "SIM"]
+ignore = ["E501", "B008"]
+
+[tool.pytest.ini_options]
+testpaths    = ["tests"]
+python_files = ["test_*.py"]
+addopts      = "-v --tb=short --strict-markers"
+markers = [
+    "step1: foundation tests",
+    "step2: config loading tests",
+    "slow: tests that take >30s",
+    "requires_data: tests needing dataset files",
+    "requires_api: tests needing Groq API key",
+]
