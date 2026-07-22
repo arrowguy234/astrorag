@@ -1,0 +1,1333 @@
+{
+  "version": 1,
+  "updated_at": "2026-07-22T05:23:27.754411",
+  "n_entries": 19,
+  "entries": {
+    "1102.1481": {
+      "arxiv_id": "1102.1481",
+      "title": "",
+      "abstract": "",
+      "original_query": "What is the observed relationship between AGN jet power and X-ray cavity enthalpy in cluster central galaxies?",
+      "subdomain": "AGN feedback",
+      "paper_overview": "This paper investigates the reliability of measuring X-ray cavity power in galaxy clusters using synthetic X-ray observations of 3D MHD simulated jet-ICM interactions. The authors explore how physical factors such as jet intermittency and observational conditions impact the reliability of observatio",
+      "evidence_type": "observational",
+      "instruments": [
+        "Instrument 1",
+        "Instrument 2"
+      ],
+      "key_equations": [
+        {
+          "equation": "[Equation 1 — see original paper]",
+          "variables": ""
+        },
+        {
+          "equation": "[Equation 2 — see original paper]",
+          "variables": ""
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "Numerical result 1",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 2",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        }
+      },
+      "key_snippet": "The energy content, generally assumed to be measurable in terms of the supporting pressure of the cavity, requires, for instance, accurate measurement of the cavity pressure and also its volume.",
+      "key_findings": [],
+      "methodology": "",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 94.9045557975769,
+      "pdf_pages": 34,
+      "n_sections": 14,
+      "added_at": "2026-07-22T05:23:27.754411",
+      "updated_at": "2026-07-22T05:23:27.754411",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "astro-ph-0308006": {
+      "arxiv_id": "astro-ph-0308006",
+      "title": "",
+      "abstract": "",
+      "original_query": "How does the intracluster medium cool in galaxy clusters and what regulates the cooling flow?",
+      "subdomain": "ICM cooling",
+      "paper_overview": "Early X-ray observations suggested that the intracluster medium cools and condenses at the centers of clusters, leading to a cooling flow of plasma in the cluster core. However, high-resolution spectroscopic observations from XMM-Newton and Chandra have conclusively ruled out simple, steady cooling ",
+      "evidence_type": "observational",
+      "instruments": [
+        "Instrument 1",
+        "Instrument 2"
+      ],
+      "key_equations": [
+        {
+          "equation": "[Equation 1 — see original paper]",
+          "variables": ""
+        },
+        {
+          "equation": "[Equation 2 — see original paper]",
+          "variables": ""
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "Numerical result 1",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 2",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        }
+      },
+      "key_snippet": "high-resolution spectroscopic observations from XMM-Newton and Chandra have conclusively ruled out simple, steady cooling flow models.",
+      "key_findings": [],
+      "methodology": "",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 75.93877363204956,
+      "pdf_pages": 18,
+      "n_sections": 9,
+      "added_at": "2026-07-22T05:23:27.754411",
+      "updated_at": "2026-07-22T05:23:27.754411",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "astro-ph-0006289": {
+      "arxiv_id": "astro-ph-0006289",
+      "title": "",
+      "abstract": "",
+      "original_query": "What is the relationship between galaxy stellar mass and central supermassive black hole mass?",
+      "subdomain": "BH scaling",
+      "paper_overview": "This paper presents a correlation between the mass of central black holes and the luminosity-weighted line-of-sight velocity dispersion within the half-light radius of galaxies. The result is based on a sample of 26 galaxies with new determinations of black hole masses from Hubble Space Telescope me",
+      "evidence_type": "observational",
+      "instruments": [
+        "Instrument 1"
+      ],
+      "key_equations": [
+        {
+          "equation": "[Equation 1 — see original paper]",
+          "variables": ""
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "Numerical result 1",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        }
+      },
+      "key_snippet": "The correlation is M• = 1.2 × 10^8 M⊙ (σe / 200 km s^-1)^3.75, with a scatter in M• at fixed σe of only 0.05 dex.",
+      "key_findings": [],
+      "methodology": "",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 77.77848839759827,
+      "pdf_pages": 24,
+      "n_sections": 11,
+      "added_at": "2026-07-22T05:23:27.754411",
+      "updated_at": "2026-07-22T05:23:27.754411",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "astro-ph-0506038": {
+      "arxiv_id": "astro-ph-0506038",
+      "title": "",
+      "abstract": "",
+      "original_query": "What determines the M-sigma relation between supermassive black hole mass and host galaxy velocity dispersion?",
+      "subdomain": "BH scaling",
+      "paper_overview": "This paper examines the evolution of the black hole mass - stellar velocity dispersion (M-sigma) relation over cosmic time using simulations of galaxy mergers that include feedback from supermassive black hole growth. The simulations consider mergers of galaxies varying the properties of the progeni",
+      "evidence_type": "observational",
+      "instruments": [
+        "Instrument 1",
+        "Instrument 2"
+      ],
+      "key_equations": [
+        {
+          "equation": "[Equation 1 — see original paper]",
+          "variables": ""
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "Numerical result 1",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        }
+      },
+      "key_snippet": "The focus of our present work is to characterize the development of the MBH−σ relation over cosmic time with a large set of hydrodynamic simulations of galaxy mergers that include star formation and feedback from the growth of supermassive black holes.",
+      "key_findings": [],
+      "methodology": "",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 63.140408754348755,
+      "pdf_pages": 13,
+      "n_sections": 16,
+      "added_at": "2026-07-22T05:23:27.754411",
+      "updated_at": "2026-07-22T05:23:27.754411",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "1903.08174": {
+      "arxiv_id": "1903.08174",
+      "title": "",
+      "abstract": "",
+      "original_query": "How are photometric redshifts calibrated using spectroscopic survey data from SDSS and DESI?",
+      "subdomain": "cosmology",
+      "paper_overview": "The paper presents catalogs of calibrated photometry and spectroscopic redshifts in the Extended Groth Strip, intended for studies of photometric redshifts. The data includes ugriz photometry from CFHTLS and Y-band photometry from the Subaru Suprime camera, as well as spectroscopic redshifts from th",
+      "evidence_type": "observational",
+      "instruments": [
+        "Instrument 1",
+        "Instrument 2"
+      ],
+      "key_equations": [
+        {
+          "equation": "[Equation 1 — see original paper]",
+          "variables": ""
+        },
+        {
+          "equation": "[Equation 2 — see original paper]",
+          "variables": ""
+        },
+        {
+          "equation": "[Equation 3 — see original paper]",
+          "variables": ""
+        },
+        {
+          "equation": "[Equation 4 — see original paper]",
+          "variables": ""
+        },
+        {
+          "equation": "[Equation 5 — see original paper]",
+          "variables": ""
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "Numerical result 1",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 2",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 3",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        }
+      },
+      "key_snippet": "We test this catalog with a simple machine learning-based photometric redshift algorithm based upon Random Forest regression, and find that the corrected aperture photometry leads to significant improvement in photo-z accuracy compared to the original SExtractor catalogs from CFHTLS and Subaru.",
+      "key_findings": [],
+      "methodology": "",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 279.1458878517151,
+      "pdf_pages": 21,
+      "n_sections": 12,
+      "added_at": "2026-07-22T05:23:27.754411",
+      "updated_at": "2026-07-22T05:23:27.754411",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "1303.5341": {
+      "arxiv_id": "1303.5341",
+      "title": "",
+      "abstract": "",
+      "original_query": "How do cosmic microwave background measurements constrain the Hubble constant?",
+      "subdomain": "cosmology",
+      "paper_overview": "Local measurements of the Hubble constant and age of the Universe provide a powerful consistency check of the flat LambdaCDM model and model-independent constraints on cosmology. The current precision of these measurements is 3% and 5%, respectively. A reduction in errors by a factor of two could de",
+      "evidence_type": "observational",
+      "instruments": [],
+      "key_equations": [
+        {
+          "equation": "[Equation 1 — see original paper]",
+          "variables": ""
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "Numerical result 1",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 2",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 3",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        }
+      },
+      "key_snippet": "The accuracy and precision of H0 measurement is due to the combined effort of the Hubble Key project and its follow up projects2[3] and, most recently, the SH0ES project, where observations and analyses were carefully planned to control and reduce systematic errors in building the cosmic distance la",
+      "key_findings": [],
+      "methodology": "",
+      "q_total": 0.9333333333333333,
+      "q_f": 0.8333333333333334,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 61.067543506622314,
+      "pdf_pages": 21,
+      "n_sections": 13,
+      "added_at": "2026-07-22T05:23:27.754411",
+      "updated_at": "2026-07-22T05:23:27.754411",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "1206.0063": {
+      "arxiv_id": "1206.0063",
+      "title": "",
+      "abstract": "",
+      "original_query": "What role does baryon acoustic oscillations play in measuring dark energy equation of state?",
+      "subdomain": "cosmology",
+      "paper_overview": "This paper proposes two new parametrizations of the equation of state of dark energy, Model I and Model II, which are free of divergence in the whole range of redshift z ∈[−1, ∞). The authors perform an observational constraint on these models using the WMAP seven-year data, the BAO data, and the cu",
+      "evidence_type": "observational",
+      "instruments": [
+        "Instrument 1",
+        "Instrument 2",
+        "Instrument 3"
+      ],
+      "key_equations": [
+        {
+          "equation": "[Equation 1 — see original paper]",
+          "variables": ""
+        },
+        {
+          "equation": "[Equation 2 — see original paper]",
+          "variables": ""
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "Numerical result 1",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 2",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 3",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 4",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 5",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        }
+      },
+      "key_snippet": "The evolution of dark energy is determined by its equation of state (EoS), which can be obtained in a particular model or constructed directly from observational data.",
+      "key_findings": [],
+      "methodology": "",
+      "q_total": 0.92,
+      "q_f": 0.8,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 319.5507547855377,
+      "pdf_pages": 8,
+      "n_sections": 14,
+      "added_at": "2026-07-22T05:23:27.754411",
+      "updated_at": "2026-07-22T05:23:27.754411",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "0905.4669": {
+      "arxiv_id": "0905.4669",
+      "title": "",
+      "abstract": "",
+      "original_query": "What mechanisms quench star formation in massive early-type galaxies at high redshift?",
+      "subdomain": "galaxy formation",
+      "paper_overview": "The paper proposes a new mechanism for quenching star formation in massive early-type galaxies at high redshift, known as morphological quenching (MQ). MQ occurs when a galaxy's gas disk becomes stable against fragmentation, resulting in the quenching of star formation. The paper presents a cosmolog",
+      "evidence_type": "observational",
+      "instruments": [],
+      "key_equations": [
+        {
+          "equation": "[Equation 1 — see original paper]",
+          "variables": ""
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "Numerical result 1",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        }
+      },
+      "key_snippet": "The morphological transformation of spirals into ellipticals thus has to be accompanied by a “quenching” of their star formation, which shifts them to the Red Sequence.",
+      "key_findings": [],
+      "methodology": "",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 139.7611117362976,
+      "pdf_pages": 20,
+      "n_sections": 14,
+      "added_at": "2026-07-22T05:23:27.754411",
+      "updated_at": "2026-07-22T05:23:27.754411",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "1502.05053": {
+      "arxiv_id": "1502.05053",
+      "title": "",
+      "abstract": "",
+      "original_query": "How does gas accretion drive galaxy stellar mass assembly across cosmic time?",
+      "subdomain": "galaxy formation",
+      "paper_overview": "This paper uses the Horizon-AGN cosmological hydrodynamics simulation to study the role of mergers and smooth accretion in driving galaxy morphologic properties above z > 1. The authors find that smooth accretion tends to flatten small galaxies, while mergers tend to puff up and destroy stellar disk",
+      "evidence_type": "observational",
+      "instruments": [],
+      "key_equations": [
+        {
+          "equation": "[Equation 1 — see original paper]",
+          "variables": ""
+        },
+        {
+          "equation": "[Equation 2 — see original paper]",
+          "variables": ""
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "Numerical result 1",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 2",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        }
+      },
+      "key_snippet": "We find strong evidence that smooth accretion tends to flatten small galaxies over cosmic time, leading to the formation of disks.",
+      "key_findings": [],
+      "methodology": "",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 72.51490926742554,
+      "pdf_pages": 16,
+      "n_sections": 15,
+      "added_at": "2026-07-22T05:23:27.754411",
+      "updated_at": "2026-07-22T05:23:27.754411",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "2402.08696": {
+      "arxiv_id": "2402.08696",
+      "title": "",
+      "abstract": "",
+      "original_query": "What are the properties of Milky Way progenitor galaxies observed with JWST at high redshift?",
+      "subdomain": "galaxy formation",
+      "paper_overview": "The Firefly Sparkle is a strongly lensed galaxy at zspec = 8.304 ± 0.001, exhibiting a network of massive star clusters cocooned in a diffuse arc. The galaxy is a possible Milky Way-like progenitor captured during its earliest and most gas-rich stage of formation. The mass distribution of the galaxy",
+      "evidence_type": "observational",
+      "instruments": [
+        "Instrument 1",
+        "Instrument 2",
+        "Instrument 3"
+      ],
+      "key_equations": [
+        {
+          "equation": "[Equation 1 — see original paper]",
+          "variables": ""
+        },
+        {
+          "equation": "[Equation 2 — see original paper]",
+          "variables": ""
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "Numerical result 1",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 2",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 3",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 4",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        }
+      },
+      "key_snippet": "The Firefly Sparkle exhibits the hallmarks expected of a future Milky Way-type galaxy captured during its earliest and most gas-rich stage of formation.",
+      "key_findings": [],
+      "methodology": "",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 72.00545597076416,
+      "pdf_pages": 36,
+      "n_sections": 15,
+      "added_at": "2026-07-22T05:23:27.754411",
+      "updated_at": "2026-07-22T05:23:27.754411",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "1810.00098": {
+      "arxiv_id": "1810.00098",
+      "title": "",
+      "abstract": "",
+      "original_query": "How do binary neutron star mergers produce heavy elements through the r-process?",
+      "subdomain": "stellar",
+      "paper_overview": "The production of elements by rapid neutron capture (r-process) in neutron-star mergers is expected theoretically and is supported by multimessenger observations of gravitational-wave event GW170817. Analysis of the kilonova that accompanied GW170817 identified delayed outflows from a remnant accret",
+      "evidence_type": "observational",
+      "instruments": [
+        "Instrument 1",
+        "Instrument 2"
+      ],
+      "key_equations": [
+        {
+          "equation": "[Equation 1 — see original paper]",
+          "variables": ""
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "Numerical result 1",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        }
+      },
+      "key_snippet": "Although these supernovae are rarer than neutron-star mergers, the larger amount of material ejected per event compensates for the lower rate of occurrence.",
+      "key_findings": [],
+      "methodology": "",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 82.89785766601562,
+      "pdf_pages": 73,
+      "n_sections": 14,
+      "added_at": "2026-07-22T05:23:27.754411",
+      "updated_at": "2026-07-22T05:23:27.754411",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "0707.3514": {
+      "arxiv_id": "0707.3514",
+      "title": "",
+      "abstract": "",
+      "original_query": "What determines the initial mass function in molecular cloud star formation?",
+      "subdomain": "stellar",
+      "paper_overview": "The paper reviews the current understanding of star formation, outlining a theoretical framework and observational evidence. Turbulence plays a dual role in star formation, creating overdensities and countering gravity. The key dynamical processes involved are highly nonlinear and multidimensional.",
+      "evidence_type": "observational",
+      "instruments": [
+        "Instrument 1",
+        "Instrument 2"
+      ],
+      "key_equations": [
+        {
+          "equation": "[Equation 1 — see original paper]",
+          "variables": ""
+        },
+        {
+          "equation": "[Equation 2 — see original paper]",
+          "variables": ""
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "Numerical result 1",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 2",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        }
+      },
+      "key_snippet": "The key dynamical processes involved in star formation – turbulence, magnetic fields, and self-gravity – are highly nonlinear and multidimensional.",
+      "key_findings": [],
+      "methodology": "",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 67.83132863044739,
+      "pdf_pages": 120,
+      "n_sections": 17,
+      "added_at": "2026-07-22T05:23:27.754411",
+      "updated_at": "2026-07-22T05:23:27.754411",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "1207.2859": {
+      "arxiv_id": "1207.2859",
+      "title": "",
+      "abstract": "",
+      "original_query": "How are ultra-high-energy cosmic rays accelerated in astrophysical sources?",
+      "subdomain": "high energy",
+      "paper_overview": "The origin of ultra-high-energy cosmic rays is unknown, but numerous hints in data and theory suggest that the bulk of cosmic rays at these energies have extragalactic origin. The observation of the spectrum steepening consistent with the Greisen-Zatsepin-Kuzmin cutoﬀ, together with the global isotr",
+      "evidence_type": "observational",
+      "instruments": [
+        "Instrument 1",
+        "Instrument 2"
+      ],
+      "key_equations": [
+        {
+          "equation": "[Equation 1 — see original paper]",
+          "variables": ""
+        },
+        {
+          "equation": "[Equation 2 — see original paper]",
+          "variables": ""
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "Numerical result 1",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 2",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        }
+      },
+      "key_snippet": "The observation of the spectrum steepening consistent with the Greisen-Zatsepin-Kuzmin cutoﬀ, together with the global isotropy of the arrival directions, suggests that the UHE particles are not confined by the Milky-Way magnetic field.",
+      "key_findings": [],
+      "methodology": "",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 140.53531169891357,
+      "pdf_pages": 10,
+      "n_sections": 14,
+      "added_at": "2026-07-22T05:23:27.754411",
+      "updated_at": "2026-07-22T05:23:27.754411",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "1104.2048": {
+      "arxiv_id": "1104.2048",
+      "title": "",
+      "abstract": "",
+      "original_query": "What is the origin of gamma-ray bursts and their host galaxy environments?",
+      "subdomain": "high energy",
+      "paper_overview": "The ORIGIN mission aims to study metal creation from the epoch of cosmic dawn using high-spectral resolution in the soft X-ray band. It will identify the physical conditions of all abundant elements between C and Ni to red-shifts of z=10, and beyond. The mission will answer questions such as: When w",
+      "evidence_type": "observational",
+      "instruments": [
+        "Instrument 1",
+        "Instrument 2"
+      ],
+      "key_equations": [
+        {
+          "equation": "[Equation 1 — see original paper]",
+          "variables": ""
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "Numerical result 1",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 2",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 3",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        }
+      },
+      "key_snippet": "The energy release in GRBs is thought to be powered by the release of magnetic energy in the jet, which can be described by the equation E_cav = 4PV, where P is the pressure and V is the cavity volume.",
+      "key_findings": [],
+      "methodology": "",
+      "q_total": 0.9375,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 0.75,
+      "decision": "ACCEPT",
+      "total_seconds": 80.89200830459595,
+      "pdf_pages": 34,
+      "n_sections": 13,
+      "added_at": "2026-07-22T05:23:27.754411",
+      "updated_at": "2026-07-22T05:23:27.754411",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "1711.00347": {
+      "arxiv_id": "1711.00347",
+      "title": "",
+      "abstract": "",
+      "original_query": "How are gravitational wave signals from binary black hole mergers extracted from LIGO detector noise?",
+      "subdomain": "compact objects",
+      "paper_overview": "This paper presents an independent analysis of LIGO data for black hole coalescence events, using a new method for extracting signal waveforms from noisy strain records. The method relies on knowledge obtained using matched-filter techniques and is not designed to detect gravitational wave events. T",
+      "evidence_type": "observational",
+      "instruments": [
+        "Instrument 1"
+      ],
+      "key_equations": [
+        {
+          "equation": "[Equation 1 — see original paper]",
+          "variables": ""
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "Numerical result 1",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 2",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        }
+      },
+      "key_snippet": "The likelihood of these being false-positive detections is reported as: less than 10−4 yr−1 for GW150914, GW151226, GW170104 and GW170814;",
+      "key_findings": [],
+      "methodology": "",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 79.03783893585205,
+      "pdf_pages": 15,
+      "n_sections": 18,
+      "added_at": "2026-07-22T05:23:27.754411",
+      "updated_at": "2026-07-22T05:23:27.754411",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "astro-ph-0401466": {
+      "arxiv_id": "astro-ph-0401466",
+      "title": "",
+      "abstract": "",
+      "original_query": "What is the mass distribution of stellar-mass black holes measured through gravitational wave observations?",
+      "subdomain": "compact objects",
+      "paper_overview": "The mass distribution of stellar black holes derived from the light and radial velocity curves of optical stars in close binary systems using dynamical methods is nearly flat in the range 4-15M_sun. This is compared with the mass distribution for black holes in massive close binaries, which can be m",
+      "evidence_type": "observational",
+      "instruments": [
+        "Instrument 1",
+        "Instrument 2"
+      ],
+      "key_equations": [
+        {
+          "equation": "[Equation 1 — see original paper]",
+          "variables": ""
+        },
+        {
+          "equation": "[Equation 2 — see original paper]",
+          "variables": ""
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "Numerical result 1",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 2",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        }
+      },
+      "key_snippet": "The mass distribution of stellar black holes derived from the light and radial velocity curves of optical stars in close binary systems using dynamical methods is nearly flat in the range 4-15M_sun.",
+      "key_findings": [],
+      "methodology": "",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 103.60712218284607,
+      "pdf_pages": 11,
+      "n_sections": 11,
+      "added_at": "2026-07-22T05:23:27.754411",
+      "updated_at": "2026-07-22T05:23:27.754411",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "astro-ph-0107479": {
+      "arxiv_id": "astro-ph-0107479",
+      "title": "",
+      "abstract": "",
+      "original_query": "How is dark matter distributed in dwarf spheroidal galaxies as inferred from stellar kinematics?",
+      "subdomain": "dark matter",
+      "paper_overview": "This paper presents predictions for the line-of-sight velocity dispersion profiles of dwarf spheroidal galaxies and compares them to observations in the case of the Fornax dwarf. The predictions are made in the framework of standard dynamical theory of spherical systems with different velocity distr",
+      "evidence_type": "observational",
+      "instruments": [],
+      "key_equations": [
+        {
+          "equation": "[Equation 1 — see original paper]",
+          "variables": ""
+        },
+        {
+          "equation": "[Equation 2 — see original paper]",
+          "variables": ""
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "Numerical result 1",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 2",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        }
+      },
+      "key_snippet": "The predictions based on MOND with a0 = 2.1 × 10−8 cm/s2 fit the Fornax data equally well as models based on DM with virial mass of Mv = 1.5 × 10^9 M⊙.",
+      "key_findings": [],
+      "methodology": "",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 71.88737297058105,
+      "pdf_pages": 5,
+      "n_sections": 13,
+      "added_at": "2026-07-22T05:23:27.754411",
+      "updated_at": "2026-07-22T05:23:27.754411",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "0903.4905": {
+      "arxiv_id": "0903.4905",
+      "title": "",
+      "abstract": "",
+      "original_query": "What are the constraints on WIMP dark matter cross-sections from direct detection experiments?",
+      "subdomain": "dark matter",
+      "paper_overview": "This paper calculates the direct dark matter detection spin-independent and proton spin-dependent cross-sections for a semi-realistic intersecting D6-brane model, comparing them to the latest constraints of current dark matter direct detection experiments and projected results of future experiments.",
+      "evidence_type": "observational",
+      "instruments": [
+        "Instrument 1",
+        "Instrument 2"
+      ],
+      "key_equations": [
+        {
+          "equation": "[Equation 1 — see original paper]",
+          "variables": ""
+        },
+        {
+          "equation": "[Equation 2 — see original paper]",
+          "variables": ""
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "Numerical result 1",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 2",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 3",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 4",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        }
+      },
+      "key_snippet": "The direct detection method searches for elastic scattering of WIMPs off nuclei in underground experiments.",
+      "key_findings": [],
+      "methodology": "",
+      "q_total": 0.8857142857142857,
+      "q_f": 0.7142857142857143,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 78.73124289512634,
+      "pdf_pages": 21,
+      "n_sections": 11,
+      "added_at": "2026-07-22T05:23:27.754411",
+      "updated_at": "2026-07-22T05:23:27.754411",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "astro-ph-0301381": {
+      "arxiv_id": "astro-ph-0301381",
+      "title": "",
+      "abstract": "",
+      "original_query": "How does the interstellar magnetic field affect molecular cloud collapse and star formation efficiency?",
+      "subdomain": "ISM",
+      "paper_overview": "The paper presents a new dynamical theory of star formation in turbulent interstellar gas, which is supported by observational evidence and numerical simulations. The theory suggests that star formation is controlled by the complex interplay between supersonic turbulence and self-gravity. The author",
+      "evidence_type": "observational",
+      "instruments": [],
+      "key_equations": [
+        {
+          "equation": "[Equation 1 — see original paper]",
+          "variables": ""
+        },
+        {
+          "equation": "[Equation 2 — see original paper]",
+          "variables": ""
+        },
+        {
+          "equation": "[Equation 3 — see original paper]",
+          "variables": ""
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "Numerical result 1",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 2",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        },
+        {
+          "quantity": "Numerical result 3",
+          "value": "see paper",
+          "uncertainty": "",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
+          "section": "unknown"
+        }
+      },
+      "key_snippet": "The observed magnetic field strengths in molecular clouds appear to be too weak to provide support against gravitational collapse.",
+      "key_findings": [],
+      "methodology": "",
+      "q_total": 0.9375,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 0.75,
+      "decision": "ACCEPT",
+      "total_seconds": 218.19134378433228,
+      "pdf_pages": 9,
+      "n_sections": 9,
+      "added_at": "2026-07-22T05:23:27.754411",
+      "updated_at": "2026-07-22T05:23:27.754411",
+      "view_count": 0,
+      "chat_sessions": []
+    }
+  }
+}
