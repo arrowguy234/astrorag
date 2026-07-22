@@ -51,4 +51,3 @@ paper/*.fls
 *.swp
 
 # ── streamlit UI folder (separate repo) ───────────
-astrorag_ui/
