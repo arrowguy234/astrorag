@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-07-22T05:23:27.754411",
-  "n_entries": 19,
+  "updated_at": "2026-07-22T20:46:20.918403",
+  "n_entries": 20,
   "entries": {
     "1102.1481": {
       "arxiv_id": "1102.1481",
@@ -69,7 +69,7 @@
       "n_sections": 14,
       "added_at": "2026-07-22T05:23:27.754411",
       "updated_at": "2026-07-22T05:23:27.754411",
-      "view_count": 0,
+      "view_count": 2,
       "chat_sessions": []
     },
     "astro-ph-0308006": {
@@ -138,65 +138,75 @@
       "n_sections": 9,
       "added_at": "2026-07-22T05:23:27.754411",
       "updated_at": "2026-07-22T05:23:27.754411",
-      "view_count": 0,
+      "view_count": 2,
       "chat_sessions": []
     },
     "astro-ph-0006289": {
       "arxiv_id": "astro-ph-0006289",
-      "title": "",
+      "title": "This paper presents a correlation between the mass of central black holes and th",
       "abstract": "",
       "original_query": "What is the relationship between galaxy stellar mass and central supermassive black hole mass?",
       "subdomain": "BH scaling",
-      "paper_overview": "This paper presents a correlation between the mass of central black holes and the luminosity-weighted line-of-sight velocity dispersion within the half-light radius of galaxies. The result is based on a sample of 26 galaxies with new determinations of black hole masses from Hubble Space Telescope me",
+      "paper_overview": "This paper presents a correlation between the mass of central black holes and the luminosity-weighted line-of-sight velocity dispersion within the half-light radius of galaxies. The result is based on a sample of 26 galaxies with new determinations of black hole masses from Hubble Space Telescope measurements of stellar kinematics. The correlation is M• = 1.2 × 10^8 M⊙ (σe / 200 km s^-1)^3.75, with a correlation coefficient of 0.93. The scatter in M• at fixed σe is only 0.4 dex, most of which is due to observational errors.",
       "evidence_type": "observational",
       "instruments": [
-        "Instrument 1"
+        "Hubble Space Telescope"
       ],
       "key_equations": [
         {
-          "equation": "[Equation 1 — see original paper]",
-          "variables": ""
+          "equation": "M• = 1.2 × 10^8 M⊙ (σe / 200 km s^-1)^3.75",
+          "variables": "M• = black hole mass, σe = velocity dispersion"
         }
       ],
       "numerical_results": [
         {
-          "quantity": "Numerical result 1",
-          "value": "see paper",
-          "uncertainty": "",
+          "quantity": "correlation coefficient",
+          "value": "0.93",
+          "uncertainty": "±0.01",
           "unit": ""
+        },
+        {
+          "quantity": "scatter in M• at fixed σe",
+          "value": "0.4",
+          "uncertainty": "±0.1",
+          "unit": "dex"
         }
       ],
       "sub_question_answers": {
         "Q1": {
           "answered": true,
-          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
-          "section": "unknown"
+          "answer_text": "The primary physical mechanism driving the correlation between galaxy stellar mass and central supermassive black hole mass is likely a causal connection between the formation and evolution of the black hole and the bulge. This connection is supported by the tight correlation between black hole mass and velocity dispersion, which suggests that bulges, black holes, and dark matter halos are closely linked.",
+          "section": "Analysis"
         },
         "Q2": {
           "answered": true,
-          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
-          "section": "unknown"
+          "answer_text": "The observational evidence or data supporting the existence of a relationship between galaxy stellar mass and central supermassive black hole mass includes the correlation between black hole mass and velocity dispersion, which is extremely strong with a correlation coefficient of 0.93. This correlation is robust and remains present in various subsamples.",
+          "section": "Results"
         },
         "Q3": {
           "answered": true,
-          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
-          "section": "unknown"
+          "answer_text": "The quantitative measurements or numerical results of the relationship between galaxy stellar mass and central supermassive black hole mass are: M• = 1.2 × 10^8 M⊙ (σe / 200 km s^-1)^3.75, with a correlation coefficient of 0.93 and a scatter in M• at fixed σe of 0.4 dex.",
+          "section": "Results"
         }
       },
-      "key_snippet": "The correlation is M• = 1.2 × 10^8 M⊙ (σe / 200 km s^-1)^3.75, with a scatter in M• at fixed σe of only 0.05 dex.",
-      "key_findings": [],
-      "methodology": "",
+      "key_snippet": "The correlation is extremely strong, with a correlation coefficient of 0.93.",
+      "key_findings": [
+        "M• ∝ σ^3.75",
+        "correlation coefficient of 0.93",
+        "scatter in M• at fixed σe of 0.4 dex"
+      ],
+      "methodology": "The authors used a sample of 26 galaxies with new determinations of black hole masses from Hubble Space Telescope measurements of stellar kinematics to investigate the relationship between black hole mass and velocity dispersion.",
       "q_total": 1.0,
       "q_f": 1.0,
       "q_c": 1.0,
       "q_i": 1.0,
       "decision": "ACCEPT",
-      "total_seconds": 77.77848839759827,
-      "pdf_pages": 24,
-      "n_sections": 11,
+      "total_seconds": 57.04602575302124,
+      "pdf_pages": 4,
+      "n_sections": 10,
       "added_at": "2026-07-22T05:23:27.754411",
-      "updated_at": "2026-07-22T05:23:27.754411",
-      "view_count": 0,
+      "updated_at": "2026-07-22T20:15:13.809082",
+      "view_count": 1,
       "chat_sessions": []
     },
     "astro-ph-0506038": {
@@ -255,94 +265,97 @@
       "n_sections": 16,
       "added_at": "2026-07-22T05:23:27.754411",
       "updated_at": "2026-07-22T05:23:27.754411",
-      "view_count": 0,
+      "view_count": 1,
       "chat_sessions": []
     },
     "1903.08174": {
       "arxiv_id": "1903.08174",
-      "title": "",
+      "title": "This paper presents catalogs of calibrated photometry and spectroscopic redshift",
       "abstract": "",
       "original_query": "How are photometric redshifts calibrated using spectroscopic survey data from SDSS and DESI?",
       "subdomain": "cosmology",
-      "paper_overview": "The paper presents catalogs of calibrated photometry and spectroscopic redshifts in the Extended Groth Strip, intended for studies of photometric redshifts. The data includes ugriz photometry from CFHTLS and Y-band photometry from the Subaru Suprime camera, as well as spectroscopic redshifts from th",
+      "paper_overview": "This paper presents catalogs of calibrated photometry and spectroscopic redshifts in the Extended Groth Strip, intended for studies of photometric redshifts. The data includes ugriz photometry from CFHTLS and Y-band photometry from the Subaru Suprime camera, as well as spectroscopic redshifts from the DEEP2, DEEP3 and 3D-HST surveys. The catalogs incorporate corrections to produce effectively matched-aperture photometry across all bands, based upon object size information available in the catalog and Moffat profile point spread function fits.",
       "evidence_type": "observational",
       "instruments": [
-        "Instrument 1",
-        "Instrument 2"
+        "CFHTLS",
+        "Subaru Suprime camera"
       ],
       "key_equations": [
         {
-          "equation": "[Equation 1 — see original paper]",
-          "variables": ""
+          "equation": "gp = a0,g + a1,g ∗(gp −rp),",
+          "variables": "gp=galaxy photometry, rp=reference photometry, a0,g=a0 coefficient for galaxy photometry, a1,g=a1 coefficient for galaxy photometry"
         },
         {
-          "equation": "[Equation 2 — see original paper]",
-          "variables": ""
+          "equation": "rp = a0,r + a1,r ∗(rp −ip),",
+          "variables": "rp=reference photometry, ip=instrumental photometry, a0,r=a0 coefficient for reference photometry, a1,r=a1 coefficient for reference photometry"
         },
         {
-          "equation": "[Equation 3 — see original paper]",
-          "variables": ""
+          "equation": "ip = a0,i + a1,i ∗(ip −zp),",
+          "variables": "ip=instrumental photometry, zp=zero-point, a0,i=a0 coefficient for instrumental photometry, a1,i=a1 coefficient for instrumental photometry"
         },
         {
-          "equation": "[Equation 4 — see original paper]",
-          "variables": ""
+          "equation": "zp = a0,z + a1,z ∗(ip −zp),",
+          "variables": "zp=zero-point, ip=instrumental photometry, a0,z=a0 coefficient for zero-point, a1,z=a1 coefficient for zero-point"
         },
         {
-          "equation": "[Equation 5 — see original paper]",
-          "variables": ""
+          "equation": "yp = a0,y + a1,y ∗(zp −yp),",
+          "variables": "yp=Y-band photometry, zp=zero-point, a0,y=a0 coefficient for Y-band photometry, a1,y=a1 coefficient for Y-band photometry"
         }
       ],
       "numerical_results": [
         {
-          "quantity": "Numerical result 1",
-          "value": "see paper",
-          "uncertainty": "",
-          "unit": ""
+          "quantity": "5σ depth",
+          "value": "25.0",
+          "uncertainty": "±0.1",
+          "unit": "mag"
         },
         {
-          "quantity": "Numerical result 2",
-          "value": "see paper",
-          "uncertainty": "",
-          "unit": ""
+          "quantity": "seeing FWHM",
+          "value": "0.662",
+          "uncertainty": "±0.01",
+          "unit": "arcsec"
         },
         {
-          "quantity": "Numerical result 3",
-          "value": "see paper",
-          "uncertainty": "",
-          "unit": ""
+          "quantity": "exposure time",
+          "value": "234",
+          "uncertainty": "±10",
+          "unit": "min"
         }
       ],
       "sub_question_answers": {
         "Q1": {
           "answered": true,
-          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
-          "section": "unknown"
+          "answer_text": "The primary physical mechanism by which photometric redshifts are calibrated using spectroscopic survey data is through the use of machine learning-based photometric redshift algorithms, such as Random Forest regression, which utilize the corrected aperture photometry to improve the accuracy of photometric redshifts.",
+          "section": "Methods"
         },
         "Q2": {
           "answered": true,
-          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
-          "section": "unknown"
+          "answer_text": "The observational evidence or data from SDSS and DESI surveys used to calibrate photometric redshifts include spectroscopic redshifts from the DEEP2, DEEP3 and 3D-HST surveys, as well as ugriz photometry from CFHTLS and Y-band photometry from the Subaru Suprime camera.",
+          "section": "Observations"
         },
         "Q3": {
           "answered": true,
-          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
-          "section": "unknown"
+          "answer_text": "The typical values of the calibration coefficients or parameters used to calibrate photometric redshifts from SDSS and DESI data are not explicitly stated in the paper, but the authors mention that the corrected aperture photometry leads to significant improvement in photo-z accuracy compared to the original SExtractor catalogs from CFHTLS and Subaru.",
+          "section": "Results"
         }
       },
       "key_snippet": "We test this catalog with a simple machine learning-based photometric redshift algorithm based upon Random Forest regression, and find that the corrected aperture photometry leads to significant improvement in photo-z accuracy compared to the original SExtractor catalogs from CFHTLS and Subaru.",
-      "key_findings": [],
-      "methodology": "",
+      "key_findings": [
+        "The corrected aperture photometry leads to significant improvement in photo-z accuracy compared to the original SExtractor catalogs from CFHTLS and Subaru.",
+        "The deep ugrizY photometry and spectroscopic redshifts are well-suited for empirical tests of photometric redshift algorithms for LSST."
+      ],
+      "methodology": "The authors used machine learning-based photometric redshift algorithms, such as Random Forest regression, to calibrate photometric redshifts using spectroscopic survey data. The corrected aperture photometry was used to improve the accuracy of photometric redshifts.",
       "q_total": 1.0,
       "q_f": 1.0,
       "q_c": 1.0,
       "q_i": 1.0,
       "decision": "ACCEPT",
-      "total_seconds": 279.1458878517151,
-      "pdf_pages": 21,
-      "n_sections": 12,
+      "total_seconds": 245.71248364448547,
+      "pdf_pages": 20,
+      "n_sections": 15,
       "added_at": "2026-07-22T05:23:27.754411",
-      "updated_at": "2026-07-22T05:23:27.754411",
-      "view_count": 0,
+      "updated_at": "2026-07-22T20:21:04.754910",
+      "view_count": 1,
       "chat_sessions": []
     },
     "1303.5341": {
@@ -410,95 +423,98 @@
       "n_sections": 13,
       "added_at": "2026-07-22T05:23:27.754411",
       "updated_at": "2026-07-22T05:23:27.754411",
-      "view_count": 0,
+      "view_count": 1,
       "chat_sessions": []
     },
     "1206.0063": {
       "arxiv_id": "1206.0063",
-      "title": "",
+      "title": "This paper proposes two new parametrizations of the equation of state of dark en",
       "abstract": "",
       "original_query": "What role does baryon acoustic oscillations play in measuring dark energy equation of state?",
       "subdomain": "cosmology",
-      "paper_overview": "This paper proposes two new parametrizations of the equation of state of dark energy, Model I and Model II, which are free of divergence in the whole range of redshift z ∈[−1, ∞). The authors perform an observational constraint on these models using the WMAP seven-year data, the BAO data, and the cu",
+      "paper_overview": "This paper proposes two new parametrizations of the equation of state of dark energy, Model I and Model II, which are free of divergence in the whole range of redshift z ∈[−1, ∞). The authors perform an observational constraint on these models using the WMAP seven-year data, the BAO data, and the current supernova Union2 data. The results show that the models with perturbations provide a better fit to the data than those without perturbations.",
       "evidence_type": "observational",
       "instruments": [
-        "Instrument 1",
-        "Instrument 2",
-        "Instrument 3"
+        "WMAP",
+        "BAO",
+        "Union2"
       ],
       "key_equations": [
         {
-          "equation": "[Equation 1 — see original paper]",
-          "variables": ""
+          "equation": "w(z) = w0 + w1z",
+          "variables": "w0=present value of the equation of state, w1=derivative with respect to the scale factor"
         },
         {
-          "equation": "[Equation 2 — see original paper]",
-          "variables": ""
+          "equation": "w(z) = w0 + w1z2/(1 + z2)",
+          "variables": "w0=present value of the equation of state, w1=derivative with respect to the scale factor"
         }
       ],
       "numerical_results": [
         {
-          "quantity": "Numerical result 1",
-          "value": "see paper",
-          "uncertainty": "",
+          "quantity": "Ωbh2",
+          "value": "0.0223",
+          "uncertainty": "±0.0016",
           "unit": ""
         },
         {
-          "quantity": "Numerical result 2",
-          "value": "see paper",
-          "uncertainty": "",
+          "quantity": "Ωbh2",
+          "value": "0.0222",
+          "uncertainty": "±0.0015",
           "unit": ""
         },
         {
-          "quantity": "Numerical result 3",
-          "value": "see paper",
-          "uncertainty": "",
+          "quantity": "Ωbh2",
+          "value": "0.0225",
+          "uncertainty": "±0.0015",
           "unit": ""
         },
         {
-          "quantity": "Numerical result 4",
-          "value": "see paper",
-          "uncertainty": "",
+          "quantity": "w0",
+          "value": "-1.0148",
+          "uncertainty": "±0.5183",
           "unit": ""
         },
         {
-          "quantity": "Numerical result 5",
-          "value": "see paper",
-          "uncertainty": "",
+          "quantity": "w0",
+          "value": "-1.0153",
+          "uncertainty": "±0.6181",
           "unit": ""
         }
       ],
       "sub_question_answers": {
         "Q1": {
           "answered": true,
-          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
-          "section": "unknown"
+          "answer_text": "Baryon acoustic oscillations interact with dark matter and dark energy to produce a characteristic scale in the large-scale structure of the universe through the perturbation equations for dark energy. The authors use the CPL parametrization as a motivation for proposing new forms of the equation of state of dark energy, which are free of divergence in the whole range of redshift z ∈[−1, ∞).",
+          "section": "BACKGROUND"
         },
         "Q2": {
           "answered": true,
-          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
-          "section": "unknown"
+          "answer_text": "The observational evidence for baryon acoustic oscillations in the universe comes from galaxy surveys and cosmic microwave background data. The authors use the WMAP seven-year data, the BAO data, and the current supernova Union2 data to constrain the parameters of the dark energy models.",
+          "section": "DATA"
         },
         "Q3": {
           "answered": true,
-          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
-          "section": "unknown"
+          "answer_text": "The precision with which baryon acoustic oscillations can be used to constrain the dark energy equation of state parameter w0 is 0.0016 for Model I and 0.0015 for Model II. The corresponding error bars are ±0.0019 and ±0.0020, respectively.",
+          "section": "RESULTS"
         }
       },
       "key_snippet": "The evolution of dark energy is determined by its equation of state (EoS), which can be obtained in a particular model or constructed directly from observational data.",
-      "key_findings": [],
-      "methodology": "",
+      "key_findings": [
+        "The results show that the models with perturbations provide a better fit to the data than those without perturbations.",
+        "The precision with which baryon acoustic oscillations can be used to constrain the dark energy equation of state parameter w0 is 0.0016 for Model I and 0.0015 for Model II."
+      ],
+      "methodology": "The authors use the Markov Chain Monte Carlo (MCMC) method to make a global fitting on the cosmological parameters in Model I and II. They use the WMAP seven-year data, the BAO data, and the current supernova Union2 data to constrain the parameters of the dark energy models.",
       "q_total": 0.92,
       "q_f": 0.8,
       "q_c": 1.0,
       "q_i": 1.0,
       "decision": "ACCEPT",
-      "total_seconds": 319.5507547855377,
+      "total_seconds": 280.3114173412323,
       "pdf_pages": 8,
-      "n_sections": 14,
+      "n_sections": 11,
       "added_at": "2026-07-22T05:23:27.754411",
-      "updated_at": "2026-07-22T05:23:27.754411",
-      "view_count": 0,
+      "updated_at": "2026-07-22T20:27:48.882327",
+      "view_count": 1,
       "chat_sessions": []
     },
     "0905.4669": {
@@ -554,7 +570,7 @@
       "n_sections": 14,
       "added_at": "2026-07-22T05:23:27.754411",
       "updated_at": "2026-07-22T05:23:27.754411",
-      "view_count": 0,
+      "view_count": 1,
       "chat_sessions": []
     },
     "1502.05053": {
@@ -620,7 +636,7 @@
       "n_sections": 15,
       "added_at": "2026-07-22T05:23:27.754411",
       "updated_at": "2026-07-22T05:23:27.754411",
-      "view_count": 0,
+      "view_count": 1,
       "chat_sessions": []
     },
     "2402.08696": {
@@ -702,7 +718,7 @@
       "n_sections": 15,
       "added_at": "2026-07-22T05:23:27.754411",
       "updated_at": "2026-07-22T05:23:27.754411",
-      "view_count": 0,
+      "view_count": 1,
       "chat_sessions": []
     },
     "1810.00098": {
@@ -761,7 +777,7 @@
       "n_sections": 14,
       "added_at": "2026-07-22T05:23:27.754411",
       "updated_at": "2026-07-22T05:23:27.754411",
-      "view_count": 0,
+      "view_count": 1,
       "chat_sessions": []
     },
     "0707.3514": {
@@ -830,76 +846,80 @@
       "n_sections": 17,
       "added_at": "2026-07-22T05:23:27.754411",
       "updated_at": "2026-07-22T05:23:27.754411",
-      "view_count": 0,
+      "view_count": 1,
       "chat_sessions": []
     },
     "1207.2859": {
       "arxiv_id": "1207.2859",
-      "title": "",
+      "title": "The origin of ultra-high-energy cosmic rays is unknown, but numerous hints in da",
       "abstract": "",
       "original_query": "How are ultra-high-energy cosmic rays accelerated in astrophysical sources?",
       "subdomain": "high energy",
-      "paper_overview": "The origin of ultra-high-energy cosmic rays is unknown, but numerous hints in data and theory suggest that the bulk of cosmic rays at these energies have extragalactic origin. The observation of the spectrum steepening consistent with the Greisen-Zatsepin-Kuzmin cutoﬀ, together with the global isotr",
+      "paper_overview": "The origin of ultra-high-energy cosmic rays is unknown, but numerous hints in data and theory suggest that the bulk of cosmic rays at these energies have extragalactic origin. The observation of the spectrum steepening consistent with the Greisen-Zatsepin-Kuzmin cutoﬀ, together with the global isotropy of the arrival directions, suggests that the UHE particles are not confined by the Milky-Way magnetic field. A toy model of particle acceleration in the immediate vicinity of supermassive black holes is proposed to explain the observed spectrum of UHECRs.",
       "evidence_type": "observational",
       "instruments": [
-        "Instrument 1",
-        "Instrument 2"
+        "Pierre Auger Observatory",
+        "IceCube"
       ],
       "key_equations": [
         {
-          "equation": "[Equation 1 — see original paper]",
-          "variables": ""
+          "equation": "E = Ecurv",
+          "variables": "Ecurv=curvature radiation energy"
         },
         {
-          "equation": "[Equation 2 — see original paper]",
-          "variables": ""
+          "equation": "Lγ = η·L0",
+          "variables": "Lγ=gamma-ray luminosity, η=efficiency, L0=total luminosity"
         }
       ],
       "numerical_results": [
         {
-          "quantity": "Numerical result 1",
-          "value": "see paper",
-          "uncertainty": "",
-          "unit": ""
+          "quantity": "number density of sources",
+          "value": "10−4",
+          "uncertainty": "±0",
+          "unit": "per cubic Megaparsec"
         },
         {
-          "quantity": "Numerical result 2",
-          "value": "see paper",
-          "uncertainty": "",
-          "unit": ""
+          "quantity": "SMBH mass",
+          "value": "1.23×1022 eV",
+          "uncertainty": "±0",
+          "unit": "erg"
         }
       ],
       "sub_question_answers": {
         "Q1": {
           "answered": true,
-          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
-          "section": "unknown"
+          "answer_text": "The primary physical mechanism or process responsible for accelerating ultra-high-energy cosmic rays in astrophysical sources is the acceleration of particles in the immediate vicinity of supermassive black holes (SMBHs) through the process of synchrotron radiation.",
+          "section": "INTRODUCTION"
         },
         "Q2": {
           "answered": true,
-          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
-          "section": "unknown"
+          "answer_text": "The observational evidence or data that supports the acceleration of ultra-high-energy cosmic rays in astrophysical sources includes the observation of the spectrum steepening consistent with the Greisen-Zatsepin-Kuzmin cutoﬀ, the global isotropy of the arrival directions, and the lack of clustering of arrival directions at small scales.",
+          "section": "INTRODUCTION"
         },
         "Q3": {
           "answered": true,
-          "answer_text": "Detailed answer available in original pipeline output. This library entry reconstructed from benchmark trace metadata.",
-          "section": "unknown"
+          "answer_text": "The quantitative measurements or numerical results of the acceleration efficiency or energy gain of ultra-high-energy cosmic rays in astrophysical sources are not explicitly provided in the paper. However, it is mentioned that the acceleration capabilities of a source are determined by a single parameter, the SMBH mass.",
+          "section": "INTRODUCTION"
         }
       },
       "key_snippet": "The observation of the spectrum steepening consistent with the Greisen-Zatsepin-Kuzmin cutoﬀ, together with the global isotropy of the arrival directions, suggests that the UHE particles are not confined by the Milky-Way magnetic field.",
-      "key_findings": [],
-      "methodology": "",
+      "key_findings": [
+        "The acceleration capabilities of a source are determined by a single parameter, the SMBH mass.",
+        "The observation of the spectrum steepening consistent with the Greisen-Zatsepin-Kuzmin cutoﬀ supports the acceleration of ultra-high-energy cosmic rays in astrophysical sources.",
+        "The lack of clustering of arrival directions at small scales constrains the number density of sources."
+      ],
+      "methodology": "The paper proposes a toy model of particle acceleration in the immediate vicinity of supermassive black holes to explain the observed spectrum of UHECRs. The model is based on the assumption that the acceleration capabilities of a source are determined by a single parameter, the SMBH mass.",
       "q_total": 1.0,
       "q_f": 1.0,
       "q_c": 1.0,
       "q_i": 1.0,
       "decision": "ACCEPT",
-      "total_seconds": 140.53531169891357,
-      "pdf_pages": 10,
-      "n_sections": 14,
+      "total_seconds": 154.09815859794617,
+      "pdf_pages": 9,
+      "n_sections": 12,
       "added_at": "2026-07-22T05:23:27.754411",
-      "updated_at": "2026-07-22T05:23:27.754411",
-      "view_count": 0,
+      "updated_at": "2026-07-22T20:36:16.544991",
+      "view_count": 1,
       "chat_sessions": []
     },
     "1104.2048": {
@@ -970,7 +990,7 @@
       "n_sections": 13,
       "added_at": "2026-07-22T05:23:27.754411",
       "updated_at": "2026-07-22T05:23:27.754411",
-      "view_count": 0,
+      "view_count": 1,
       "chat_sessions": []
     },
     "1711.00347": {
@@ -1034,7 +1054,7 @@
       "n_sections": 18,
       "added_at": "2026-07-22T05:23:27.754411",
       "updated_at": "2026-07-22T05:23:27.754411",
-      "view_count": 0,
+      "view_count": 1,
       "chat_sessions": []
     },
     "astro-ph-0401466": {
@@ -1103,7 +1123,7 @@
       "n_sections": 11,
       "added_at": "2026-07-22T05:23:27.754411",
       "updated_at": "2026-07-22T05:23:27.754411",
-      "view_count": 0,
+      "view_count": 1,
       "chat_sessions": []
     },
     "astro-ph-0107479": {
@@ -1169,7 +1189,7 @@
       "n_sections": 13,
       "added_at": "2026-07-22T05:23:27.754411",
       "updated_at": "2026-07-22T05:23:27.754411",
-      "view_count": 0,
+      "view_count": 1,
       "chat_sessions": []
     },
     "0903.4905": {
@@ -1250,7 +1270,7 @@
       "n_sections": 11,
       "added_at": "2026-07-22T05:23:27.754411",
       "updated_at": "2026-07-22T05:23:27.754411",
-      "view_count": 0,
+      "view_count": 1,
       "chat_sessions": []
     },
     "astro-ph-0301381": {
@@ -1326,6 +1346,70 @@
       "n_sections": 9,
       "added_at": "2026-07-22T05:23:27.754411",
       "updated_at": "2026-07-22T05:23:27.754411",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "1101.3384": {
+      "arxiv_id": "1101.3384",
+      "title": "The paper discusses the role of magnetic fields in regulating the collapse of mo",
+      "abstract": "",
+      "original_query": "How does the interstellar magnetic field affect molecular cloud collapse and star formation efficiency?",
+      "subdomain": "ISM",
+      "paper_overview": "The paper discusses the role of magnetic fields in regulating the collapse of molecular clouds and the subsequent formation of stars. The authors use numerical simulations to study the evolution of molecular clouds and the impact of magnetic fields on star formation. They find that magnetic fields play a crucial role in regulating the collapse of molecular clouds and the formation of stars. The simulations show that the efficiency of star formation is affected by the strength of the magnetic field.",
+      "evidence_type": "observational",
+      "instruments": [],
+      "key_equations": [
+        {
+          "equation": "(N/B)obs = N/(B cos2 θ)",
+          "variables": "N=column density, B=magnetic field strength, θ=angle between magnetic field and line of sight"
+        },
+        {
+          "equation": "(N/B)obs = N/(B cos θ)",
+          "variables": "N=column density, B=magnetic field strength, θ=angle between magnetic field and line of sight"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "efficiency of star formation",
+          "value": "2-3",
+          "uncertainty": "±1",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "The role of magnetic field lines in regulating the collapse of molecular clouds and the subsequent formation of stars is to oppose the self-gravity of the cloud. The magnetic field lines act as a brake on the collapse of the cloud, preventing it from collapsing too quickly. This is because the magnetic field lines are tied to the dense gas in the cloud, and as the cloud collapses, the magnetic field lines are stretched and twisted, opposing the collapse. The magnetic field lines also play a role in the redistribution of mass within the cloud, which can affect the formation of stars.",
+          "section": "Methods"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "The observational evidence from radio, infrared, and submillimeter surveys that supports the impact of interstellar magnetic fields on star formation includes the measurement of the column density to magnetic field strength ratio (N/B) along lines of sight through the cloud. This ratio is often used to estimate the magnetic field strength in molecular clouds. However, this method has limitations, as it can overestimate the actual value of N/B due to the orientation of the magnetic field lines with respect to the line of sight.",
+          "section": "Methods"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "The quantitative effects of varying interstellar magnetic field strengths on the efficiency of star formation in molecular clouds are studied using numerical simulations. The simulations show that the efficiency of star formation decreases with increasing magnetic field strength. Specifically, the simulations show that the efficiency of star formation decreases by a factor of 2-3 when the magnetic field strength is increased by a factor of 2.",
+          "section": "Results"
+        }
+      },
+      "key_snippet": "The magnetic field lines act as a brake on the collapse of the cloud, preventing it from collapsing too quickly.",
+      "key_findings": [
+        "The efficiency of star formation decreases with increasing magnetic field strength.",
+        "The magnetic field lines play a crucial role in regulating the collapse of molecular clouds and the formation of stars.",
+        "The simulations show that the efficiency of star formation decreases by a factor of 2-3 when the magnetic field strength is increased by a factor of 2."
+      ],
+      "methodology": "The authors use numerical simulations to study the evolution of molecular clouds and the impact of magnetic fields on star formation. The simulations are run using the FLASH code, which includes the AD module developed by Duﬃn & Pudritz (2008). The simulations are initialized with a cloud of gas and magnetic field lines, and the evolution of the cloud is followed over time.",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 254.44394493103027,
+      "pdf_pages": 21,
+      "n_sections": 13,
+      "added_at": "2026-07-22T20:46:20.918384",
+      "updated_at": "2026-07-22T20:46:20.918399",
       "view_count": 0,
       "chat_sessions": []
     }
