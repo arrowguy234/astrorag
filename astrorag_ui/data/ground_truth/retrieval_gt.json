@@ -1,0 +1,207 @@
+{
+  "study_name": "retrieval_ground_truth",
+  "judge_model": "llama-3.3-70b-versatile",
+  "n_queries": 14,
+  "n_valid": 14,
+  "precision_at_1": 0.21428571428571427,
+  "precision_at_3": 0.5,
+  "results": [
+    {
+      "query_idx": 2,
+      "query": "How does the intracluster medium cool in galaxy clusters and what regulates the cooling flow?",
+      "astrorag_selected": "astro-ph-0308006",
+      "judge_top3": [
+        "astro-ph-0308006",
+        "1208.2962",
+        "astro-ph-0310011"
+      ],
+      "astrorag_in_judge_top1": true,
+      "astrorag_in_judge_top3": true,
+      "judge_rationale": "These three papers are the most relevant because they directly address the cooling flow in galaxy clusters, its regulation, and the role of active galactic nuclei (AGN) in offsetting radiative cooling.",
+      "error": ""
+    },
+    {
+      "query_idx": 3,
+      "query": "What is the observed relationship between AGN jet power and X-ray cavity enthalpy in cluster central galaxies?",
+      "astrorag_selected": "1102.1481",
+      "judge_top3": [
+        "1405.6208",
+        "1806.04692",
+        "1102.1481"
+      ],
+      "astrorag_in_judge_top1": false,
+      "astrorag_in_judge_top3": true,
+      "judge_rationale": "These three papers are the most relevant because they directly discuss the relationship between AGN jet power and X-ray cavity enthalpy in cluster central galaxies, with papers 6 and 2 providing specific measurements and paper 1 examining the reliability of these measurements.",
+      "error": ""
+    },
+    {
+      "query_idx": 4,
+      "query": "What is the relationship between galaxy stellar mass and central supermassive black hole mass?",
+      "astrorag_selected": "astro-ph-0006289",
+      "judge_top3": [
+        "2401.14567",
+        "1405.2446",
+        "1412.3862"
+      ],
+      "astrorag_in_judge_top1": false,
+      "astrorag_in_judge_top3": false,
+      "judge_rationale": "These three papers are the most relevant because they directly investigate the relationship between galaxy properties, such as stellar mass or luminosity, and the mass of their central supermassive black holes, which is the core of the research query.",
+      "error": ""
+    },
+    {
+      "query_idx": 5,
+      "query": "What determines the M-sigma relation between supermassive black hole mass and host galaxy velocity dispersion?",
+      "astrorag_selected": "astro-ph-0506038",
+      "judge_top3": [
+        "1002.1705",
+        "0811.0594",
+        "1305.2946"
+      ],
+      "astrorag_in_judge_top1": false,
+      "astrorag_in_judge_top3": false,
+      "judge_rationale": "These three papers are the most relevant because they directly discuss the M-sigma relation, its implications, and the factors that determine the relationship between supermassive black hole mass and host galaxy velocity dispersion.",
+      "error": ""
+    },
+    {
+      "query_idx": 6,
+      "query": "How are photometric redshifts calibrated using spectroscopic survey data from SDSS and DESI?",
+      "astrorag_selected": "1903.08174",
+      "judge_top3": [
+        "2407.20670",
+        "astro-ph-0106036",
+        "2409.14799"
+      ],
+      "astrorag_in_judge_top1": false,
+      "astrorag_in_judge_top3": false,
+      "judge_rationale": "These three papers are the most relevant because they directly address the calibration of photometric redshifts using spectroscopic survey data, with papers #0 and #9 discussing the use of specific surveys like DESI and paper #1 utilizing SDSS data.",
+      "error": ""
+    },
+    {
+      "query_idx": 7,
+      "query": "How do cosmic microwave background measurements constrain the Hubble constant?",
+      "astrorag_selected": "1303.5341",
+      "judge_top3": [
+        "1406.1718",
+        "2307.13083",
+        "1303.5341"
+      ],
+      "astrorag_in_judge_top1": false,
+      "astrorag_in_judge_top3": true,
+      "judge_rationale": "These three papers are the most relevant because they directly discuss how cosmic microwave background measurements constrain the Hubble constant, with papers #0 and #8 explicitly mentioning the use of CMB to predict the current expansion rate and paper #2 using CMB data to define model-dependent cosmological parameters.",
+      "error": ""
+    },
+    {
+      "query_idx": 8,
+      "query": "What role does baryon acoustic oscillations play in measuring dark energy equation of state?",
+      "astrorag_selected": "astro-ph-0301632",
+      "judge_top3": [
+        "1305.0761",
+        "0904.1589",
+        "1002.3277"
+      ],
+      "astrorag_in_judge_top1": false,
+      "astrorag_in_judge_top3": false,
+      "judge_rationale": "These three papers are the most relevant because they explicitly mention baryon acoustic oscillations in the context of measuring dark energy equation of state, with papers #1 and #6 discussing their role in constraining dark energy models and paper #3 mentioning their use in ground-based experiments to achieve constraints on dark energy.",
+      "error": ""
+    },
+    {
+      "query_idx": 9,
+      "query": "What mechanisms quench star formation in massive early-type galaxies at high redshift?",
+      "astrorag_selected": "0905.4669",
+      "judge_top3": [
+        "0905.4669",
+        "0706.1246",
+        "astro-ph-0101468"
+      ],
+      "astrorag_in_judge_top1": true,
+      "astrorag_in_judge_top3": true,
+      "judge_rationale": "These three papers are the most relevant because they directly address the quenching of star formation in early-type galaxies, with paper #1 proposing a natural quenching mechanism, paper #6 developing a model for the cosmological role of mergers in quenching, and paper #4 constructing models for the transformation of star-forming galaxies into early-type galaxies at high redshift.",
+      "error": ""
+    },
+    {
+      "query_idx": 10,
+      "query": "How does gas accretion drive galaxy stellar mass assembly across cosmic time?",
+      "astrorag_selected": "1502.05053",
+      "judge_top3": [
+        "1206.6995",
+        "1309.1603",
+        "2407.00166"
+      ],
+      "astrorag_in_judge_top1": false,
+      "astrorag_in_judge_top3": false,
+      "judge_rationale": "These three papers are most relevant because they directly address the role of gas accretion in galaxy evolution, its impact on stellar mass assembly, and the challenges of measuring its contribution across cosmic time.",
+      "error": ""
+    },
+    {
+      "query_idx": 11,
+      "query": "What are the properties of Milky Way progenitor galaxies observed with JWST at high redshift?",
+      "astrorag_selected": "2402.08696",
+      "judge_top3": [
+        "2204.01794",
+        "2402.08696",
+        "1005.4422"
+      ],
+      "astrorag_in_judge_top1": false,
+      "astrorag_in_judge_top3": true,
+      "judge_rationale": "These three papers are the most relevant because they specifically discuss the properties of Milky Way progenitor galaxies, with papers #0 and #1 mentioning JWST observations at high redshift and paper #5 exploring the identification of MW progenitors as high redshift Lyman Alpha Emitters.",
+      "error": ""
+    },
+    {
+      "query_idx": 12,
+      "query": "How do binary neutron star mergers produce heavy elements through the r-process?",
+      "astrorag_selected": "2107.02714",
+      "judge_top3": [
+        "2402.08214",
+        "2107.02714",
+        "1410.1891"
+      ],
+      "astrorag_in_judge_top1": false,
+      "astrorag_in_judge_top3": true,
+      "judge_rationale": "These three papers are the most relevant because they directly discuss binary neutron star mergers as a site for r-process nucleosynthesis, providing evidence and theoretical frameworks for the production of heavy elements in these events.",
+      "error": ""
+    },
+    {
+      "query_idx": 13,
+      "query": "What determines the initial mass function in molecular cloud star formation?",
+      "astrorag_selected": "0707.3514",
+      "judge_top3": [
+        "astro-ph-9601139",
+        "2001.11787",
+        "2410.07311"
+      ],
+      "astrorag_in_judge_top1": false,
+      "astrorag_in_judge_top3": false,
+      "judge_rationale": "These three papers are the most relevant because they explicitly discuss the initial mass function (IMF) in molecular cloud star formation, with papers #2 and #9 directly addressing the IMF and paper #8 exploring the related concept of the mass function of prestellar cores.",
+      "error": ""
+    },
+    {
+      "query_idx": 14,
+      "query": "How are ultra-high-energy cosmic rays accelerated in astrophysical sources?",
+      "astrorag_selected": "1207.2859",
+      "judge_top3": [
+        "1207.2859",
+        "1705.00017",
+        "1711.11274"
+      ],
+      "astrorag_in_judge_top1": true,
+      "astrorag_in_judge_top3": true,
+      "judge_rationale": "These three papers are the most relevant because they directly address the acceleration mechanisms of ultra-high-energy cosmic rays in astrophysical sources, such as supermassive black holes, ultra-relativistic flows, and tidal disruptions.",
+      "error": ""
+    },
+    {
+      "query_idx": 15,
+      "query": "What is the origin of gamma-ray bursts and their host galaxy environments?",
+      "astrorag_selected": "1104.2048",
+      "judge_top3": [
+        "astro-ph-0508115",
+        "astro-ph-0703458",
+        "1311.2603"
+      ],
+      "astrorag_in_judge_top1": false,
+      "astrorag_in_judge_top3": false,
+      "judge_rationale": "These three papers are the most relevant because they directly discuss the origin of gamma-ray bursts and their host galaxy environments, providing insights into the connection between GRBs and their progenitor stars, as well as the properties of their host galaxies.",
+      "error": ""
+    }
+  ],
+  "finished_at": "2026-07-26T01:05:09.575842"
+}

@@ -1,0 +1,893 @@
+{
+  "study_name": "multi_judge",
+  "n_papers": 15,
+  "n_judges": 3,
+  "n_variants": 0,
+  "started_at": "2026-07-25T22:04:08.862331",
+  "finished_at": "2026-07-25T22:04:08.862355",
+  "per_paper": [
+    {
+      "arxiv_id": "1102.1481",
+      "n_judges": 3,
+      "mean_faithfulness": 2.6666666666666665,
+      "mean_coverage": 2.5,
+      "mean_technical_accuracy": 3.0,
+      "mean_overall": 2.7222222222222228,
+      "verdict_distribution": {
+        "accept": 2,
+        "needs_revision": 0,
+        "reject": 0,
+        "other": 1
+      },
+      "judges": [
+        {
+          "judge_name": "Llama-3.3-70B (larger)",
+          "arxiv_id": "1102.1481",
+          "query": "What is the observed relationship between AGN jet power and X-ray cavity enthalpy in cluster central galaxies?",
+          "faithfulness": 4.0,
+          "coverage": 4.0,
+          "technical_accuracy": 4.5,
+          "overall": 4.166666666666667,
+          "verdict": "accept",
+          "rationale": "The summary accurately captures the essence of the paper, addressing key aspects of the relationship between AGN jet power and X-ray cavity enthalpy, with minor room for improvement in technical details and equation formatting.",
+          "judged_at": "2026-07-25T21:48:16.545177",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Llama-3.1-8B (baseline)",
+          "arxiv_id": "1102.1481",
+          "query": "What is the observed relationship between AGN jet power and X-ray cavity enthalpy in cluster central galaxies?",
+          "faithfulness": 4.0,
+          "coverage": 3.5,
+          "technical_accuracy": 4.5,
+          "overall": 4.0,
+          "verdict": "accept",
+          "rationale": "The summary accurately captures the main points of the paper, but could benefit from more detailed coverage of the quantitative results and technical aspects.",
+          "judged_at": "2026-07-25T21:48:49.298717",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Qwen3.6-27B (different family)",
+          "arxiv_id": "1102.1481",
+          "query": "What is the observed relationship between AGN jet power and X-ray cavity enthalpy in cluster central galaxies?",
+          "faithfulness": 0.0,
+          "coverage": 0.0,
+          "technical_accuracy": 0.0,
+          "overall": 0.0,
+          "verdict": "",
+          "rationale": "",
+          "judged_at": "2026-07-25T21:49:10.525556",
+          "llm_error": ""
+        }
+      ]
+    },
+    {
+      "arxiv_id": "astro-ph-0308006",
+      "n_judges": 3,
+      "mean_faithfulness": 2.6666666666666665,
+      "mean_coverage": 2.6666666666666665,
+      "mean_technical_accuracy": 2.3333333333333335,
+      "mean_overall": 2.5555555555555554,
+      "verdict_distribution": {
+        "accept": 1,
+        "needs_revision": 1,
+        "reject": 0,
+        "other": 1
+      },
+      "judges": [
+        {
+          "judge_name": "Llama-3.3-70B (larger)",
+          "arxiv_id": "astro-ph-0308006",
+          "query": "How does the intracluster medium cool in galaxy clusters and what regulates the cooling flow?",
+          "faithfulness": 4.0,
+          "coverage": 4.0,
+          "technical_accuracy": 3.0,
+          "overall": 3.6666666666666665,
+          "verdict": "needs_revision",
+          "rationale": "The summary generally addresses the key aspects of intracluster medium cooling in galaxy clusters but requires revision to correct dimensionally inconsistent equations and ensure physically plausible numerical values.",
+          "judged_at": "2026-07-25T21:49:31.209387",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Llama-3.1-8B (baseline)",
+          "arxiv_id": "astro-ph-0308006",
+          "query": "How does the intracluster medium cool in galaxy clusters and what regulates the cooling flow?",
+          "faithfulness": 4.0,
+          "coverage": 4.0,
+          "technical_accuracy": 4.0,
+          "overall": 4.0,
+          "verdict": "accept",
+          "rationale": "The summary accurately captures the main points of the paper, including the challenges to simple cooling flow models and the observational evidence supporting cooling flows, but could benefit from more precise equation formatting.",
+          "judged_at": "2026-07-25T21:49:51.839108",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Qwen3.6-27B (different family)",
+          "arxiv_id": "astro-ph-0308006",
+          "query": "How does the intracluster medium cool in galaxy clusters and what regulates the cooling flow?",
+          "faithfulness": 0.0,
+          "coverage": 0.0,
+          "technical_accuracy": 0.0,
+          "overall": 0.0,
+          "verdict": "",
+          "rationale": "",
+          "judged_at": "2026-07-25T21:50:13.251293",
+          "llm_error": ""
+        }
+      ]
+    },
+    {
+      "arxiv_id": "astro-ph-0006289",
+      "n_judges": 3,
+      "mean_faithfulness": 3.0,
+      "mean_coverage": 2.6666666666666665,
+      "mean_technical_accuracy": 3.1666666666666665,
+      "mean_overall": 2.944444444444444,
+      "verdict_distribution": {
+        "accept": 2,
+        "needs_revision": 0,
+        "reject": 0,
+        "other": 1
+      },
+      "judges": [
+        {
+          "judge_name": "Llama-3.3-70B (larger)",
+          "arxiv_id": "astro-ph-0006289",
+          "query": "What is the relationship between galaxy stellar mass and central supermassive black hole mass?",
+          "faithfulness": 4.5,
+          "coverage": 4.0,
+          "technical_accuracy": 5.0,
+          "overall": 4.5,
+          "verdict": "accept",
+          "rationale": "The summary accurately captures the relationship between galaxy stellar mass and central supermassive black hole mass, with minor omissions in addressing the sub-questions, but overall demonstrates strong technical accuracy and faithfulness to the topic.",
+          "judged_at": "2026-07-25T21:50:33.930782",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Llama-3.1-8B (baseline)",
+          "arxiv_id": "astro-ph-0006289",
+          "query": "What is the relationship between galaxy stellar mass and central supermassive black hole mass?",
+          "faithfulness": 4.5,
+          "coverage": 4.0,
+          "technical_accuracy": 4.5,
+          "overall": 4.333333333333333,
+          "verdict": "accept",
+          "rationale": "The summary accurately captures the main findings and relationship between galaxy stellar mass and central supermassive black hole mass, with minor omissions in addressing the sub-questions.",
+          "judged_at": "2026-07-25T21:50:54.586215",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Qwen3.6-27B (different family)",
+          "arxiv_id": "astro-ph-0006289",
+          "query": "What is the relationship between galaxy stellar mass and central supermassive black hole mass?",
+          "faithfulness": 0.0,
+          "coverage": 0.0,
+          "technical_accuracy": 0.0,
+          "overall": 0.0,
+          "verdict": "",
+          "rationale": "",
+          "judged_at": "2026-07-25T21:51:15.640831",
+          "llm_error": ""
+        }
+      ]
+    },
+    {
+      "arxiv_id": "astro-ph-0506038",
+      "n_judges": 3,
+      "mean_faithfulness": 2.6666666666666665,
+      "mean_coverage": 2.8333333333333335,
+      "mean_technical_accuracy": 3.0,
+      "mean_overall": 2.8333333333333335,
+      "verdict_distribution": {
+        "accept": 2,
+        "needs_revision": 0,
+        "reject": 0,
+        "other": 1
+      },
+      "judges": [
+        {
+          "judge_name": "Llama-3.3-70B (larger)",
+          "arxiv_id": "astro-ph-0506038",
+          "query": "What determines the M-sigma relation between supermassive black hole mass and host galaxy velocity dispersion?",
+          "faithfulness": 4.0,
+          "coverage": 4.0,
+          "technical_accuracy": 4.5,
+          "overall": 4.166666666666667,
+          "verdict": "accept",
+          "rationale": "The summary accurately captures the essence of the paper, addressing key aspects of the M-sigma relation, although minor details could be improved for perfection.",
+          "judged_at": "2026-07-25T21:51:36.458802",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Llama-3.1-8B (baseline)",
+          "arxiv_id": "astro-ph-0506038",
+          "query": "What determines the M-sigma relation between supermassive black hole mass and host galaxy velocity dispersion?",
+          "faithfulness": 4.0,
+          "coverage": 4.5,
+          "technical_accuracy": 4.5,
+          "overall": 4.333333333333333,
+          "verdict": "accept",
+          "rationale": "The summary accurately captures the main claims and results of the paper, with minor omissions and some minor errors in technical details.",
+          "judged_at": "2026-07-25T21:51:57.317246",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Qwen3.6-27B (different family)",
+          "arxiv_id": "astro-ph-0506038",
+          "query": "What determines the M-sigma relation between supermassive black hole mass and host galaxy velocity dispersion?",
+          "faithfulness": 0.0,
+          "coverage": 0.0,
+          "technical_accuracy": 0.0,
+          "overall": 0.0,
+          "verdict": "",
+          "rationale": "",
+          "judged_at": "2026-07-25T21:52:18.477002",
+          "llm_error": ""
+        }
+      ]
+    },
+    {
+      "arxiv_id": "2309.06443",
+      "n_judges": 3,
+      "mean_faithfulness": 2.6666666666666665,
+      "mean_coverage": 2.5,
+      "mean_technical_accuracy": 2.5,
+      "mean_overall": 2.5555555555555554,
+      "verdict_distribution": {
+        "accept": 1,
+        "needs_revision": 1,
+        "reject": 0,
+        "other": 1
+      },
+      "judges": [
+        {
+          "judge_name": "Llama-3.3-70B (larger)",
+          "arxiv_id": "2309.06443",
+          "query": "How are photometric redshifts calibrated using spectroscopic survey data from SDSS and DESI?",
+          "faithfulness": 4.0,
+          "coverage": 4.0,
+          "technical_accuracy": 3.0,
+          "overall": 3.6666666666666665,
+          "verdict": "needs_revision",
+          "rationale": "The summary generally addresses the sub-questions and presents plausible claims, but requires revision to improve technical accuracy and provide more specific quantitative results.",
+          "judged_at": "2026-07-25T21:52:39.331242",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Llama-3.1-8B (baseline)",
+          "arxiv_id": "2309.06443",
+          "query": "How are photometric redshifts calibrated using spectroscopic survey data from SDSS and DESI?",
+          "faithfulness": 4.0,
+          "coverage": 3.5,
+          "technical_accuracy": 4.5,
+          "overall": 4.0,
+          "verdict": "accept",
+          "rationale": "The summary accurately captures the main points of the paper, but could benefit from more comprehensive coverage of the sub-questions and minor corrections to technical accuracy.",
+          "judged_at": "2026-07-25T21:53:00.073161",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Qwen3.6-27B (different family)",
+          "arxiv_id": "2309.06443",
+          "query": "How are photometric redshifts calibrated using spectroscopic survey data from SDSS and DESI?",
+          "faithfulness": 0.0,
+          "coverage": 0.0,
+          "technical_accuracy": 0.0,
+          "overall": 0.0,
+          "verdict": "",
+          "rationale": "",
+          "judged_at": "2026-07-25T21:53:21.232963",
+          "llm_error": ""
+        }
+      ]
+    },
+    {
+      "arxiv_id": "1303.5341",
+      "n_judges": 3,
+      "mean_faithfulness": 2.6666666666666665,
+      "mean_coverage": 2.6666666666666665,
+      "mean_technical_accuracy": 2.8333333333333335,
+      "mean_overall": 2.7222222222222228,
+      "verdict_distribution": {
+        "accept": 2,
+        "needs_revision": 0,
+        "reject": 0,
+        "other": 1
+      },
+      "judges": [
+        {
+          "judge_name": "Llama-3.3-70B (larger)",
+          "arxiv_id": "1303.5341",
+          "query": "How do cosmic microwave background measurements constrain the Hubble constant?",
+          "faithfulness": 4.0,
+          "coverage": 4.0,
+          "technical_accuracy": 4.0,
+          "overall": 4.0,
+          "verdict": "accept",
+          "rationale": "The summary accurately captures the relationship between cosmic microwave background measurements and the Hubble constant, with minor formatting issues in the extracted numerical results.",
+          "judged_at": "2026-07-25T21:53:42.027400",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Llama-3.1-8B (baseline)",
+          "arxiv_id": "1303.5341",
+          "query": "How do cosmic microwave background measurements constrain the Hubble constant?",
+          "faithfulness": 4.0,
+          "coverage": 4.0,
+          "technical_accuracy": 4.5,
+          "overall": 4.166666666666667,
+          "verdict": "accept",
+          "rationale": "The summary accurately captures the main points of the paper, including the relationship between CMB measurements and the Hubble constant, but could benefit from more precise formatting and notation.",
+          "judged_at": "2026-07-25T21:54:02.805716",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Qwen3.6-27B (different family)",
+          "arxiv_id": "1303.5341",
+          "query": "How do cosmic microwave background measurements constrain the Hubble constant?",
+          "faithfulness": 0.0,
+          "coverage": 0.0,
+          "technical_accuracy": 0.0,
+          "overall": 0.0,
+          "verdict": "",
+          "rationale": "",
+          "judged_at": "2026-07-25T21:54:23.996744",
+          "llm_error": ""
+        }
+      ]
+    },
+    {
+      "arxiv_id": "astro-ph-0301632",
+      "n_judges": 3,
+      "mean_faithfulness": 3.0,
+      "mean_coverage": 2.6666666666666665,
+      "mean_technical_accuracy": 3.0,
+      "mean_overall": 2.888888888888889,
+      "verdict_distribution": {
+        "accept": 2,
+        "needs_revision": 0,
+        "reject": 0,
+        "other": 1
+      },
+      "judges": [
+        {
+          "judge_name": "Llama-3.3-70B (larger)",
+          "arxiv_id": "astro-ph-0301632",
+          "query": "What role does baryon acoustic oscillations play in measuring dark energy equation of state?",
+          "faithfulness": 4.5,
+          "coverage": 4.0,
+          "technical_accuracy": 4.5,
+          "overall": 4.333333333333333,
+          "verdict": "accept",
+          "rationale": "The summary accurately captures the role of baryon acoustic oscillations in measuring dark energy equation of state, with minor omissions in coverage and slight formatting issues in technical accuracy.",
+          "judged_at": "2026-07-25T21:54:44.909843",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Llama-3.1-8B (baseline)",
+          "arxiv_id": "astro-ph-0301632",
+          "query": "What role does baryon acoustic oscillations play in measuring dark energy equation of state?",
+          "faithfulness": 4.5,
+          "coverage": 4.0,
+          "technical_accuracy": 4.5,
+          "overall": 4.333333333333333,
+          "verdict": "accept",
+          "rationale": "The summary accurately captures the main ideas and technical details of the paper, but could benefit from more explicit connections between the sub-questions and the overall research question.",
+          "judged_at": "2026-07-25T21:55:05.587260",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Qwen3.6-27B (different family)",
+          "arxiv_id": "astro-ph-0301632",
+          "query": "What role does baryon acoustic oscillations play in measuring dark energy equation of state?",
+          "faithfulness": 0.0,
+          "coverage": 0.0,
+          "technical_accuracy": 0.0,
+          "overall": 0.0,
+          "verdict": "",
+          "rationale": "",
+          "judged_at": "2026-07-25T21:55:26.792790",
+          "llm_error": ""
+        }
+      ]
+    },
+    {
+      "arxiv_id": "0905.4669",
+      "n_judges": 3,
+      "mean_faithfulness": 2.6666666666666665,
+      "mean_coverage": 2.5,
+      "mean_technical_accuracy": 2.5,
+      "mean_overall": 2.5555555555555554,
+      "verdict_distribution": {
+        "accept": 1,
+        "needs_revision": 1,
+        "reject": 0,
+        "other": 1
+      },
+      "judges": [
+        {
+          "judge_name": "Llama-3.3-70B (larger)",
+          "arxiv_id": "0905.4669",
+          "query": "What mechanisms quench star formation in massive early-type galaxies at high redshift?",
+          "faithfulness": 4.0,
+          "coverage": 4.0,
+          "technical_accuracy": 3.0,
+          "overall": 3.6666666666666665,
+          "verdict": "needs_revision",
+          "rationale": "The summary generally addresses the topic and sub-questions but requires improvement in technical accuracy, particularly with the formatting and presentation of extracted equations and numerical results.",
+          "judged_at": "2026-07-25T21:55:47.735826",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Llama-3.1-8B (baseline)",
+          "arxiv_id": "0905.4669",
+          "query": "What mechanisms quench star formation in massive early-type galaxies at high redshift?",
+          "faithfulness": 4.0,
+          "coverage": 3.5,
+          "technical_accuracy": 4.5,
+          "overall": 4.0,
+          "verdict": "accept",
+          "rationale": "The summary accurately captures the main mechanism and observational evidence, but slightly underrepresents the quantitative aspects of the paper.",
+          "judged_at": "2026-07-25T21:56:08.580210",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Qwen3.6-27B (different family)",
+          "arxiv_id": "0905.4669",
+          "query": "What mechanisms quench star formation in massive early-type galaxies at high redshift?",
+          "faithfulness": 0.0,
+          "coverage": 0.0,
+          "technical_accuracy": 0.0,
+          "overall": 0.0,
+          "verdict": "",
+          "rationale": "",
+          "judged_at": "2026-07-25T21:56:29.771565",
+          "llm_error": ""
+        }
+      ]
+    },
+    {
+      "arxiv_id": "1502.05053",
+      "n_judges": 3,
+      "mean_faithfulness": 2.6666666666666665,
+      "mean_coverage": 2.6666666666666665,
+      "mean_technical_accuracy": 2.3333333333333335,
+      "mean_overall": 2.5555555555555554,
+      "verdict_distribution": {
+        "accept": 1,
+        "needs_revision": 1,
+        "reject": 0,
+        "other": 1
+      },
+      "judges": [
+        {
+          "judge_name": "Llama-3.3-70B (larger)",
+          "arxiv_id": "1502.05053",
+          "query": "How does gas accretion drive galaxy stellar mass assembly across cosmic time?",
+          "faithfulness": 4.0,
+          "coverage": 4.0,
+          "technical_accuracy": 3.0,
+          "overall": 3.6666666666666665,
+          "verdict": "needs_revision",
+          "rationale": "The summary generally captures the essence of the paper but requires revision to improve technical accuracy, particularly in the extracted equations and numerical results.",
+          "judged_at": "2026-07-25T21:56:50.402551",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Llama-3.1-8B (baseline)",
+          "arxiv_id": "1502.05053",
+          "query": "How does gas accretion drive galaxy stellar mass assembly across cosmic time?",
+          "faithfulness": 4.0,
+          "coverage": 4.0,
+          "technical_accuracy": 4.0,
+          "overall": 4.0,
+          "verdict": "accept",
+          "rationale": "The summary accurately captures the main findings and mechanisms of the paper, but some minor details and quantitative results are missing or not explicitly stated.",
+          "judged_at": "2026-07-25T21:57:11.121359",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Qwen3.6-27B (different family)",
+          "arxiv_id": "1502.05053",
+          "query": "How does gas accretion drive galaxy stellar mass assembly across cosmic time?",
+          "faithfulness": 0.0,
+          "coverage": 0.0,
+          "technical_accuracy": 0.0,
+          "overall": 0.0,
+          "verdict": "",
+          "rationale": "",
+          "judged_at": "2026-07-25T21:57:32.374915",
+          "llm_error": ""
+        }
+      ]
+    },
+    {
+      "arxiv_id": "1903.08174",
+      "n_judges": 3,
+      "mean_faithfulness": 2.6666666666666665,
+      "mean_coverage": 2.6666666666666665,
+      "mean_technical_accuracy": 2.1666666666666665,
+      "mean_overall": 2.5,
+      "verdict_distribution": {
+        "accept": 0,
+        "needs_revision": 2,
+        "reject": 0,
+        "other": 1
+      },
+      "judges": [
+        {
+          "judge_name": "Llama-3.3-70B (larger)",
+          "arxiv_id": "1903.08174",
+          "query": "How are photometric redshifts calibrated using spectroscopic survey data from SDSS and DESI?",
+          "faithfulness": 4.0,
+          "coverage": 4.0,
+          "technical_accuracy": 3.5,
+          "overall": 3.8333333333333335,
+          "verdict": "needs_revision",
+          "rationale": "The summary generally addresses the sub-questions and presents plausible claims, but some extracted equations and numerical values lack clear physical context or contain formatting issues that require revision for full accuracy.",
+          "judged_at": "2026-07-25T21:57:53.234080",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Llama-3.1-8B (baseline)",
+          "arxiv_id": "1903.08174",
+          "query": "How are photometric redshifts calibrated using spectroscopic survey data from SDSS and DESI?",
+          "faithfulness": 4.0,
+          "coverage": 4.0,
+          "technical_accuracy": 3.0,
+          "overall": 3.6666666666666665,
+          "verdict": "needs_revision",
+          "rationale": "The summary accurately captures the main points of the paper, but the extracted equations and numerical results contain minor errors and inconsistencies.",
+          "judged_at": "2026-07-25T21:58:13.874929",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Qwen3.6-27B (different family)",
+          "arxiv_id": "1903.08174",
+          "query": "How are photometric redshifts calibrated using spectroscopic survey data from SDSS and DESI?",
+          "faithfulness": 0.0,
+          "coverage": 0.0,
+          "technical_accuracy": 0.0,
+          "overall": 0.0,
+          "verdict": "",
+          "rationale": "",
+          "judged_at": "2026-07-25T21:58:35.180165",
+          "llm_error": ""
+        }
+      ]
+    },
+    {
+      "arxiv_id": "2402.08696",
+      "n_judges": 3,
+      "mean_faithfulness": 2.8333333333333335,
+      "mean_coverage": 2.8333333333333335,
+      "mean_technical_accuracy": 2.8333333333333335,
+      "mean_overall": 2.8333333333333335,
+      "verdict_distribution": {
+        "accept": 2,
+        "needs_revision": 0,
+        "reject": 0,
+        "other": 1
+      },
+      "judges": [
+        {
+          "judge_name": "Llama-3.3-70B (larger)",
+          "arxiv_id": "2402.08696",
+          "query": "What are the properties of Milky Way progenitor galaxies observed with JWST at high redshift?",
+          "faithfulness": 4.0,
+          "coverage": 4.5,
+          "technical_accuracy": 4.0,
+          "overall": 4.166666666666667,
+          "verdict": "accept",
+          "rationale": "The summary accurately captures the properties of Milky Way progenitor galaxies observed with JWST at high redshift, with minor issues in technical accuracy and formatting.",
+          "judged_at": "2026-07-25T21:58:55.904325",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Llama-3.1-8B (baseline)",
+          "arxiv_id": "2402.08696",
+          "query": "What are the properties of Milky Way progenitor galaxies observed with JWST at high redshift?",
+          "faithfulness": 4.5,
+          "coverage": 4.0,
+          "technical_accuracy": 4.5,
+          "overall": 4.333333333333333,
+          "verdict": "accept",
+          "rationale": "The summary accurately captures the main claims and findings of the paper, with minor omissions and some minor formatting issues.",
+          "judged_at": "2026-07-25T21:59:16.513609",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Qwen3.6-27B (different family)",
+          "arxiv_id": "2402.08696",
+          "query": "What are the properties of Milky Way progenitor galaxies observed with JWST at high redshift?",
+          "faithfulness": 0.0,
+          "coverage": 0.0,
+          "technical_accuracy": 0.0,
+          "overall": 0.0,
+          "verdict": "",
+          "rationale": "",
+          "judged_at": "2026-07-25T21:59:37.553341",
+          "llm_error": ""
+        }
+      ]
+    },
+    {
+      "arxiv_id": "2107.02714",
+      "n_judges": 3,
+      "mean_faithfulness": 2.6666666666666665,
+      "mean_coverage": 2.6666666666666665,
+      "mean_technical_accuracy": 2.3333333333333335,
+      "mean_overall": 2.5555555555555554,
+      "verdict_distribution": {
+        "accept": 1,
+        "needs_revision": 1,
+        "reject": 0,
+        "other": 1
+      },
+      "judges": [
+        {
+          "judge_name": "Llama-3.3-70B (larger)",
+          "arxiv_id": "2107.02714",
+          "query": "How do binary neutron star mergers produce heavy elements through the r-process?",
+          "faithfulness": 4.0,
+          "coverage": 4.0,
+          "technical_accuracy": 3.0,
+          "overall": 3.6666666666666665,
+          "verdict": "needs_revision",
+          "rationale": "The summary generally addresses the key aspects of binary neutron star mergers and the r-process, but contains some inaccuracies and inconsistencies in the extracted equations and numerical values.",
+          "judged_at": "2026-07-25T21:59:59.118296",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Llama-3.1-8B (baseline)",
+          "arxiv_id": "2107.02714",
+          "query": "How do binary neutron star mergers produce heavy elements through the r-process?",
+          "faithfulness": 4.0,
+          "coverage": 4.0,
+          "technical_accuracy": 4.0,
+          "overall": 4.0,
+          "verdict": "accept",
+          "rationale": "The summary accurately captures the main points of the paper, including the mechanism of heavy element production, observational evidence, and quantitative estimates, but could benefit from more precise equation formatting.",
+          "judged_at": "2026-07-25T22:00:19.836847",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Qwen3.6-27B (different family)",
+          "arxiv_id": "2107.02714",
+          "query": "How do binary neutron star mergers produce heavy elements through the r-process?",
+          "faithfulness": 0.0,
+          "coverage": 0.0,
+          "technical_accuracy": 0.0,
+          "overall": 0.0,
+          "verdict": "",
+          "rationale": "",
+          "judged_at": "2026-07-25T22:00:41.091324",
+          "llm_error": ""
+        }
+      ]
+    },
+    {
+      "arxiv_id": "0707.3514",
+      "n_judges": 3,
+      "mean_faithfulness": 2.6666666666666665,
+      "mean_coverage": 2.8333333333333335,
+      "mean_technical_accuracy": 2.8333333333333335,
+      "mean_overall": 2.7777777777777772,
+      "verdict_distribution": {
+        "accept": 2,
+        "needs_revision": 0,
+        "reject": 0,
+        "other": 1
+      },
+      "judges": [
+        {
+          "judge_name": "Llama-3.3-70B (larger)",
+          "arxiv_id": "0707.3514",
+          "query": "What determines the initial mass function in molecular cloud star formation?",
+          "faithfulness": 4.0,
+          "coverage": 4.0,
+          "technical_accuracy": 4.0,
+          "overall": 4.0,
+          "verdict": "accept",
+          "rationale": "The summary accurately captures the essence of the paper, addressing key aspects of star formation in molecular clouds with plausible claims, substantive coverage, and physically meaningful equations and values.",
+          "judged_at": "2026-07-25T22:01:01.858302",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Llama-3.1-8B (baseline)",
+          "arxiv_id": "0707.3514",
+          "query": "What determines the initial mass function in molecular cloud star formation?",
+          "faithfulness": 4.0,
+          "coverage": 4.5,
+          "technical_accuracy": 4.5,
+          "overall": 4.333333333333333,
+          "verdict": "accept",
+          "rationale": "The summary accurately captures the main points of the paper, including the role of turbulence in star formation and the characteristics of the initial mass function, but could benefit from more precise equation formatting.",
+          "judged_at": "2026-07-25T22:01:22.542009",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Qwen3.6-27B (different family)",
+          "arxiv_id": "0707.3514",
+          "query": "What determines the initial mass function in molecular cloud star formation?",
+          "faithfulness": 0.0,
+          "coverage": 0.0,
+          "technical_accuracy": 0.0,
+          "overall": 0.0,
+          "verdict": "",
+          "rationale": "",
+          "judged_at": "2026-07-25T22:01:43.801079",
+          "llm_error": ""
+        }
+      ]
+    },
+    {
+      "arxiv_id": "1207.2859",
+      "n_judges": 3,
+      "mean_faithfulness": 2.6666666666666665,
+      "mean_coverage": 2.5,
+      "mean_technical_accuracy": 2.5,
+      "mean_overall": 2.5555555555555554,
+      "verdict_distribution": {
+        "accept": 1,
+        "needs_revision": 1,
+        "reject": 0,
+        "other": 1
+      },
+      "judges": [
+        {
+          "judge_name": "Llama-3.3-70B (larger)",
+          "arxiv_id": "1207.2859",
+          "query": "How are ultra-high-energy cosmic rays accelerated in astrophysical sources?",
+          "faithfulness": 4.0,
+          "coverage": 4.0,
+          "technical_accuracy": 3.0,
+          "overall": 3.6666666666666665,
+          "verdict": "needs_revision",
+          "rationale": "The summary generally addresses the key questions and provides plausible claims, but it contains some inconsistencies and inaccuracies in the extracted equations and numerical values.",
+          "judged_at": "2026-07-25T22:02:04.574666",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Llama-3.1-8B (baseline)",
+          "arxiv_id": "1207.2859",
+          "query": "How are ultra-high-energy cosmic rays accelerated in astrophysical sources?",
+          "faithfulness": 4.0,
+          "coverage": 3.5,
+          "technical_accuracy": 4.5,
+          "overall": 4.0,
+          "verdict": "accept",
+          "rationale": "The summary accurately captures the main points of the paper, including the proposed acceleration mechanism and observational evidence, but could benefit from more detailed quantitative results.",
+          "judged_at": "2026-07-25T22:02:25.219576",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Qwen3.6-27B (different family)",
+          "arxiv_id": "1207.2859",
+          "query": "How are ultra-high-energy cosmic rays accelerated in astrophysical sources?",
+          "faithfulness": 0.0,
+          "coverage": 0.0,
+          "technical_accuracy": 0.0,
+          "overall": 0.0,
+          "verdict": "",
+          "rationale": "",
+          "judged_at": "2026-07-25T22:02:46.425020",
+          "llm_error": ""
+        }
+      ]
+    },
+    {
+      "arxiv_id": "1104.2048",
+      "n_judges": 3,
+      "mean_faithfulness": 2.0,
+      "mean_coverage": 2.5,
+      "mean_technical_accuracy": 2.8333333333333335,
+      "mean_overall": 2.444444444444444,
+      "verdict_distribution": {
+        "accept": 1,
+        "needs_revision": 0,
+        "reject": 1,
+        "other": 1
+      },
+      "judges": [
+        {
+          "judge_name": "Llama-3.3-70B (larger)",
+          "arxiv_id": "1104.2048",
+          "query": "What is the origin of gamma-ray bursts and their host galaxy environments?",
+          "faithfulness": 2.0,
+          "coverage": 3.0,
+          "technical_accuracy": 4.0,
+          "overall": 3.0,
+          "verdict": "reject",
+          "rationale": "The summary appears to be a mixture of unrelated concepts and equations, and does not accurately address the origin of gamma-ray bursts and their host galaxy environments as presented in the paper arXiv:1104.2048.",
+          "judged_at": "2026-07-25T22:03:07.137522",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Llama-3.1-8B (baseline)",
+          "arxiv_id": "1104.2048",
+          "query": "What is the origin of gamma-ray bursts and their host galaxy environments?",
+          "faithfulness": 4.0,
+          "coverage": 4.5,
+          "technical_accuracy": 4.5,
+          "overall": 4.333333333333333,
+          "verdict": "accept",
+          "rationale": "The summary accurately captures the main points of the paper, including the mechanism of gamma-ray bursts, observational evidence, and quantitative measurements, but could benefit from more precise formatting and notation.",
+          "judged_at": "2026-07-25T22:03:27.722764",
+          "llm_error": ""
+        },
+        {
+          "judge_name": "Qwen3.6-27B (different family)",
+          "arxiv_id": "1104.2048",
+          "query": "What is the origin of gamma-ray bursts and their host galaxy environments?",
+          "faithfulness": 0.0,
+          "coverage": 0.0,
+          "technical_accuracy": 0.0,
+          "overall": 0.0,
+          "verdict": "",
+          "rationale": "",
+          "judged_at": "2026-07-25T22:03:48.860529",
+          "llm_error": ""
+        }
+      ]
+    }
+  ],
+  "per_judge": [
+    {
+      "judge": "Llama-3.3-70B (larger)",
+      "n_papers_judged": 15,
+      "n_errors": 0,
+      "mean_faithfulness": 3.933333333333333,
+      "mean_coverage": 3.966666666666667,
+      "mean_technical_accuracy": 3.7333333333333334,
+      "mean_overall": 3.8777777777777773,
+      "verdict_distribution": {
+        "accept": 7,
+        "needs_revision": 7,
+        "reject": 1,
+        "other": 0
+      }
+    },
+    {
+      "judge": "Llama-3.1-8B (baseline)",
+      "n_papers_judged": 15,
+      "n_errors": 0,
+      "mean_faithfulness": 4.1,
+      "mean_coverage": 3.966666666666667,
+      "mean_technical_accuracy": 4.3,
+      "mean_overall": 4.122222222222223,
+      "verdict_distribution": {
+        "accept": 14,
+        "needs_revision": 1,
+        "reject": 0,
+        "other": 0
+      }
+    },
+    {
+      "judge": "Qwen3.6-27B (different family)",
+      "n_papers_judged": 15,
+      "n_errors": 0,
+      "mean_faithfulness": 0.0,
+      "mean_coverage": 0.0,
+      "mean_technical_accuracy": 0.0,
+      "mean_overall": 0.0,
+      "verdict_distribution": {
+        "accept": 0,
+        "needs_revision": 0,
+        "reject": 0,
+        "other": 15
+      }
+    }
+  ],
+  "aggregate": {
+    "n_verdicts_total": 45,
+    "n_verdicts_ok": 45,
+    "n_verdicts_err": 0,
+    "mean_overall_all_judges": 2.666666666666667,
+    "pairwise_agreement": {
+      "n_pairs": 45,
+      "n_agree": 8,
+      "agreement": 0.17777777777777778
+    }
+  }
+}
