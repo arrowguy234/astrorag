@@ -1,19 +1,19 @@
 """
 Query Assistance module — helps users construct well-formed queries
 for AstroRAG. This is UI-only; nothing here touches the production
-pipeline. All modules assume access to Groq via GROQ_API_KEY.
+pipeline.
 """
 
-from astrorag_ui.query_assist.templates      import QUERY_TEMPLATES, get_template
-from astrorag_ui.query_assist.decomposer     import preview_decomposition
-from astrorag_ui.query_assist.similar        import find_similar_queries
-from astrorag_ui.query_assist.quality_check  import assess_query_quality
-from astrorag_ui.query_assist.refiner        import suggest_refinements
+from query_assist.templates      import QUERY_TEMPLATES, get_template, fill_template
+from query_assist.decomposer     import preview_decomposition
+from query_assist.similar        import find_similar_queries
+from query_assist.quality_check  import assess_query_quality
+from query_assist.refiner        import suggest_refinements, build_refined_query
 
 __all__ = [
-    "QUERY_TEMPLATES", "get_template",
+    "QUERY_TEMPLATES", "get_template", "fill_template",
     "preview_decomposition",
     "find_similar_queries",
     "assess_query_quality",
-    "suggest_refinements",
+    "suggest_refinements", "build_refined_query",
 ]

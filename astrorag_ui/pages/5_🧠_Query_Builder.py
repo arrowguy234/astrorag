@@ -13,21 +13,19 @@ All UI. Doesn't touch the production pipeline.
 import sys
 from   pathlib import Path
 
-# make the sibling query_assist package importable
-sys.path.insert(0, str(Path(__file__).parent.parent))
+# make the sibling query_assist package importable from anywhere
+_root = Path(__file__).parent.parent
+if str(_root) not in sys.path:
+    sys.path.insert(0, str(_root))
 
 import streamlit as st
 
-from query_assist import (
-    QUERY_TEMPLATES,
-    get_template,
-    preview_decomposition,
-    find_similar_queries,
-    assess_query_quality,
-    suggest_refinements,
-)
-from query_assist.templates import fill_template
-from query_assist.refiner   import build_refined_query
+# import directly from the query_assist package
+from query_assist.templates      import QUERY_TEMPLATES, get_template, fill_template
+from query_assist.decomposer     import preview_decomposition
+from query_assist.similar        import find_similar_queries
+from query_assist.quality_check  import assess_query_quality
+from query_assist.refiner        import suggest_refinements, build_refined_query
 
 
 st.set_page_config(
@@ -190,7 +188,7 @@ with tab_free:
                     )
                 with col_b:
                     if st.button("Use", key=f"use_similar_{s['arxiv_id']}",
-                                use_container_width=True):
+                                width="stretch"):
                         st.session_state.qb_query = s["query"]
                         st.rerun()
 
@@ -208,7 +206,7 @@ with tab_templates:
     for i, tpl in enumerate(QUERY_TEMPLATES):
         with template_cols[i]:
             if st.button(f"{tpl.icon} {tpl.label}", key=f"tpl_pick_{tpl.id}",
-                         use_container_width=True,
+                         width="stretch",
                          type="primary" if st.session_state.qb_template_id == tpl.id else "secondary"):
                 st.session_state.qb_template_id = tpl.id
                 st.session_state.qb_field_values = {}
@@ -249,7 +247,7 @@ with tab_templates:
                     st.caption("Examples (click to use):")
                     for ex in field["examples"][:4]:
                         if st.button(ex, key=f"tpl_ex_{tpl.id}_{fname}_{ex}",
-                                     use_container_width=True):
+                                     width="stretch"):
                             st.session_state.qb_field_values[fname] = ex
                             st.rerun()
 
@@ -263,7 +261,7 @@ with tab_templates:
                and st.session_state.qb_field_values[f["name"]].strip()
                for f in tpl.fields):
             if st.button("✓ Use this query", type="primary",
-                         use_container_width=True, key="use_template_btn"):
+                         width="stretch", key="use_template_btn"):
                 st.session_state.qb_query = filled
                 st.success("Query set. Switch to Free-form tab or go to Chat.")
 
@@ -341,16 +339,16 @@ if st.session_state.qb_query.strip():
 
     with col1:
         if st.button("💬 Send to Chat", type="primary",
-                     use_container_width=True):
+                     width="stretch"):
             st.session_state["chat_prefilled"] = st.session_state.qb_query
             st.switch_page("pages/2_💬_Chat.py")
 
     with col2:
-        if st.button("📋 Copy",  use_container_width=True):
+        if st.button("📋 Copy",  width="stretch"):
             st.write("Copy from the box above.")
 
     with col3:
-        if st.button("🔄 Clear", use_container_width=True):
+        if st.button("🔄 Clear", width="stretch"):
             st.session_state.qb_query = ""
             st.session_state.qb_template_id = None
             st.session_state.qb_field_values = {}
