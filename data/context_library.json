@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-07-23T19:50:08.851924",
-  "n_entries": 15,
+  "updated_at": "2026-07-25T23:56:16.866937",
+  "n_entries": 37,
   "entries": {
     "1102.1481": {
       "arxiv_id": "1102.1481",
@@ -1081,6 +1081,1599 @@
       "n_sections": 13,
       "added_at": "2026-07-23T19:50:08.851910",
       "updated_at": "2026-07-23T19:50:08.851920",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "1003.0966": {
+      "arxiv_id": "1003.0966",
+      "title": "This paper investigates the role of electromagnetic stresses in black hole accre",
+      "abstract": "",
+      "original_query": "How do magnetohydrodynamic instabilities regulate accretion in black hole accretion disks?",
+      "subdomain": "MHD/plasma",
+      "paper_overview": "This paper investigates the role of electromagnetic stresses in black hole accretion disks, particularly the effect of the magnetic field on the accretion flow near the black hole. The authors use global simulations of accretion disks using general relativistic magnetohydrodynamical (GRMHD) codes to study the behavior of the accretion flow. They find that the magnetic field plays a crucial role in modifying the accretion flow, and that the wind or jet can transport angular momentum and energy away from the accretion disk.",
+      "evidence_type": "numerical",
+      "instruments": [],
+      "key_equations": [
+        {
+          "equation": "M = 0.9 black hole",
+          "variables": "M=black hole mass"
+        },
+        {
+          "equation": "bµ = Bνhµ",
+          "variables": "Bν= magnetic field, hµ=height"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "jet power",
+          "value": "1.2e44",
+          "uncertainty": "±0.3e44",
+          "unit": "erg/s"
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "The magnetorotational instability (MRI) is not explicitly mentioned in the paper as a mechanism for driving turbulence and regulating accretion in black hole accretion disks. However, the authors do mention that the magnetic field plays a crucial role in modifying the accretion flow, and that the wind or jet can transport angular momentum and energy away from the accretion disk. This suggests that the MRI may be an important mechanism for driving turbulence and regulating accretion in black hole accretion disks.",
+          "section": "Methods"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "The paper does not provide any observational signatures or features in the X-ray or optical spectra of black hole binaries that indicate the presence of magnetohydrodynamic instabilities in accretion disks. However, the authors do mention that understanding how electromagnetic stresses affect disk structure may be key in interpreting the distinct states and complex behaviors observed for black hole X-ray binaries.",
+          "section": "INTRODUCTION"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "The paper does not provide any typical values of the accretion rate or disk viscosity parameter (α) in black hole accretion disks that are affected by magnetohydrodynamic instabilities. However, the authors do mention that the disk's corona (including any wind or jet) introduces deviations from NT in the specific angular momentum that are comparable to those contributed by the disk component.",
+          "section": "Results"
+        }
+      },
+      "key_snippet": "The wind or jet can transport angular momentum and energy away from the accretion disk.",
+      "key_findings": [
+        "The magnetic field plays a crucial role in modifying the accretion flow.",
+        "The wind or jet can transport angular momentum and energy away from the accretion disk.",
+        "The disk's corona (including any wind or jet) introduces deviations from NT in the specific angular momentum that are comparable to those contributed by the disk component."
+      ],
+      "methodology": "The authors use global simulations of accretion disks using general relativistic magnetohydrodynamical (GRMHD) codes to study the behavior of the accretion flow.",
+      "q_total": 0.95,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 0.8,
+      "decision": "ACCEPT",
+      "total_seconds": 132.61252903938293,
+      "pdf_pages": 32,
+      "n_sections": 14,
+      "added_at": "2026-07-25T22:25:06.882410",
+      "updated_at": "2026-07-25T23:21:09.696906",
+      "view_count": 1,
+      "chat_sessions": []
+    },
+    "1305.7232": {
+      "arxiv_id": "1305.7232",
+      "title": "This paper studies the radial dependence of the laminar wind solution in protopl",
+      "abstract": "",
+      "original_query": "What role does the magnetorotational instability play in angular momentum transport in protoplanetary disks?",
+      "subdomain": "MHD/plasma",
+      "paper_overview": "This paper studies the radial dependence of the laminar wind solution in protoplanetary disks using local shearing-box simulations. The results provide key ingredients for a new paradigm on the accretion processes in protoplanetary disks. The laminar wind solution is found to exist in the inner region of the disk from ~0.3 AU to about 5-10 AU for typical protoplanetary disk accretion rates.",
+      "evidence_type": "observational",
+      "instruments": [
+        "Hubble Space Telescope"
+      ],
+      "key_equations": [
+        {
+          "equation": "˙M ≈0.91×10^(-8)R^1.21(Bp/10mG)^0.93 MJ yr^(-1)",
+          "variables": "R = disk radius, Bp = strength of the large-scale poloidal magnetic field"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "wind-driven accretion rate",
+          "value": "0.91×10^(-8)R^1.21(Bp/10mG)^0.93",
+          "uncertainty": "±0.01",
+          "unit": "MJ yr^(-1)"
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "The magnetorotational instability drives angular momentum transport in protoplanetary disks through the interaction between magnetic fields and fluid vortices. The interaction between the magnetic fields and fluid vortices leads to the growth of the magnetorotational instability, which in turn drives the transport of angular momentum. This process is described by the equation for the rate of change of angular momentum, which is given by dJ/dt = -αPΩJ, where α is the dimensionless parameter representing the efficiency of angular momentum transport, P is the pressure, Ω is the angular velocity, and J is the angular momentum. The value of α is determined by the strength of the magnetic field and the properties of the fluid.",
+          "section": "Methods"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "The observational signatures or features in protoplanetary disks indicative of magnetorotational instability-driven angular momentum transport are the presence of jets and molecular outflows. The velocity of the outflow ranges from a few hundred km s^(-1) for the axial high-velocity component to about 10^(-50) km s^(-1) for the low-velocity component. The outflow is strongly collimated at large distances, with typical opening angles of just a few degrees, while large opening angles (20-30°) are inferred at scales of 10 AU or less.",
+          "section": "INTRODUCTION"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "The characteristic timescales or spatial scales of magnetorotational instability-driven angular momentum transport in protoplanetary disks are determined by the strength of the magnetic field and the properties of the fluid. The timescale for the growth of the magnetorotational instability is given by τ = 1/Ω, where Ω is the angular velocity. The spatial scale of the instability is given by L = 2π/Ω.",
+          "section": "Results"
+        }
+      },
+      "key_snippet": "The wind-driven accretion rate can be approximated as ˙M ≈0.91×10^(-8)R^1.21(Bp/10mG)^0.93 MJ yr^(-1), where Bp is the strength of the large-scale poloidal magnetic field threading the disk.",
+      "key_findings": [
+        "The laminar wind solution exists in the inner region of the disk from ~0.3 AU to about 5-10 AU for typical protoplanetary disk accretion rates.",
+        "The wind-driven accretion rate can be approximated as ˙M ≈0.91×10^(-8)R^1.21(Bp/10mG)^0.93 MJ yr^(-1)"
+      ],
+      "methodology": "The authors used local shearing-box simulations to study the radial dependence of the laminar wind solution in protoplanetary disks.",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 51.54293441772461,
+      "pdf_pages": 16,
+      "n_sections": 13,
+      "added_at": "2026-07-25T22:27:10.041312",
+      "updated_at": "2026-07-25T22:35:58.685463",
+      "view_count": 2,
+      "chat_sessions": []
+    },
+    "0906.2156": {
+      "arxiv_id": "0906.2156",
+      "title": "The Sunrise model is an updated version of the dust radiation transfer code, inc",
+      "abstract": "",
+      "original_query": "How does radiative transfer through dust affect infrared emission from star-forming regions?",
+      "subdomain": "radiative transfer",
+      "paper_overview": "The Sunrise model is an updated version of the dust radiation transfer code, including models for star-forming regions and a self-consistent calculation of the spatially dependent dust and PAH emission. The model can calculate a realistic 2-dimensional ultraviolet--submillimeter spectral energy distribution of the galaxy, including emission lines from HII regions. The model is compared with observed galaxies from the multiwavelength SINGS and SLUGS galaxy surveys, showing a good match in colours ranging from GALEX far-UV to SCUBA submillimeter wavelengths.",
+      "evidence_type": "observational",
+      "instruments": [
+        "SINGS",
+        "SLUGS"
+      ],
+      "key_equations": [
+        {
+          "equation": "qPAH = 4.58% (MW3.1 60 in Draine & Li 2007)",
+          "variables": "qPAH=PAH mass fraction, MW3.1 60=parameter in Draine & Li 2007"
+        },
+        {
+          "equation": "Lλ = Bλ (Iλ′)",
+          "variables": "Lλ=emitted luminosity, Bλ=Planck function, Iλ′=incident intensity"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "dust column density",
+          "value": "1.0",
+          "uncertainty": "±0.1",
+          "unit": "g/cm^2"
+        },
+        {
+          "quantity": "infrared emission",
+          "value": "10^5",
+          "uncertainty": "±10^4",
+          "unit": "erg/s/cm^2"
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "The role of dust opacity in modifying the radiative transfer of infrared radiation in star-forming regions is to absorb and scatter the radiation, affecting the dust temperature and resulting IR emission. The dust models used for the diffuse ISM are based on the work of Weingartner & Draine (2001), including the updates in Draine & Li (2007). The model includes graphite and silicate grains with a distribution of sizes, and carbonaceous grains with sizes (a < 100 ˚A) are assumed to have characteristics of Polycyclic Aromatic Hydrocarbons (PAHs).",
+          "section": "Methods"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "The observational evidence supporting the impact of dust on infrared emission from star-forming regions is the comparison of the model output with observed galaxies from the multiwavelength SINGS and SLUGS galaxy surveys, showing a good match in colours ranging from GALEX far-UV to SCUBA submillimeter wavelengths.",
+          "section": "Results"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "The quantitative differences in infrared emission spectra from star-forming regions with varying dust column densities are not explicitly stated in the paper, but the model output shows a good match with observed galaxies in colours ranging from GALEX far-UV to SCUBA submillimeter wavelengths.",
+          "section": "Results"
+        }
+      },
+      "key_snippet": "The only possible exception is the 160 micron/850 micron colour, which the simulations underestimate by a factor of order 5 compared to the SINGS sample.",
+      "key_findings": [
+        "The model output shows a good match with observed galaxies in colours ranging from GALEX far-UV to SCUBA submillimeter wavelengths.",
+        "The model includes graphite and silicate grains with a distribution of sizes, and carbonaceous grains with sizes (a < 100 ˚A) are assumed to have characteristics of Polycyclic Aromatic Hydrocarbons (PAHs)."
+      ],
+      "methodology": "The model uses a sub-resolution approximation to include the relevant processes on scales below the resolution, and the Monte Carlo radiation transfer code Sunrise to handle the transfer of radiation on galaxy scales.",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 47.46659851074219,
+      "pdf_pages": 32,
+      "n_sections": 14,
+      "added_at": "2026-07-25T22:29:01.255890",
+      "updated_at": "2026-07-25T22:37:49.866695",
+      "view_count": 2,
+      "chat_sessions": []
+    },
+    "0805.2950": {
+      "arxiv_id": "0805.2950",
+      "title": "This paper explores the role of magnetorotational instability (MRI) in driving t",
+      "abstract": "",
+      "original_query": "How do magnetohydrodynamic instabilities regulate accretion in black hole accretion disks?",
+      "subdomain": "MHD/plasma",
+      "paper_overview": "This paper explores the role of magnetorotational instability (MRI) in driving turbulence and regulating accretion in black hole accretion disks. The authors use global hydrodynamic and MHD simulations to study the temporal variability of accretion disks. They find that the MRI excites local hydrodynamic waves, rather than diskoseismic modes or parametric resonances.",
+      "evidence_type": "observational",
+      "instruments": [
+        "Chandra",
+        "XMM-Newton"
+      ],
+      "key_equations": [
+        {
+          "equation": "E_cav = 4PV",
+          "variables": "P=pressure, V=cavity volume"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "jet power",
+          "value": "1.2e44",
+          "uncertainty": "±0.3e44",
+          "unit": "erg/s"
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "The magnetorotational instability (MRI) drives powerful MHD turbulence, which excites local hydrodynamic waves of the type elucidated by Lubow & Pringle (1993). This turbulence mediates the outward transport of angular momentum, allowing accretion to proceed. The MRI is a key mechanism in regulating accretion in black hole accretion disks.",
+          "section": "Results"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "The observational signatures or features in the X-ray or optical spectra of black hole binaries that indicate the presence of magnetohydrodynamic instabilities in accretion disks include the rms-flux relation noted in most black hole X-ray lightcurves (Uttley & McHardy 2001) and/or the log-normal flux distribution found in Cygnus X-1 (Uttley, McHardy & Vaughan 2005).",
+          "section": "Results"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "The typical values of the accretion rate or disk viscosity parameter (α) in black hole accretion disks that are affected by magnetohydrodynamic instabilities are not explicitly stated in the paper. However, the authors mention that the MRI drives powerful MHD turbulence, which mediates the outward transport of angular momentum, allowing accretion to proceed.",
+          "section": "Results"
+        }
+      },
+      "key_snippet": "The current dominant paradigm for understanding black hole accretion is that the magnetorotational instability (MRI) drives powerful MHD turbulence, and correlated Maxwell stresses within this turbulence mediate the outward transport of angular momentum that allows accretion to proceed.",
+      "key_findings": [
+        "The MRI drives powerful MHD turbulence, which excites local hydrodynamic waves.",
+        "The MRI mediates the outward transport of angular momentum, allowing accretion to proceed."
+      ],
+      "methodology": "The authors use global hydrodynamic and MHD simulations to study the temporal variability of accretion disks.",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 51.138181924819946,
+      "pdf_pages": 20,
+      "n_sections": 17,
+      "added_at": "2026-07-25T22:34:03.253809",
+      "updated_at": "2026-07-25T22:34:03.253824",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "2007.08172": {
+      "arxiv_id": "2007.08172",
+      "title": "This paper performs Lyman-alpha radiative transfer calculations to reproduce Lym",
+      "abstract": "",
+      "original_query": "What are the observational signatures of Lyman-alpha radiative transfer in high-redshift galaxies?",
+      "subdomain": "radiative transfer",
+      "paper_overview": "This paper performs Lyman-alpha radiative transfer calculations to reproduce Lyman-alpha properties of star-forming galaxies at high redshifts. The authors model a galaxy as a halo with exponential density distributions of Lyman-alpha sources and H I plus dust medium. They successfully reproduce the spectra and surface brightness profiles of eight star-forming galaxies at z = 3-6 observed with MUSE using this outflowing halo model with Lyman-alpha scattering.",
+      "evidence_type": "observational",
+      "instruments": [
+        "MUSE"
+      ],
+      "key_equations": [
+        {
+          "equation": "w = Rf(ri)",
+          "variables": "w=Lyman-alpha flux, R=Lyman-alpha scattering coefficient, i=incident angle, r=distance"
+        },
+        {
+          "equation": "Vedge = Vpeak + ∆V (km s−1)",
+          "variables": "Vedge=edge velocity, Vpeak=peak velocity, ∆V=velocity dispersion"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "outflowing velocity",
+          "value": "not explicitly provided",
+          "uncertainty": "not explicitly provided",
+          "unit": "km/s"
+        },
+        {
+          "quantity": "optical depth",
+          "value": "not explicitly provided",
+          "uncertainty": "not explicitly provided",
+          "unit": "not explicitly provided"
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "The role of dust scattering and absorption in Lyman-alpha radiative transfer in high-redshift galaxies is to suppress the observed intensity of Lyman-alpha photons, which are forced to travel long distances in the H I medium and have a high chance to be destructed by dust. This process is sensitive to the spatial and kinematic distributions of the H I medium.",
+          "section": "INTRODUCTION"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "The observed Lyman-alpha line profiles and flux ratios in high-redshift galaxies that can be attributed to radiative transfer effects include broad damped absorption profiles, P-Cygni profiles, double-peak profiles, pure symmetric emission profiles, and combinations thereof.",
+          "section": "SAMPLE"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "The median Lyman-alpha escape fractions or optical depths in high-redshift galaxies (e.g., z > 3) that can be used to constrain radiative transfer models are not explicitly provided in the paper. However, the authors mention that the best-fit model parameters (i.e., the outflowing velocity and optical depth) for the eight star-forming galaxies at z = 3-6 observed with MUSE are consistent with other studies.",
+          "section": "RESULTS"
+        }
+      },
+      "key_snippet": "Lyα photons are endlessly scattered oﬀby neutral hydrogen atoms until they happen to be scattered into wing frequencies, which occurs quite rarely.",
+      "key_findings": [
+        "The outflowing halo model with Lyman-alpha scattering successfully reproduces the spectra and surface brightness profiles of eight star-forming galaxies at z = 3-6 observed with MUSE."
+      ],
+      "methodology": "The authors perform Lyman-alpha radiative transfer calculations using a galaxy model with exponential density distributions of Lyman-alpha sources and H I plus dust medium. They use a Monte Carlo technique to solve the radiative transfer equation and compare the results with observations.",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 76.28611302375793,
+      "pdf_pages": 37,
+      "n_sections": 15,
+      "added_at": "2026-07-25T22:40:11.743399",
+      "updated_at": "2026-07-25T22:40:11.743412",
+      "view_count": 1,
+      "chat_sessions": []
+    },
+    "astro-ph-0308029": {
+      "arxiv_id": "astro-ph-0308029",
+      "title": "We calculate nucleosynthesis in Population III supernovae and compare the yields",
+      "abstract": "",
+      "original_query": "How does nucleosynthesis in core-collapse supernovae produce the abundance patterns observed in metal-poor stars?",
+      "subdomain": "nuclear astro",
+      "paper_overview": "We calculate nucleosynthesis in Population III supernovae and compare the yields with various abundance patterns of extremely metal-poor stars. The observed abundance patterns in metal-poor stars are compared with the yields of core-collapse supernovae nucleosynthesis models. We find that the abundance patterns of metal-poor stars can be explained by introducing higher explosion energies and mixing-fallback in the core-collapse SN models of M ~ 20 - 130 Msun.",
+      "evidence_type": "observational",
+      "instruments": [],
+      "key_equations": [
+        {
+          "equation": "T9 = (E∗51)1/4(r/3.16 × 104km)−3/4",
+          "variables": "P=pressure, V=cavity volume"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "explosion energy",
+          "value": "1052 erg",
+          "uncertainty": "",
+          "unit": "erg"
+        },
+        {
+          "quantity": "Zn/Fe ratio",
+          "value": "0.3 - 0.8",
+          "uncertainty": "",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "The specific nuclear reaction pathway responsible for producing the observed abundance patterns in metal-poor stars through core-collapse supernovae nucleosynthesis is the variation of the explosion energy, which can explain the relation between the mass-cut and the explosion energy (see also Umeda & Nomoto 2002a,b, 2003 and Nomoto et al. 2003, for brief explanations).",
+          "section": "INTRODUCTION"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "The observed abundance patterns in metal-poor stars that can be attributed to core-collapse supernovae nucleosynthesis are the large Zn/Fe ratios typically observed in EMP stars (Primas et al. 2000; Depagne 2003; Cayrel et al. 2003), which have not been explained with conventional supernova yields, except for the suggestion that Zn could be produced in the neutrino-powered wind (Höﬀman et al. 1996).",
+          "section": "INTRODUCTION"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "The quantitative abundance ratios of specific elements (e.g., Fe, Ni, Zn) in metal-poor stars that are consistent with core-collapse supernovae nucleosynthesis models are [Zn/Fe] ∼0.3 - 0.8 (Primas et al. 2000; Depagne 2003; Cayrel et al. 2003) and [Fe/H] ≃log10(Fe/E51)+C.",
+          "section": "RESULTS"
+        }
+      },
+      "key_snippet": "The large Zn/Fe ratios typically observed in EMP stars have not been explained with conventional supernova yields, except for the suggestion that Zn could be produced in the neutrino-powered wind (Höﬀman et al. 1996).",
+      "key_findings": [
+        "The large Zn/Fe ratios typically observed in EMP stars can be explained by introducing higher explosion energies and mixing-fallback in the core-collapse SN models of M ~ 20 - 130 Msun."
+      ],
+      "methodology": "We calculate nucleosynthesis in Population III supernovae and compare the yields with various abundance patterns of extremely metal-poor stars.",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 52.8944206237793,
+      "pdf_pages": 33,
+      "n_sections": 12,
+      "added_at": "2026-07-25T22:42:08.921782",
+      "updated_at": "2026-07-25T22:42:08.921797",
+      "view_count": 1,
+      "chat_sessions": []
+    },
+    "2203.16380": {
+      "arxiv_id": "2203.16380",
+      "title": "The p-process nucleosynthesis can explain proton-rich isotopes heavier than iron",
+      "abstract": "",
+      "original_query": "What is the origin of the p-process elements in stellar explosions?",
+      "subdomain": "nuclear astro",
+      "paper_overview": "The p-process nucleosynthesis can explain proton-rich isotopes heavier than iron, but discrepancies persist. The authors investigate how the p-process operates in exploding rotating massive stars with enhanced s-process nucleosynthesis. They find that the contribution of core-collapse supernovae from massive stars to the solar p-nuclei has been underestimated.",
+      "evidence_type": "observational",
+      "instruments": [],
+      "key_equations": [
+        {
+          "equation": "Z M2 \n⟨Fi⟩=\n1 \nMp Xi,ini \nXi(Mr) dMr,",
+          "variables": "Z=metallicity, M2=upper Lagrangian mass coordinate, Mp=total mass of the PPLs, Xi,ini=initial abundance of the p-nucleus, Xi(Mr)=mass fraction of p-nucleus at mass coordinate Mr"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "temperature range",
+          "value": "1.8 × 10^9 K",
+          "uncertainty": "±0 K",
+          "unit": "K"
+        },
+        {
+          "quantity": "temperature range",
+          "value": "3.5 × 10^9 K",
+          "uncertainty": "±0 K",
+          "unit": "K"
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "The primary nuclear reaction or process responsible for the production of p-process elements in stellar explosions is the photodisintegration of heavy seeds in layers heated at temperatures ranging between 1.8 and 3.5 × 10^9 K.",
+          "section": "DATA"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "The observational evidence or astrophysical phenomena associated with the formation of p-process elements in stellar explosions include the existence of proton-rich isotopes heavier than iron in the Solar System, and the anomalous isotopic signatures found in meteorites.",
+          "section": "INTRODUCTION"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "The specific mass fractions or abundance ratios of p-process elements produced in stellar explosions are not explicitly stated in the paper. However, it is mentioned that the p-process yields mostly depend on the initial number of trans-iron seeds, which in turn depend on the initial rotation rate.",
+          "section": "RESULTS"
+        }
+      },
+      "key_snippet": "The p-process nucleosynthesis can explain proton-rich isotopes that are heavier than iron, which are observed in the Solar System, but discrepancies still persist and important questions concerning the astrophysical site(s) of the p-process remain unanswered.",
+      "key_findings": [
+        "The contribution of core-collapse supernovae from massive stars to the solar p-nuclei has been underestimated.",
+        "The contribution from massive stars with sub-solar metallicities may even dominate."
+      ],
+      "methodology": "The authors used the Geneva stellar evolution code to compute 25 M⊙ stellar models at a metallicity of Z = 10^−3 with different initial rotation velocities and rates for the 17O(α,γ)21Ne reaction.",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 55.44984149932861,
+      "pdf_pages": 12,
+      "n_sections": 12,
+      "added_at": "2026-07-25T22:44:15.363060",
+      "updated_at": "2026-07-25T22:44:15.363073",
+      "view_count": 1,
+      "chat_sessions": []
+    },
+    "2404.08052": {
+      "arxiv_id": "2404.08052",
+      "title": "The paper presents the first NIRSpec spectra of 23 HST-dark galaxies, unveiling ",
+      "abstract": "",
+      "original_query": "What have JWST NIRSpec observations revealed about the spectra of galaxies at z > 10?",
+      "subdomain": "JWST",
+      "paper_overview": "The paper presents the first NIRSpec spectra of 23 HST-dark galaxies, unveiling their nature and physical properties. The sample includes both dusty and quiescent galaxies with spectroscopic data from NIRSpec/PRISM, providing accurate spectroscopic redshifts. The spectral features demonstrate that, while the majority of HST-dark galaxies are dusty, a substantial fraction are quiescent.",
+      "evidence_type": "observational",
+      "instruments": [
+        "JWST NIRSpec"
+      ],
+      "key_equations": [
+        {
+          "equation": "zspec = 4.1±0.7",
+          "variables": "zspec = spectroscopic redshift"
+        },
+        {
+          "equation": "AV > 2 mag",
+          "variables": "AV = dust attenuation"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "spectroscopic redshift",
+          "value": "4.1",
+          "uncertainty": "±0.7",
+          "unit": ""
+        },
+        {
+          "quantity": "dust attenuation",
+          "value": "2",
+          "uncertainty": "",
+          "unit": "mag"
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "The primary physical process driving the emission lines observed in the spectra of galaxies at z > 10 by JWST NIRSpec is the Balmer decrement (Hα/Hβ), which is used to quantify the dust attenuation.",
+          "section": "DATA"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "The key spectral features and patterns observed in the JWST NIRSpec spectra of galaxies at z > 10 include the presence of Hα emission lines, equivalent widths spanning the range 68Å < EWHα < 550Å, and prominent breaks in their spectra at rest-frame λrest ≃4000Å.",
+          "section": "DATA"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "The measured flux ratios or equivalent widths of specific emission lines in the JWST NIRSpec spectra of galaxies at z > 10 are: EWHα = 68Å to 550Å.",
+          "section": "DATA"
+        }
+      },
+      "key_snippet": "The spectral features demonstrate that, while the majority of HST-dark galaxies are dusty, a substantial fraction, 13+9−6%, are quiescent.",
+      "key_findings": [
+        "HST-dark galaxies are predominantly massive, with 85% of the galaxies in the sample having masses log(M∗/M⊙) > 9.8"
+      ],
+      "methodology": "The paper presents the first NIRSpec spectra of 23 HST-dark galaxies, unveiling their nature and physical properties. The sample includes both dusty and quiescent galaxies with spectroscopic data from NIRSpec/PRISM, providing accurate spectroscopic redshifts.",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 54.61230444908142,
+      "pdf_pages": 16,
+      "n_sections": 17,
+      "added_at": "2026-07-25T22:46:21.426931",
+      "updated_at": "2026-07-25T22:46:21.426942",
+      "view_count": 1,
+      "chat_sessions": []
+    },
+    "2309.06932": {
+      "arxiv_id": "2309.06932",
+      "title": "This paper presents an analysis of the stellar population and star formation his",
+      "abstract": "",
+      "original_query": "How do JWST MIRI observations constrain dust properties in nearby galaxies?",
+      "subdomain": "JWST",
+      "paper_overview": "This paper presents an analysis of the stellar population and star formation history of 181 MIRI selected galaxies at redshift 0 −3.5 in the massive galaxy cluster field SMACS J0723.3–7327 using the James Webb Space Telescope's Mid-Infrared Instrument (MIRI). The analysis aims to constrain dust properties in nearby galaxies and investigate the impact of dust on star formation and galaxy evolution. The paper uses a combination of observational data from JWST MIRI and photometric redshifts to derive physical properties of the galaxies. The results show that MIRI data provides tighter constraints on the AGN contribution, reducing the typical AGN contributions by ∼14%.",
+      "evidence_type": "observational",
+      "instruments": [
+        "JWST MIRI",
+        "HST WFC3/IR",
+        "ACS"
+      ],
+      "key_equations": [
+        {
+          "equation": "E_cav = 4PV",
+          "variables": "P=pressure, V=cavity volume"
+        },
+        {
+          "equation": "logU = -2.0",
+          "variables": "U=radiation parameter"
+        },
+        {
+          "equation": "fAGN = fAGN,MIRI - fAGN,no MIRI",
+          "variables": "fAGN=AGN fraction, fAGN,MIRI=AGN fraction with MIRI, fAGN,no MIRI=AGN fraction without MIRI"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "mass fraction of PAHs",
+          "value": "0.14",
+          "uncertainty": "±0.11",
+          "unit": ""
+        },
+        {
+          "quantity": "radiation parameter (U)",
+          "value": "0.1",
+          "uncertainty": "±0.06",
+          "unit": ""
+        },
+        {
+          "quantity": "AGN fraction",
+          "value": "0.1",
+          "uncertainty": "±0.06",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "The primary physical process governing dust emission in nearby galaxies that JWST MIRI observations aim to constrain is the equilibrium emission from very small, warm grains, which becomes dominant at higher radiation field intensities.",
+          "section": "Observations"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "The specific observational data from JWST MIRI observations that provide constraints on dust properties in nearby galaxies include the PAH features and dust emission captured by the MIRI bands, which significantly enhance the accuracy of photometric redshift and measurements of the physical properties of these galaxies.",
+          "section": "Data"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "The quantitative values of dust properties constrained by JWST MIRI observations in nearby galaxies include the mass fraction of polycyclic aromatic hydrocarbons (PAHs), which is found to be ∼0.14±0.11, and the radiation parameter (U), which is found to be ∼0.1.",
+          "section": "Results"
+        }
+      },
+      "key_snippet": "The advanced capabilities of MIRI thus enable more precise investigations into the impact of dust on star formation and galaxy evolution, as well as the analysis of PAH features in the mid-infrared.",
+      "key_findings": [
+        "MIRI data provides tighter constraints on the AGN contribution, reducing the typical AGN contributions by ∼14%",
+        "The median photo-z's of galaxies with MIRI data are found to have a small 0.1% difference from spectroscopic redshifts and reducing the error by 20%"
+      ],
+      "methodology": "The analysis uses a combination of observational data from JWST MIRI and photometric redshifts to derive physical properties of the galaxies. The results are obtained by fitting the spectral energy distributions of each source to derive photometric redshifts in various different ways.",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 98.30116534233093,
+      "pdf_pages": 15,
+      "n_sections": 17,
+      "added_at": "2026-07-25T22:49:03.930469",
+      "updated_at": "2026-07-25T22:49:03.930483",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "2101.11652": {
+      "arxiv_id": "2101.11652",
+      "title": "We present ALMA observations of CO isotopologues and high-density molecular trac",
+      "abstract": "",
+      "original_query": "What does ALMA reveal about molecular gas kinematics in galaxy centers?",
+      "subdomain": "mm astronomy",
+      "paper_overview": "We present ALMA observations of CO isotopologues and high-density molecular tracers in NGC 7465, an unusually gas-rich early-type galaxy that acquired its cold gas recently. The molecular gas kinematics are misaligned with respect to all other galaxy components, indicating that the stellar kinematically-decoupled core is not related to the current gas accretion event. The galaxy exhibits unusually high 12CO/13CO line ratios in its nucleus, but typical 13CO/C18O ratios.",
+      "evidence_type": "observational",
+      "instruments": [
+        "ALMA"
+      ],
+      "key_equations": [
+        {
+          "equation": "E_cav = 4PV",
+          "variables": "P=pressure, V=cavity volume"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "orbital time",
+          "value": "80 Myr",
+          "uncertainty": "±0",
+          "unit": "Myr"
+        },
+        {
+          "quantity": "maximum circular rotation speed",
+          "value": "163 km s−1",
+          "uncertainty": "±0",
+          "unit": "km s−1"
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "The primary physical mechanism driving molecular gas kinematics in galaxy centers is the torquing of gas into polar orbits about the stellar kinematically-decoupled core (KDC) as the gas works its way inward.",
+          "section": "Results"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "The observational evidence from ALMA data supporting the presence of molecular gas kinematics in galaxy centers includes the misalignment of molecular gas with respect to all other galaxy components, and the presence of unusually high 12CO/13CO line ratios in the nucleus.",
+          "section": "Results"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "The quantitative measurements of molecular gas kinematics in galaxy centers derived from ALMA observations include the orbital time at the outer edge of the molecular arms, which is 80 Myr, and the maximum circular rotation speed of 163 km s−1.",
+          "section": "Discussion"
+        }
+      },
+      "key_snippet": "The galaxy also exhibits unusually high 12CO/13CO line ratios in its nucleus but typical 13CO/C18O ratios.",
+      "key_findings": [
+        "The galaxy exhibits unusually high 12CO/13CO line ratios in its nucleus.",
+        "The molecular gas kinematics are misaligned with respect to all other galaxy components."
+      ],
+      "methodology": "We present ALMA observations of CO isotopologues and high-density molecular tracers in NGC 7465, an unusually gas-rich early-type galaxy that acquired its cold gas recently.",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 49.9865837097168,
+      "pdf_pages": 26,
+      "n_sections": 13,
+      "added_at": "2026-07-25T22:51:05.826120",
+      "updated_at": "2026-07-25T22:51:05.826130",
+      "view_count": 1,
+      "chat_sessions": []
+    },
+    "2306.15406": {
+      "arxiv_id": "2306.15406",
+      "title": "The eDisk program is a Large Program conducted with the Atacama Large Millimeter",
+      "abstract": "",
+      "original_query": "How do ALMA observations of dust continuum trace star formation in protoplanetary disks?",
+      "subdomain": "mm astronomy",
+      "paper_overview": "The eDisk program is a Large Program conducted with the Atacama Large Millimeter/submillimeter Array (ALMA) to study the early stages of planet formation in embedded disks. The program focuses on searching for substructures in disks around 12 Class 0 and 7 Class I protostars in nearby (<200 pc) star-forming regions. The initial results show that the continuum emission, mostly arising from dust disks around the sample protostars, has relatively few distinctive substructures, such as rings and spirals, in marked contrast to Class II disks.",
+      "evidence_type": "observational",
+      "instruments": [
+        "ALMA"
+      ],
+      "key_equations": [
+        {
+          "equation": "VLSR = −3.15",
+          "variables": "VLSR=velocity of local standard of rest"
+        },
+        {
+          "equation": "Lbol = 1.00 L",
+          "variables": "Lbol=bolometric luminosity"
+        },
+        {
+          "equation": "Tbol =   68 K",
+          "variables": "Tbol=bolometric temperature"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "distance",
+          "value": "200 pc",
+          "uncertainty": "",
+          "unit": "pc"
+        },
+        {
+          "quantity": "resolution",
+          "value": "∼7 au",
+          "uncertainty": "",
+          "unit": "au"
+        },
+        {
+          "quantity": "angular resolution",
+          "value": "0.′′04",
+          "uncertainty": "",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "The primary physical mechanism by which dust continuum emission in protoplanetary disks is linked to star formation is not explicitly stated in the paper. However, it can be inferred that the connection between dust continuum emission and star formation is related to the presence of Keplerian disks around protostars, which provide crucial physical parameters, in particular, the dynamical mass of the central protostars.",
+          "section": "SAMPLE"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "The observational evidence from ALMA data that supports the connection between dust continuum emission and star formation in protoplanetary disks is the presence of Keplerian disks around protostars, which provide crucial physical parameters, in particular, the dynamical mass of the central protostars.",
+          "section": "SAMPLE"
+        },
+        "Q3": {
+          "answered": false,
+          "answer_text": "The quantitative relationships between dust continuum flux, disk mass, or other relevant parameters and star formation rates in protoplanetary disks as observed by ALMA are not explicitly stated in the paper.",
+          "section": ""
+        }
+      },
+      "key_snippet": "The continuum emission, mostly arising from dust disks around the sample protostars, has relatively few distinctive substructures, such as rings and spirals, in marked contrast to Class II disks.",
+      "key_findings": [
+        "The continuum emission, mostly arising from dust disks around the sample protostars, has relatively few distinctive substructures, such as rings and spirals, in marked contrast to Class II disks."
+      ],
+      "methodology": "The eDisk program uses ALMA to observe the continuum emission of protoplanetary disks around 12 Class 0 and 7 Class I protostars in nearby (<200 pc) star-forming regions.",
+      "q_total": 0.8833333333333333,
+      "q_f": 1.0,
+      "q_c": 0.6666666666666666,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 53.14235782623291,
+      "pdf_pages": 34,
+      "n_sections": 19,
+      "added_at": "2026-07-25T22:53:06.329340",
+      "updated_at": "2026-07-25T22:53:06.329351",
+      "view_count": 1,
+      "chat_sessions": []
+    },
+    "2503.12950": {
+      "arxiv_id": "2503.12950",
+      "title": "The paper presents JWST MIRI observations of the nearby supernova SN 1993J, aimi",
+      "abstract": "",
+      "original_query": "How do JWST MIRI observations constrain dust properties in nearby galaxies?",
+      "subdomain": "JWST",
+      "paper_overview": "The paper presents JWST MIRI observations of the nearby supernova SN 1993J, aiming to constrain dust properties in nearby galaxies. The observations reveal a significant amount of dust (∼0.01 M⊙) ∼30 years after explosion. The results provide evidence for dust condensation in CCSNe, supporting their role in the cosmic dust budget.",
+      "evidence_type": "observational",
+      "instruments": [
+        "JWST",
+        "MIRI"
+      ],
+      "key_equations": [
+        {
+          "equation": "Fλ = MdBλ(Td)κ(a)/D2",
+          "variables": "MdBλ(Td) = dust mass, κ(a) = dust opacity, D = distance"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "dust mass",
+          "value": "0.01",
+          "uncertainty": "±0",
+          "unit": "M⊙"
+        },
+        {
+          "quantity": "dust temperature",
+          "value": "116",
+          "uncertainty": "±10",
+          "unit": "K"
+        },
+        {
+          "quantity": "grain radius",
+          "value": "0.1",
+          "uncertainty": "±0",
+          "unit": "µm"
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "The primary physical process governing dust emission in nearby galaxies that JWST MIRI observations aim to constrain is the condensation of dust in the ejecta of core-collapse supernovae (CCSNe).",
+          "section": "INTRODUCTION"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "The specific observational data from JWST MIRI observations that provide constraints on dust properties in nearby galaxies include the fluxes of SN 1993J in JWST/MIRI images, which were measured using point-spread-function (PSF) photometry on background-subtracted level-two data products.",
+          "section": "DATA REDUCTION"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "The quantitative values of dust properties constrained by JWST MIRI observations in nearby galaxies include the dust mass (∼0.01 M⊙), temperature (116 ± 10 K), and grain radius (a = 0.1 µm).",
+          "section": "RESULTS"
+        }
+      },
+      "key_snippet": "The origin and heating mechanism of the dust can have several important implications.",
+      "key_findings": [
+        "SN 1993J still contains a significant amount of dust (∼0.01 M⊙) ∼30 years after explosion.",
+        "The dust mass is ∼0.01 M⊙.",
+        "The dust temperature is 116 ± 10 K."
+      ],
+      "methodology": "The authors used JWST MIRI observations to constrain dust properties in nearby galaxies. They measured the fluxes of SN 1993J in JWST/MIRI images using point-spread-function (PSF) photometry on background-subtracted level-two data products. They then fit single- and two-component silicate and carbonaceous dust models to the SED in order to determine the dust parameters.",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 127.66287469863892,
+      "pdf_pages": 11,
+      "n_sections": 17,
+      "added_at": "2026-07-25T23:30:24.561768",
+      "updated_at": "2026-07-25T23:30:24.561781",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "2111.12101": {
+      "arxiv_id": "2111.12101",
+      "title": "This paper analyzes families of hybrid equations of state of cold QCD matter, co",
+      "abstract": "",
+      "original_query": "What are the constraints on neutron star equations of state from LIGO-Virgo binary neutron star merger observations?",
+      "subdomain": "gravitational waves",
+      "paper_overview": "This paper analyzes families of hybrid equations of state of cold QCD matter, combining input from gauge/gravity duality and from various ab initio methods for nuclear matter at low density. The authors predict that all neutron stars are fully hadronic without quark matter cores. They focus on constraints from recent measurements by the NICER telescope on the radius and mass of the millisecond pulsar PSR J0740+6620.",
+      "evidence_type": "observational",
+      "instruments": [
+        "NICER",
+        "XMM-Newton"
+      ],
+      "key_equations": [
+        {
+          "equation": "E_cav = 4PV",
+          "variables": "P=pressure, V=cavity volume"
+        },
+        {
+          "equation": "ns = 0.16fm−3",
+          "variables": "ns=neutron star density"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "mass of PSR J0740+6620",
+          "value": "2.08",
+          "uncertainty": "±0.07",
+          "unit": "M⊙"
+        },
+        {
+          "quantity": "radius of PSR J0740+6620",
+          "value": "13.7",
+          "uncertainty": "±2.6",
+          "unit": "km"
+        },
+        {
+          "quantity": "radius of PSR J0740+6620",
+          "value": "12.39",
+          "uncertainty": "±1.30",
+          "unit": "km"
+        },
+        {
+          "quantity": "tidal deformability",
+          "value": "f2 ≈3.19 kHz",
+          "uncertainty": "",
+          "unit": "kHz"
+        },
+        {
+          "quantity": "tidal deformability",
+          "value": "fmrg ≈1.89 kHz",
+          "uncertainty": "",
+          "unit": "kHz"
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "The primary physical mechanism by which LIGO-Virgo binary neutron star merger observations constrain neutron star equations of state is through the tidal deformability of compact stars.",
+          "section": "OBSERVATIONS"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "The observational evidence or data from LIGO-Virgo binary neutron star merger observations used to constrain neutron star equations of state include the tidal deformability of compact stars, as well as the Shapiro delay from pulsars locked in binary systems.",
+          "section": "OBSERVATIONS"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "The specific numerical constraints on neutron star equations of state imposed by LIGO-Virgo binary neutron star merger observations are f2 ≈3.19 kHz and fmrg ≈1.89 kHz for the EoSs satisfying the R(2M⊙) > 12.2 km constraint.",
+          "section": "Results"
+        }
+      },
+      "key_snippet": "These results are found to be consistent with our approach: they set only mild constraints on the hybrid equations of state, and favor the most natural models which are relatively stiff at low density.",
+      "key_findings": [
+        "The NICER radius constraints set only mild constraints on the hybrid equations of state, and favor the most natural models which are relatively stiff at low density."
+      ],
+      "methodology": "The authors use gauge/gravity duality, combined with predictions from other sources, to analyze the QCD EoS at zero temperature.",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 91.78736734390259,
+      "pdf_pages": 22,
+      "n_sections": 13,
+      "added_at": "2026-07-25T23:35:05.008124",
+      "updated_at": "2026-07-25T23:35:05.008138",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "1904.09326": {
+      "arxiv_id": "1904.09326",
+      "title": "The origin and properties of black hole seeds that grow to produce the detected ",
+      "abstract": "",
+      "original_query": "How do gravitational wave detections inform our understanding of black hole formation channels?",
+      "subdomain": "gravitational waves",
+      "paper_overview": "The origin and properties of black hole seeds that grow to produce the detected population of supermassive black holes are unconstrained at present. Several new observables that encapsulate information about seeding have been proposed in recent years, and these offer exciting prospects for truly unraveling the nature of black hole seeds. Galaxy mergers are believed to be the drivers of SMBH growth as these also trigger accretion episodes. Improving our theoretical understanding of black hole dynamics and accretion will also be pivotal in constraining seeding models in combination with the wide range of multi-messenger data.",
+      "evidence_type": "observational",
+      "instruments": [
+        "Chandra",
+        "XMM-Newton"
+      ],
+      "key_equations": [
+        {
+          "equation": "E_cav = 4PV",
+          "variables": "P=pressure, V=cavity volume"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "mass of SMBHs",
+          "value": "10^9 M⊙",
+          "uncertainty": "±0",
+          "unit": "M⊙"
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "Dynamical processes, such as mergers and tidal interactions, play a crucial role in shaping the mass distribution of black hole populations that produce detectable gravitational waves. The merger-triggering paradigm is used to generate an initial population of seeds, with light seeds randomly drawn from an IMF ranging from 30-100 solar masses representing PopIII remnant masses, while heavy seeds are assigned according to the dynamical model of Lodato & Natarajan (2006). Galaxy mergers are believed to be the drivers of SMBH growth as these also trigger accretion episodes.",
+          "section": "Results"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "The key features of the gravitational wave signals from black hole mergers that can be used to distinguish between different black hole formation channels are the masses and spin alignments of the black holes. The masses for these behemoth SMBHs inferred using broad-line spectroscopy are of the order of ∼10^9 M⊙ at z ∼6, which places some constraints on a combination of the seeding and accretion conditions that produced these objects.",
+          "section": "Observations"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "The median mass ratios or spin alignments of black hole pairs that are inferred from gravitational wave observations are not explicitly stated in the paper. However, the paper discusses the importance of distinguishing between different black hole formation channels using the masses and spin alignments of the black holes.",
+          "section": "Results"
+        }
+      },
+      "key_snippet": "The masses for these behemoth SMBHs inferred using broad-line spectroscopy are of the order of ∼10^9 M⊙ at z ∼6.",
+      "key_findings": [
+        "The masses for these behemoth SMBHs inferred using broad-line spectroscopy are of the order of ∼10^9 M⊙ at z ∼6."
+      ],
+      "methodology": "The paper uses a combination of theoretical models and observational data to constrain the properties of black hole seeds. The theoretical models are based on the merger-triggering paradigm and the dynamical model of Lodato & Natarajan (2006). The observational data are used to constrain the masses and spin alignments of the black holes.",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 26.075404167175293,
+      "pdf_pages": 8,
+      "n_sections": 7,
+      "added_at": "2026-07-25T23:36:36.493349",
+      "updated_at": "2026-07-25T23:36:36.493363",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "1407.4150": {
+      "arxiv_id": "1407.4150",
+      "title": "The characterization of exoplanetary atmospheres has come of age in the last dec",
+      "abstract": "",
+      "original_query": "What determines the atmospheric composition of hot Jupiters as measured by transmission spectroscopy?",
+      "subdomain": "exoplanets",
+      "paper_overview": "The characterization of exoplanetary atmospheres has come of age in the last decade, with astronomical techniques allowing for the measurement of albedos, chemical abundances, temperature profiles, and maps. Hot exoplanets, particularly hot Jupiters, are most amenable to these characterization techniques. The review focuses on the basic atmospheric quantities inferred from astronomical observations and addresses current questions in the field.",
+      "evidence_type": "observational",
+      "instruments": [
+        "Hubble Space Telescope",
+        "Chandra"
+      ],
+      "key_equations": [
+        {
+          "equation": "tcirc = 4QMa13/2",
+          "variables": "Q=stellar flux, M=mass of the exoplanet, a=semi-major axis, t=temperature"
+        },
+        {
+          "equation": "tsyn = 8QΩMa6",
+          "variables": "Q=stellar flux, Ω=orbital frequency, M=mass of the exoplanet, a=semi-major axis, t=temperature"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "temperature",
+          "value": "1000-3000 K",
+          "uncertainty": "±0 K",
+          "unit": "K"
+        },
+        {
+          "quantity": "orbital period",
+          "value": "2-10 days",
+          "uncertainty": "±0 days",
+          "unit": "days"
+        },
+        {
+          "quantity": "radius",
+          "value": "1-10 R_J",
+          "uncertainty": "±0 R_J",
+          "unit": "R_J"
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "The primary physical process driving the atmospheric chemistry of hot Jupiters is the intense flux of stellar irradiation they receive, rather than because of internal heat. This process leads to the formation of clouds and hazes at high altitudes, which scatter broadly across a wide range of wavelengths and provide a likely explanation for relatively flat transmission spectra.",
+          "section": "Methods"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "The key observational features of hot Jupiter transmission spectra that constrain atmospheric composition models are the variation in the radius of the exoplanet with wavelength, which provides information on how the atmospheric absorption and scattering vary with wavelength. Transmission spectra show how the effective radius of a close-in exoplanet varies with wavelength, and therefore provide information on how the atmospheric absorption and scattering vary with wavelength.",
+          "section": "Results"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "The typical abundances of key atmospheric species in hot Jupiter atmospheres as measured by transmission spectroscopy are: H2 (abundance not specified), He (abundance not specified), H2O (detected in the transmission spectrum of HD 209458b, with a peak absorption of 0.01% at 1.4 μm), and CH4 (abundance not specified).",
+          "section": "Results"
+        }
+      },
+      "key_snippet": "Transmission spectra show how the effective radius of a close-in exoplanet varies with wavelength, and therefore provide information on how the atmospheric absorption and scattering vary with wavelength.",
+      "key_findings": [
+        "The existence of clouds or hazes at high altitudes provides a likely explanation for relatively flat transmission spectra.",
+        "The variation in the radius of the exoplanet with wavelength provides information on how the atmospheric absorption and scattering vary with wavelength."
+      ],
+      "methodology": "The review focuses on the basic atmospheric quantities inferred from astronomical observations and addresses current questions in the field.",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 38.34056496620178,
+      "pdf_pages": 32,
+      "n_sections": 15,
+      "added_at": "2026-07-25T23:38:19.645542",
+      "updated_at": "2026-07-25T23:38:19.645555",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "1910.00267": {
+      "arxiv_id": "1910.00267",
+      "title": "Atmospheric escape is key to explaining the long-term evolution of planets in ou",
+      "abstract": "",
+      "original_query": "How does atmospheric escape affect the demographics of sub-Neptune exoplanets?",
+      "subdomain": "exoplanets",
+      "paper_overview": "Atmospheric escape is key to explaining the long-term evolution of planets in our Solar System and beyond. Hydrodynamic escape is generally thought to be driven by the flux of extreme ultraviolet photons that the planet receives from its host star. However, the escape from planets orbiting hot stars proceeds through a different yet complementary process: drawing its energy from the intense near ultraviolet emission of the star. The ultra-hot exoplanet KELT-9b likely represents the first known instance of this Balmer-driven escape.",
+      "evidence_type": "observational",
+      "instruments": [],
+      "key_equations": [
+        {
+          "equation": "dIλ/ds = −κλIλ + ελ",
+          "variables": "Iλ = radiance, κλ = absorption coefficient, ελ = emission coefficient, ds = spatial derivative"
+        },
+        {
+          "equation": "Γ(x) = Z Z [−κλ(x)Iλ(x, s) + ελ(x)]dΩ(s)dλ",
+          "variables": "Γ = net energy emission rate, κλ = absorption coefficient, ελ = emission coefficient, dΩ = solid angle, dλ = wavelength"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "mass loss rate",
+          "value": "7.5×10^6",
+          "uncertainty": "±0.5×10^6",
+          "unit": "g s^−1"
+        },
+        {
+          "quantity": "optical thickness",
+          "value": "1.3×10^−7",
+          "uncertainty": "±0.5×10^−7",
+          "unit": "cm^−1"
+        },
+        {
+          "quantity": "temperature",
+          "value": "4,600 K",
+          "uncertainty": "±100 K",
+          "unit": "K"
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "The primary physical mechanism driving atmospheric escape in sub-Neptune exoplanets is the Balmer-driven escape, which draws its energy from the intense near ultraviolet emission of the star.",
+          "section": "Methods"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "The observational evidence supporting the occurrence of atmospheric escape in sub-Neptune exoplanets includes the detection of strong absorption in the H-α and -β lines of the hydrogen Balmer series in the atmospheres of KELT-9b and MASCARA-2b/KELT-20b.",
+          "section": "Results"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "The quantitative differences in the demographics of sub-Neptune exoplanets with and without atmospheric escape are that the former are more likely to experience catastrophic mass loss when they are less massive than 1--2 Jupiter masses and closer-in than KELT-9b.",
+          "section": "Results"
+        }
+      },
+      "key_snippet": "The ultra-hot exoplanet KELT-9b likely represents the first known instance of this Balmer-driven escape.",
+      "key_findings": [
+        "The ultra-hot exoplanet KELT-9b likely represents the first known instance of Balmer-driven escape.",
+        "The near ultraviolet emission from the star is more important at determining the planet mass loss than the extreme ultraviolet emission.",
+        "Gas exoplanets around hot stars may experience catastrophic mass loss when they are less massive than 1--2 Jupiter masses and closer-in than KELT-9b."
+      ],
+      "methodology": "The authors built a model of KELT-9b's hydrogen atmosphere to investigate whether the detected H-α and -β lines are the smoking guns for significant stellar energy absorption in the hydrogen Balmer continuum that could result in a vigorous hydrodynamic escape.",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 40.20185351371765,
+      "pdf_pages": 31,
+      "n_sections": 11,
+      "added_at": "2026-07-25T23:40:03.700620",
+      "updated_at": "2026-07-25T23:40:03.700631",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "2104.04417": {
+      "arxiv_id": "2104.04417",
+      "title": "This study investigates the contribution of active regions to the solar wind ove",
+      "abstract": "",
+      "original_query": "What triggers solar coronal mass ejections and how are they predicted?",
+      "subdomain": "solar",
+      "paper_overview": "This study investigates the contribution of active regions to the solar wind over multiple solar cycles using photospheric magnetic field maps. The results show that active regions can contribute up to 80% of the solar wind during solar maximum, with a strong correlation with sunspot number. The study uses potential field source surface (PFSS) modeling to estimate the open magnetic flux rooted in active regions. The results are consistent across different data sources and solar cycles.",
+      "evidence_type": "observational",
+      "instruments": [
+        "Kitt Peak Vacuum Telescope (KPVT)",
+        "Michelson Doppler Interferometer (MDI)",
+        "Synoptic Optical Long-term Investigations of the Sun (SOLIS)",
+        "Global Oscillations Network Group (GONG)"
+      ],
+      "key_equations": [
+        {
+          "equation": "Rss = {1.5, 2.0, 2.5, 3.0}R⊙",
+          "variables": "Rss = source surface height, R⊙ = solar radius"
+        },
+        {
+          "equation": "Rss = 2.0R⊙",
+          "variables": "Rss = source surface height, R⊙ = solar radius"
+        },
+        {
+          "equation": "Rss = 1.5R",
+          "variables": "Rss = source surface height, R = solar radius"
+        },
+        {
+          "equation": "Rss = 2.0R",
+          "variables": "Rss = source surface height, R = solar radius"
+        },
+        {
+          "equation": "Rss = 2.5R",
+          "variables": "Rss = source surface height, R = solar radius"
+        },
+        {
+          "equation": "Rss = 3.0R",
+          "variables": "Rss = source surface height, R = solar radius"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "fractional contribution of active regions to the solar wind",
+          "value": "80%",
+          "uncertainty": "±20%",
+          "unit": "%"
+        },
+        {
+          "quantity": "sunspot number",
+          "value": "100",
+          "uncertainty": "±20",
+          "unit": "units"
+        },
+        {
+          "quantity": "coronal mass ejection rate",
+          "value": "10",
+          "uncertainty": "±2",
+          "unit": "events per month"
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "The primary physical mechanism or process that initiates solar coronal mass ejections is the reconnection of closed magnetic loops with adjacent open field lines, redistributing regions of existing open flux and opening up previously closed flux.",
+          "section": "Introduction"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "Observational evidence supporting the occurrence of solar coronal mass ejections includes the presence of coronal holes in extreme ultra-violet (EUV) images, which are regions of open magnetic field lines that can accelerate plasma to form the solar wind.",
+          "section": "Observations"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "The quantitative measurements or numerical results of the prediction models for solar coronal mass ejections are not explicitly stated in the paper, but the results show that the fractional contribution of active regions to the solar wind can be up to 80% during solar maximum, with a strong correlation with sunspot number.",
+          "section": "Results"
+        }
+      },
+      "key_snippet": "The fractional contribution of active regions to the solar wind varies between 30% to 80% at any one time during solar maximum and is negligible at solar minimum, showing a strong correlation with sunspot number.",
+      "key_findings": [
+        "Active regions can contribute up to 80% of the solar wind during solar maximum.",
+        "The fractional contribution of active regions to the solar wind correlates strongly with sunspot number.",
+        "The coronal mass ejection rate is highly variable, changing by ±20% on monthly timescales within individual solar maxima."
+      ],
+      "methodology": "The study uses potential field source surface (PFSS) modeling to estimate the open magnetic flux rooted in active regions. The results are consistent across different data sources and solar cycles.",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 278.6749098300934,
+      "pdf_pages": 18,
+      "n_sections": 16,
+      "added_at": "2026-07-25T23:45:46.173941",
+      "updated_at": "2026-07-25T23:45:46.173951",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "0801.4213": {
+      "arxiv_id": "0801.4213",
+      "title": "Global helioseismology has made significant advances in understanding the intern",
+      "abstract": "",
+      "original_query": "How does helioseismology constrain the internal structure and rotation of the Sun?",
+      "subdomain": "solar",
+      "paper_overview": "Global helioseismology has made significant advances in understanding the internal structure and dynamics of the Sun, with over 30 years of observations and analysis leading to precise reconstructions of the Sun's internal structure and dynamics.",
+      "evidence_type": "observational",
+      "instruments": [],
+      "key_equations": [
+        {
+          "equation": "ℓ(cos θ) exp(imφ)",
+          "variables": "ℓ=degree of spherical harmonic, θ=colatitude, φ=longitude"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "convection zone helium abundance",
+          "value": "0.243",
+          "uncertainty": "±0.0",
+          "unit": ""
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "The primary physical mechanism by which helioseismology probes the internal structure of the Sun is through the detection and analysis of global modes of oscillation, which are standing acoustic waves excited stochastically by turbulence in the outermost layers of the sub-surface convection zone.",
+          "section": "Observations"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "The types of seismic data or observations used to infer the internal rotation of the Sun through helioseismology include the detection and analysis of global modes of oscillation, particularly the low-ℓ modes that penetrate the core.",
+          "section": "Observations"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "The typical values of the Sun's internal rotation rate and its radial dependence as constrained by helioseismology are not explicitly stated in the paper, but it is mentioned that the inversions of Christensen-Dalsgaard et al. (1985) suggested there were problems with computation of the astrophysical opacities.",
+          "section": "Results"
+        }
+      },
+      "key_snippet": "More than 30 years on, exquisite observational reconstructions of the internal structure and dynamics of the Sun are in everyday use, thanks to helioseismology.",
+      "key_findings": [
+        "The Sun's internal structure and dynamics can be precisely reconstructed through helioseismology.",
+        "The standard solar model has been improved through the inclusion of diffusion and settling.",
+        "The equation of state has been tested through helioseismology."
+      ],
+      "methodology": "The methodology of global helioseismology involves the detection and analysis of global modes of oscillation, which are standing acoustic waves excited stochastically by turbulence in the outermost layers of the sub-surface convection zone.",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 37.909088373184204,
+      "pdf_pages": 24,
+      "n_sections": 14,
+      "added_at": "2026-07-25T23:47:28.654101",
+      "updated_at": "2026-07-25T23:47:28.654112",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "2001.09057": {
+      "arxiv_id": "2001.09057",
+      "title": "The sources of ultra-high energy cosmic rays (UHECRs) are still an open question",
+      "abstract": "",
+      "original_query": "What are the astrophysical sources of high-energy neutrinos detected by IceCube?",
+      "subdomain": "cosmic rays",
+      "paper_overview": "The sources of ultra-high energy cosmic rays (UHECRs) are still an open question in high-energy astrophysics. High-energy neutrinos are used as probes to investigate the origin of UHECRs. Three analyses are presented to search for correlations between high-energy neutrinos and UHECRs using data from IceCube, ANTARES, Pierre Auger Observatory, and Telescope Array.",
+      "evidence_type": "observational",
+      "instruments": [
+        "IceCube",
+        "ANTARES",
+        "Pierre Auger Observatory",
+        "Telescope Array"
+      ],
+      "key_equations": [
+        {
+          "equation": "N_{CR} = N_{Auger} + N_{TA}",
+          "variables": "N_{CR} = total number of CR events, N_{Auger} = number of CR events from Pierre Auger Observatory, N_{TA} = number of CR events from Telescope Array"
+        },
+        {
+          "equation": "MD = D × 100 EeV / ECR",
+          "variables": "MD = mean angular deflection, D = angular distance, EeV = energy in units of EeV, ECR = energy of CR in units of EeV"
+        },
+        {
+          "equation": "TS = 2 ln (L (ˆns)/L (ˆns)",
+          "variables": "TS = test statistic, L (ˆns) = likelihood function under the null hypothesis, L (ˆns) = likelihood function under the alternative hypothesis"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "angular distance",
+          "value": "1-30 degrees",
+          "uncertainty": "±0 degrees",
+          "unit": "degrees"
+        },
+        {
+          "quantity": "mean angular deflection",
+          "value": "2.4-3.7 degrees",
+          "uncertainty": "±0.5 degrees",
+          "unit": "degrees"
+        },
+        {
+          "quantity": "angular resolution",
+          "value": "15-1 degrees",
+          "uncertainty": "±5 degrees",
+          "unit": "degrees"
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "Astrophysical processes responsible for accelerating particles to energies capable of producing high-energy neutrinos include active galactic nuclei, gamma-ray bursts, and magnetized and fast-spinning neutron stars. These processes are expected to produce high-energy photons and neutrinos when interacting with the ambient matter and radiation.",
+          "section": "INTRODUCTION"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "Observational evidence from IceCube and other experiments supports the association of high-energy neutrinos with astrophysical sources. The results of three different analyses that correlate the very high-energy neutrino candidates detected by IceCube and ANTARES and the highest-energy cosmic rays measured by the Pierre Auger Observatory and the Telescope Array will be discussed.",
+          "section": "RESULTS"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "The fluxes and spectral indices of high-energy neutrinos detected by IceCube are not explicitly stated in the paper. However, the paper mentions that the IceCube realtime event selection is based on a spectrum φ = 1.01(E/100TeV)^−2.19 · 10^−18 GeV^−1 cm^−2 s^−1 sr^−1.",
+          "section": "SAMPLE"
+        }
+      },
+      "key_snippet": "The results of three different analyses that correlate the very high-energy neutrino candidates detected by IceCube and ANTARES and the highest-energy cosmic rays measured by the Pierre Auger Observatory and the Telescope Array will be discussed.",
+      "key_findings": [
+        "The results of three different analyses that correlate the very high-energy neutrino candidates detected by IceCube and ANTARES and the highest-energy cosmic rays measured by the Pierre Auger Observatory and the Telescope Array will be discussed."
+      ],
+      "methodology": "The three analyses are (1) a cross-correlation analysis that scans angular distances between UHECRs and high-energy neutrinos, (2) a neutrino-stacking correlation analysis with UHECR directions, and (3) a UHECR-stacking correlation analysis with neutrino directions.",
+      "q_total": 0.9,
+      "q_f": 0.75,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 51.06986141204834,
+      "pdf_pages": 8,
+      "n_sections": 10,
+      "added_at": "2026-07-25T23:49:25.682606",
+      "updated_at": "2026-07-25T23:49:25.682617",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "1712.09755": {
+      "arxiv_id": "1712.09755",
+      "title": "The GALPROP code is a sophisticated cosmic-ray propagation code that has been de",
+      "abstract": "",
+      "original_query": "How does the cosmic ray spectrum reveal information about propagation through the galaxy?",
+      "subdomain": "cosmic rays",
+      "paper_overview": "The GALPROP code is a sophisticated cosmic-ray propagation code that has been developed for about 20 years. It provides a unified framework for interpreting data from various experiments and is used to describe direct cosmic-ray measurements and associated interstellar emissions. The code has been updated to include new features and improvements, such as a 3D description of the interstellar medium and source distribution. Recent results and updates on the GALPROP code are presented in this paper.",
+      "evidence_type": "observational",
+      "instruments": [
+        "Voyager 1"
+      ],
+      "key_equations": [
+        {
+          "equation": "∂f/∂t = D∇²f - ∇⋅(vf) + Q",
+          "variables": "f = cosmic-ray density, D = diffusion coefficient, v = velocity of cosmic rays, Q = source term"
+        },
+        {
+          "equation": "D = D₀(E/R)⁻α",
+          "variables": "D = diffusion coefficient, D₀ = constant, E = energy of cosmic rays, R = rigidity of cosmic rays, α = power-law index"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "energy density of CRs",
+          "value": "0.83-1.02 eV cm⁻³",
+          "uncertainty": "±0.19 eV cm⁻³",
+          "unit": "eV cm⁻³"
+        },
+        {
+          "quantity": "diffusion coefficient",
+          "value": "10^28 cm²/s",
+          "uncertainty": "±10^27 cm²/s",
+          "unit": "cm²/s"
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "The primary physical mechanism responsible for the modification of cosmic-ray spectra during propagation through the interstellar medium is the diffusion of cosmic rays in the interstellar medium, which is described by the diffusion equation. The diffusion equation is given by: ∂f/∂t = D∇²f - ∇⋅(vf) + Q, where f is the cosmic-ray density, D is the diffusion coefficient, v is the velocity of the cosmic rays, and Q is the source term. The diffusion coefficient D is a function of the energy and rigidity of the cosmic rays, and is typically described by a power-law function: D = D₀(E/R)⁻α, where D₀ is a constant, E is the energy of the cosmic rays, R is the rigidity of the cosmic rays, and α is a power-law index.",
+          "section": "Methods"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "The observational evidence for cosmic-ray spectral modifications due to propagation through the galaxy comes from the Voyager 1 spacecraft, which has been measuring the cosmic-ray flux since its launch in 1977. The spacecraft has been traveling through the heliosphere and has provided valuable data on the cosmic-ray flux at different energies. The data from Voyager 1 have been used to constrain the parameters of the GALPROP code and to study the propagation of cosmic rays through the interstellar medium.",
+          "section": "Introduction"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "The quantitative differences in the cosmic-ray spectra at different energies or rigidities that can be attributed to propagation through the galaxy are: at low energies (E < 10 GeV), the cosmic-ray flux is dominated by the diffusion of cosmic rays in the interstellar medium, while at high energies (E > 10 GeV), the cosmic-ray flux is dominated by the convection of cosmic rays by the galactic wind. The diffusion coefficient D is a function of the energy and rigidity of the cosmic rays, and is typically described by a power-law function: D = D₀(E/R)⁻α.",
+          "section": "Results"
+        }
+      },
+      "key_snippet": "The GALPROP code provides a unified framework for interpreting data from various experiments and is used to describe direct cosmic-ray measurements and associated interstellar emissions.",
+      "key_findings": [
+        "The GALPROP code is a sophisticated cosmic-ray propagation code that has been developed for about 20 years.",
+        "The code has been updated to include new features and improvements, such as a 3D description of the interstellar medium and source distribution.",
+        "The diffusion coefficient D is a function of the energy and rigidity of the cosmic rays, and is typically described by a power-law function: D = D₀(E/R)⁻α."
+      ],
+      "methodology": "The GALPROP code uses a combination of numerical methods and analytical solutions to simulate the propagation of cosmic rays through the interstellar medium. The code includes a 3D description of the interstellar medium and source distribution, and uses a power-law function to describe the diffusion coefficient D.",
+      "q_total": 0.95,
+      "q_f": 0.875,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 48.36300826072693,
+      "pdf_pages": 6,
+      "n_sections": 10,
+      "added_at": "2026-07-25T23:51:19.640983",
+      "updated_at": "2026-07-25T23:51:19.640995",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "astro-ph-0002319": {
+      "arxiv_id": "astro-ph-0002319",
+      "title": "The paper presents He-like line ratios for totally and partially photoionized me",
+      "abstract": "",
+      "original_query": "What atomic processes drive the observed line ratios in photoionized nebulae?",
+      "subdomain": "atomic processes",
+      "paper_overview": "The paper presents He-like line ratios for totally and partially photoionized media, which can be used to determine the ionization processes involved in the plasma, as well as the density and electronic temperature. The ratios are already widely used for collisional plasma diagnostics, but can also be extended to study photoionized plasmas. The new generation of X-ray satellites will allow for high spectral resolution and high sensitivity observations, making it possible to measure these ratios for a large number of non-solar objects.",
+      "evidence_type": "observational",
+      "instruments": [
+        "Chandra",
+        "XMM-Newton"
+      ],
+      "key_equations": [
+        {
+          "equation": "R(ne) = (x + y) / z",
+          "variables": "x, y, z = intensities of resonance, intercombination, and forbidden lines"
+        },
+        {
+          "equation": "G(Te) = z + (x + y)",
+          "variables": "x, y, z = intensities of resonance, intercombination, and forbidden lines"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "electron density",
+          "value": "1.0e10",
+          "uncertainty": "±0.5e10",
+          "unit": "cm^-3"
+        },
+        {
+          "quantity": "electronic temperature",
+          "value": "1.0e6",
+          "uncertainty": "±0.5e6",
+          "unit": "K"
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "The primary atomic process responsible for ionizing the gas in photoionized nebulae is radiative recombination (RR), which is described by the equation: σnl(E) = 0.55597 Z^2 / (2(2l + 1)n^2) * γ(nl, l ± 1) * E. This process is sensitive to the photon energy E and the atomic number Z.",
+          "section": "Methods"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "The observed line ratios in photoionized nebulae that can be used to constrain atomic processes are the ratios of the resonance, intercombination, and forbidden lines of He-like ions. These ratios are sensitive to electron density and electronic temperature.",
+          "section": "Introduction"
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "The specific line ratio values observed in photoionized nebulae that can be used to test atomic processes are R(ne) = (x + y) / z and G(Te) = z + (x + y), where x, y, and z are the intensities of the resonance, intercombination, and forbidden lines, respectively.",
+          "section": "Introduction"
+        }
+      },
+      "key_snippet": "The ratios of these lines are already widely used for collisional (coronal) plasma diagnostics of various types of objects: solar flares, supernovae remnants, the interstellar medium and tokamak plasmas.",
+      "key_findings": [
+        "The ratios of the resonance, intercombination, and forbidden lines of He-like ions are sensitive to electron density and electronic temperature.",
+        "The new generation of X-ray satellites will allow for high spectral resolution and high sensitivity observations."
+      ],
+      "methodology": "The authors used the method of Bely-Dubau et al. (1982a) to calculate the radiative recombination rates for He-like ions. They also used the Burgess (1958) formulae to calculate the photoionization cross-sections.",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 109.92538833618164,
+      "pdf_pages": 24,
+      "n_sections": 8,
+      "added_at": "2026-07-25T23:54:13.326897",
+      "updated_at": "2026-07-25T23:54:13.326909",
+      "view_count": 0,
+      "chat_sessions": []
+    },
+    "0708.3388": {
+      "arxiv_id": "0708.3388",
+      "title": "The paper discusses the use of radio recombination lines to estimate the densiti",
+      "abstract": "",
+      "original_query": "How are recombination lines used to measure temperatures and densities in HII regions?",
+      "subdomain": "atomic processes",
+      "paper_overview": "The paper discusses the use of radio recombination lines to estimate the densities and velocities of ionized gas in hypercompact and ultracompact HII regions. These regions are thought to be at their earliest evolutionary phase and associated with the youngest massive stars. The observations suggest that these HII regions are characterized by high densities, supersonic flows, and steep density gradients. The paper presents a method to estimate the separate contributions of thermal, dynamical, and pressure broadening to the line widths.",
+      "evidence_type": "observational",
+      "instruments": [
+        "SMA",
+        "VLA"
+      ],
+      "key_equations": [
+        {
+          "equation": "∆ν ∼ ν^(-4)",
+          "variables": "ν=frequency, ∆ν=width due to pressure broadening"
+        },
+        {
+          "equation": "∆ν^2 = ∆ν_G^2 + ∆ν_T^2 + ∆ν_P^2",
+          "variables": "∆ν_G=width due to gas motions, ∆ν_T=width due to thermal broadening, ∆ν_P=width due to pressure broadening"
+        }
+      ],
+      "numerical_results": [
+        {
+          "quantity": "electron density",
+          "value": "10^5 cm^(-3)",
+          "uncertainty": "±0.1e5 cm^(-3)",
+          "unit": "cm^(-3)"
+        },
+        {
+          "quantity": "temperature",
+          "value": "8000 K",
+          "uncertainty": "±1000 K",
+          "unit": "K"
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "answer_text": "The physical process by which recombination lines are emitted in HII regions is through the collisional excitation of hydrogen atoms by free electrons. The recombination lines are broadened by three contributions: thermal broadening, dynamical broadening due to spatially unresolved motions in the HII region, and pressure broadening due to high electron densities. The width due to thermal and dynamical broadening is independent of frequency, while the width due to pressure broadening decreases with frequency as ∆ν ∼ ν^(-4) (Brocklehurst & Seaton 1972; Griem 1974).",
+          "section": "Gas velocities, pressure broadening, and electron densities"
+        },
+        "Q2": {
+          "answered": true,
+          "answer_text": "The observational evidence or data used to detect and analyze recombination lines in HII regions includes the SMA observations of the H30α line in the HII regions G10.6-0.04, NGC7538-IRS1, W51e2, and G28.20-0.04, which were made in 2005 September with a spectral resolution of 0.83 km s^(-1), a bandwidth of 2 GHz, and an angular resolution of 1.0′′.",
+          "section": "The SMA observations of the H30α line (231.900959 GHz) in the HII regions G10.6-0.04, NGC7538-IRS1, W51e2, and G28.20-0.04 were made in 2005 September with a spectral resolution of 0.83 km s^(-1), a bandwidth of 2 GHz, and an angular resolution of 1.0′′."
+        },
+        "Q3": {
+          "answered": true,
+          "answer_text": "The typical temperature and density ranges that can be measured using recombination lines in HII regions are 8000 K and 10^5 cm^(-3), respectively. The electron density is estimated to be 10^5 cm^(-3) based on the observed line widths and the equation ∆ν^2 = ∆ν_G^2 + ∆ν_T^2 + ∆ν_P^2.",
+          "section": "Gas velocities, pressure broadening, and electron densities"
+        }
+      },
+      "key_snippet": "The SMA observations of the H30α line (231.900959 GHz) in the HII regions G10.6-0.04, NGC7538-IRS1, W51e2, and G28.20-0.04 were made in 2005 September with a spectral resolution of 0.83 km s^(-1), a bandwidth of 2 GHz, and an angular resolution of 1.0′′.",
+      "key_findings": [
+        "The electron density is estimated to be 10^5 cm^(-3) based on the observed line widths.",
+        "The temperature is estimated to be 8000 K based on the observed line widths."
+      ],
+      "methodology": "The paper presents a method to estimate the separate contributions of thermal, dynamical, and pressure broadening to the line widths. The method involves comparing the widths of RRL observed at different frequencies.",
+      "q_total": 1.0,
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "decision": "ACCEPT",
+      "total_seconds": 53.83302307128906,
+      "pdf_pages": 25,
+      "n_sections": 12,
+      "added_at": "2026-07-25T23:56:16.866924",
+      "updated_at": "2026-07-25T23:56:16.866935",
       "view_count": 0,
       "chat_sessions": []
     }
