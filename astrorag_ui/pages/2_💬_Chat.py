@@ -1,30 +1,38 @@
 """
-Chat page — follow-up Q&A on a selected paper.
+💬 Research Chat — deep Q&A on a selected paper.
 
-The LLM (Groq LLaMA-3.1-8B) is called with the paper's summary,
-equations, numerical results, and methodology as context.
-No retrieval happens here — only follow-up conversation on
-already-processed papers.
+Uses the chat_assist module for:
+- Research-oriented system prompt (methodology, derivation, critique focus)
+- Question template library grouped by category
+- Section-aware paper context retrieval
+- Larger max_tokens for detailed answers
+- Automatic 70B model for depth, with 8B fallback
 """
 
-from pathlib import Path
-import json
-import os
+import sys
+from   pathlib import Path
 
+# make sibling chat_assist package importable
+_root = Path(__file__).parent.parent
+if str(_root) not in sys.path:
+    sys.path.insert(0, str(_root))
+
+import json
 import streamlit as st
 
-try:
-    from groq import Groq
-    HAS_GROQ = True
-except ImportError:
-    HAS_GROQ = False
+from chat_assist.question_templates import get_templates_by_category
+from chat_assist.qa_engine          import ResearchPaperQA
 
 
-st.set_page_config(page_title="AstroRAG — Chat", page_icon="💬", layout="wide")
+st.set_page_config(
+    page_title = "AstroRAG — Research Chat",
+    page_icon  = "💬",
+    layout     = "wide",
+)
 
 
 # ══════════════════════════════════════════════════════════
-# data
+# data loading
 # ══════════════════════════════════════════════════════════
 
 DATA_DIR = Path(__file__).parent.parent / "data"
@@ -41,29 +49,42 @@ def load_library():
 
 
 library = load_library()
-
 if not library:
     st.error("Context library is empty.")
     st.stop()
 
 
 # ══════════════════════════════════════════════════════════
-# session
+# session state
 # ══════════════════════════════════════════════════════════
 
 if "current_arxiv_id" not in st.session_state:
     st.session_state.current_arxiv_id = None
 if "chat_messages" not in st.session_state:
     st.session_state.chat_messages = []
+if "chat_model" not in st.session_state:
+    st.session_state.chat_model = "llama-3.3-70b-versatile"
 
 
 # ══════════════════════════════════════════════════════════
-# paper selection
+# header
 # ══════════════════════════════════════════════════════════
 
-st.markdown("# 💬 Chat with a Paper")
+st.markdown("""
+<div style="background:linear-gradient(90deg, #1e3a5f, #2c5282);
+            color:white; padding:20px; border-radius:12px; margin-bottom:20px;">
+  <h1 style="margin:0;">💬 Research Chat</h1>
+  <p style="margin:8px 0 0 0; opacity:0.9;">
+    Ask deep methodological, quantitative, and comparative questions about any paper.
+  </p>
+</div>
+""", unsafe_allow_html=True)
 
+
+# ══════════════════════════════════════════════════════════
 # paper selector
+# ══════════════════════════════════════════════════════════
+
 sorted_entries = sorted(library.values(), key=lambda x: x.get("q_total", 0), reverse=True)
 paper_options = {
     f"arXiv:{e['arxiv_id']} — {(e.get('title') or e.get('original_query', ''))[:70]}":
@@ -79,13 +100,12 @@ if st.session_state.current_arxiv_id:
             break
 
 selected_label = st.selectbox(
-    "Select a paper to chat with",
+    "Select a paper to analyze",
     list(paper_options.keys()),
-    index=default_idx,
+    index = default_idx,
 )
 selected_arxiv = paper_options[selected_label]
 
-# if selection changed, reset chat
 if selected_arxiv != st.session_state.current_arxiv_id:
     st.session_state.current_arxiv_id = selected_arxiv
     st.session_state.chat_messages = []
@@ -94,182 +114,92 @@ entry = library[selected_arxiv]
 
 
 # ══════════════════════════════════════════════════════════
-# header
+# paper summary card
 # ══════════════════════════════════════════════════════════
 
 col1, col2 = st.columns([4, 1])
+
 with col1:
     st.markdown(f"""
-Chatting with **arXiv:{selected_arxiv}**
+**Analyzing arXiv:{selected_arxiv}**
 
-_Query: {entry.get('original_query', '')}_
+_Original query: {entry.get('original_query', '')}_
 """)
 
 with col2:
-    if st.button("🔄 Reset chat", use_container_width=True):
+    if st.button("🔄 Reset chat", width="stretch"):
         st.session_state.chat_messages = []
         st.rerun()
 
 
-# quick metadata
 mc1, mc2, mc3, mc4 = st.columns(4)
-mc1.metric("Q_total", f"{entry.get('q_total', 0):.3f}")
-mc2.metric("Decision", entry.get("decision", ""))
+mc1.metric("Q_total",   f"{entry.get('q_total', 0):.3f}")
+mc2.metric("Decision",  entry.get("decision", ""))
 mc3.metric("Equations", len(entry.get("key_equations", [])))
 mc4.metric("Numerical", len(entry.get("numerical_results", [])))
+
+st.divider()
+
+
+# ══════════════════════════════════════════════════════════
+# question templates panel
+# ══════════════════════════════════════════════════════════
+
+with st.expander("📚 Research question templates (click to insert)", expanded=len(st.session_state.chat_messages) == 0):
+    st.caption(
+        "These are the questions researchers actually ask. Click any to "
+        "load into your input box — you can edit before sending."
+    )
+
+    templates_by_cat = get_templates_by_category()
+
+    for category, templates in templates_by_cat.items():
+        st.markdown(f"**{category}**")
+        cols = st.columns(2)
+        for i, tmpl in enumerate(templates):
+            with cols[i % 2]:
+                depth_badge = {
+                    "basic":    "🟢",
+                    "medium":   "🟡",
+                    "advanced": "🔴",
+                }.get(tmpl.depth, "")
+                if st.button(
+                    f"{depth_badge} {tmpl.text}",
+                    key = f"tmpl_{category}_{i}",
+                    width = "stretch",
+                ):
+                    st.session_state["chat_prefilled"] = tmpl.text
+                    st.rerun()
 
 
 st.divider()
 
 
 # ══════════════════════════════════════════════════════════
-# LLM setup — Groq
-# ══════════════════════════════════════════════════════════
-
-def get_groq_client():
-    """Get Groq client, checking env / secrets."""
-    # try Streamlit secrets first
-    try:
-        api_key = st.secrets.get("GROQ_API_KEY")
-    except Exception:
-        api_key = None
-
-    # fall back to env
-    if not api_key:
-        api_key = os.environ.get("GROQ_API_KEY", "")
-
-    if not api_key:
-        return None
-    return Groq(api_key=api_key)
-
-
-def build_paper_context(entry: dict) -> str:
-    """Assemble paper context block for LLM prompt."""
-    parts = [
-        f"PAPER: arXiv:{entry['arxiv_id']}",
-        f"TITLE: {entry.get('title', '')}",
-        f"",
-        f"OVERVIEW: {entry.get('paper_overview', '')}",
-        f"",
-        f"EVIDENCE TYPE: {entry.get('evidence_type', '')}",
-    ]
-    if entry.get("instruments"):
-        parts.append(f"INSTRUMENTS: {', '.join(entry['instruments'])}")
-    parts.append("")
-
-    if entry.get("key_equations"):
-        parts.append("KEY EQUATIONS:")
-        for eq in entry["key_equations"][:10]:
-            parts.append(f"  - {eq.get('equation', '')} (variables: {eq.get('variables', '')})")
-        parts.append("")
-
-    if entry.get("numerical_results"):
-        parts.append("NUMERICAL RESULTS:")
-        for nr in entry["numerical_results"][:15]:
-            parts.append(f"  - {nr.get('quantity', '')} = {nr.get('value', '')} "
-                         f"± {nr.get('uncertainty', '')} {nr.get('unit', '')}")
-        parts.append("")
-
-    if entry.get("sub_question_answers"):
-        parts.append("SUB-QUESTION ANSWERS:")
-        for qk, sqa in entry["sub_question_answers"].items():
-            if sqa.get("answered"):
-                parts.append(f"  {qk} ({sqa.get('section', '')}): "
-                             f"{sqa.get('answer_text', '')[:400]}")
-        parts.append("")
-
-    if entry.get("methodology"):
-        parts.append(f"METHODOLOGY: {entry['methodology'][:600]}")
-        parts.append("")
-
-    if entry.get("key_snippet"):
-        parts.append(f"KEY SNIPPET: \"{entry['key_snippet']}\"")
-
-    return "\n".join(parts)
-
-
-SYSTEM_PROMPT = (
-    "You are an expert astrophysicist answering follow-up questions about a "
-    "specific paper the user has retrieved. Use the paper's summary, equations, "
-    "and numerical results provided in the context to answer precisely and "
-    "quantitatively. If the answer is not in the context, say so clearly. "
-    "Do not invent data. Cite section names when relevant. "
-    "Keep answers focused and technical."
-)
-
-
-def ask_groq(question: str, entry: dict, history: list) -> str:
-    """Send a follow-up question to Groq."""
-    client = get_groq_client()
-    if client is None:
-        return ("⚠ GROQ_API_KEY not configured. Add it to `.streamlit/secrets.toml` "
-                "or set as environment variable.")
-
-    context = build_paper_context(entry)
-
-    # build conversation
-    messages = [{"role": "system", "content": SYSTEM_PROMPT}]
-    messages.append({
-        "role":    "user",
-        "content": f"CONTEXT ABOUT THE PAPER:\n\n{context}\n\n"
-                   f"I will now ask you follow-up questions about this paper.",
-    })
-    messages.append({
-        "role":    "assistant",
-        "content": f"Understood. I have the paper's summary, equations, "
-                   f"numerical results, and methodology. Ask your question.",
-    })
-
-    for msg in history[:-1]:  # exclude the just-added user question
-        messages.append({"role": msg["role"], "content": msg["content"]})
-
-    messages.append({"role": "user", "content": question})
-
-    try:
-        response = client.chat.completions.create(
-            model       = "llama-3.1-8b-instant",
-            messages    = messages,
-            temperature = 0.0,
-            max_tokens  = 800,
-        )
-        return response.choices[0].message.content.strip()
-    except Exception as e:
-        return f"⚠ LLM error: {type(e).__name__}: {e}"
-
-
-# ══════════════════════════════════════════════════════════
 # chat display
 # ══════════════════════════════════════════════════════════
-
-if not HAS_GROQ:
-    st.warning("`groq` package not installed. Install with `pip install groq`.")
-    st.stop()
-
 
 if not st.session_state.chat_messages:
     with st.chat_message("assistant", avatar="🤖"):
         st.markdown(f"""
-Hello! I'm ready to answer follow-up questions about **arXiv:{selected_arxiv}**.
+Ready to analyze **arXiv:{selected_arxiv}** in depth.
 
-I have access to:
-- The paper's overview and methodology
-- **{len(entry.get('key_equations', []))}** extracted equations
-- **{len(entry.get('numerical_results', []))}** numerical measurements
-- Sub-question answers with section attribution
-- Key verbatim snippets
+**I can help you with:**
+- **Methodology:** sample selection, calibration, systematic errors, assumptions
+- **Results:** exact numerical values, uncertainties, scaling relations
+- **Derivations:** walk through equations step by step, explain physical reasoning
+- **Comparisons:** relate this paper's approach to others (when cited)
+- **Critical analysis:** limitations, failure modes, alternative interpretations
+- **Extensions:** what would resolve open questions, follow-up observations
 
-**Try asking:**
+**I will:**
+- ✓ Cite section names when I make claims
+- ✓ Distinguish what the paper explicitly states from what I'm inferring
+- ✓ Clearly say "the paper does not address this" when it doesn't
+- ✓ Show reasoning and derivations when asked
+
+Use the **question templates above** for depth, or type your own question.
 """)
-        # subject-appropriate suggestions
-        suggestions = [
-            "What are the key equations in this paper?",
-            "What numerical values did the paper measure?",
-            "What instruments were used?",
-            "Explain the methodology in simple terms.",
-            "What are the main limitations?",
-        ]
-        for s in suggestions:
-            st.markdown(f"- _{s}_")
 
 
 # display messages
@@ -278,21 +208,73 @@ for msg in st.session_state.chat_messages:
     with st.chat_message(msg["role"], avatar=avatar):
         st.markdown(msg["content"])
 
+        # show metadata if present
+        if msg.get("metadata"):
+            m = msg["metadata"]
+            st.caption(
+                f"_Intent: **{m['intent']}** &nbsp;•&nbsp; "
+                f"Context: {m['context_chars']} chars &nbsp;•&nbsp; "
+                f"Model: {m['model_used']}_"
+            )
 
+
+# ══════════════════════════════════════════════════════════
 # input
-question = st.chat_input(f"Ask about arXiv:{selected_arxiv}...")
+# ══════════════════════════════════════════════════════════
+
+prefilled = st.session_state.pop("chat_prefilled", "")
+question = st.chat_input(
+    f"Ask a research question about arXiv:{selected_arxiv}...",
+)
+
+# handle prefilled from template
+if prefilled and not question:
+    question = prefilled
 
 if question:
-    st.session_state.chat_messages.append({"role": "user", "content": question})
+    st.session_state.chat_messages.append({
+        "role":    "user",
+        "content": question,
+    })
     with st.chat_message("user", avatar="👤"):
         st.markdown(question)
 
     with st.chat_message("assistant", avatar="🤖"):
-        with st.spinner("Thinking..."):
-            answer = ask_groq(question, entry, st.session_state.chat_messages)
-        st.markdown(answer)
+        with st.spinner("Analyzing paper..."):
+            history = [
+                {"role": m["role"], "content": m["content"]}
+                for m in st.session_state.chat_messages[:-1]
+            ]
+            qa = ResearchPaperQA(
+                library_entry = entry,
+                history       = history,
+                model         = st.session_state.chat_model,
+            )
+            result = qa.ask(question)
 
-    st.session_state.chat_messages.append({"role": "assistant", "content": answer})
+        if result.error:
+            st.error(f"⚠ {result.error}")
+            answer = f"Error: {result.error}"
+            metadata = None
+        else:
+            st.markdown(result.answer)
+            st.caption(
+                f"_Intent: **{result.intent}** &nbsp;•&nbsp; "
+                f"Context: {result.context_chars} chars &nbsp;•&nbsp; "
+                f"Model: {result.model_used}_"
+            )
+            answer = result.answer
+            metadata = {
+                "intent":        result.intent,
+                "context_chars": result.context_chars,
+                "model_used":    result.model_used,
+            }
+
+    st.session_state.chat_messages.append({
+        "role":     "assistant",
+        "content":  answer,
+        "metadata": metadata,
+    })
 
 
 # ══════════════════════════════════════════════════════════
@@ -300,6 +282,34 @@ if question:
 # ══════════════════════════════════════════════════════════
 
 with st.sidebar:
+    st.markdown("### 💬 Research Chat")
+    st.caption(
+        "This chat is optimized for deep, technical questions about "
+        "the selected paper — not casual summaries. Each answer is "
+        "grounded in the paper's summary, equations, numerical values, "
+        "and methodology."
+    )
+
+    st.divider()
+
+    st.markdown("### Model")
+    model_choice = st.radio(
+        "LLM for answers",
+        options = [
+            "llama-3.3-70b-versatile",
+            "llama-3.1-8b-instant",
+        ],
+        index = 0,
+        help = (
+            "70B produces deeper, more detailed answers but is slower. "
+            "8B is fast but shallower. Recommendation: 70B for methodology "
+            "and derivations, 8B for quick lookups."
+        ),
+    )
+    st.session_state.chat_model = model_choice
+
+    st.divider()
+
     st.markdown("### Current Paper")
     st.success(f"**arXiv:{selected_arxiv}**")
     st.caption(entry.get("original_query", "")[:100])
@@ -309,11 +319,15 @@ with st.sidebar:
     st.markdown("### Session")
     st.metric("Messages", len(st.session_state.chat_messages))
 
-    st.divider()
-
-    st.markdown("### About")
-    st.caption(
-        "Chat uses Groq's LLaMA-3.1-8B model with the paper's structured "
-        "summary as context. No retrieval happens here — only follow-up "
-        "Q&A on the already-processed paper."
-    )
+    if st.button("💾 Export chat", width="stretch"):
+        chat_json = json.dumps({
+            "arxiv_id": selected_arxiv,
+            "messages": st.session_state.chat_messages,
+        }, indent=2)
+        st.download_button(
+            "Download chat.json",
+            chat_json,
+            file_name=f"chat_{selected_arxiv}.json",
+            mime="application/json",
+            width="stretch",
+        )
