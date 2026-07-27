@@ -29,20 +29,20 @@
         {
           "quantity": "jet power",
           "value": "1.2e46",
-          "uncertainty": "±0.3e46",
+          "uncertainty": "\u00b10.3e46",
           "unit": "erg/s"
         },
         {
           "quantity": "cavity enthalpy",
           "value": "1e60",
-          "uncertainty": "±0.5e60",
+          "uncertainty": "\u00b10.5e60",
           "unit": "erg"
         }
       ],
       "sub_question_answers": {
         "Q1": {
           "answered": true,
-          "answer_text": "The theoretical mechanism by which AGN jets interact with the intracluster medium to produce X-ray cavities is through the expansion of low-density, hot plasma originating from the AGN, which inflates a bubble in the ICM. The low-density plasma produces a decrement in the line of sight intensity through the cavity from the normal ICM X-ray emission. The cavities produce roughly elliptical brightness depressions ∼20% to 40% below the surrounding regions.",
+          "answer_text": "The theoretical mechanism by which AGN jets interact with the intracluster medium to produce X-ray cavities is through the expansion of low-density, hot plasma originating from the AGN, which inflates a bubble in the ICM. The low-density plasma produces a decrement in the line of sight intensity through the cavity from the normal ICM X-ray emission. The cavities produce roughly elliptical brightness depressions \u223c20% to 40% below the surrounding regions.",
           "section": "Discussion"
         },
         "Q2": {
@@ -89,26 +89,26 @@
       ],
       "key_equations": [
         {
-          "equation": "Tvir = µmpσ^2 / k",
+          "equation": "Tvir = \u00b5mp\u03c3^2 / k",
           "variables": "P=pressure, V=cavity volume"
         },
         {
-          "equation": "Tvir = 7.1 × 10^7σ^2 / 1000 K",
-          "variables": "σ = line-of-sight velocity dispersion"
+          "equation": "Tvir = 7.1 \u00d7 10^7\u03c3^2 / 1000 K",
+          "variables": "\u03c3 = line-of-sight velocity dispersion"
         }
       ],
       "numerical_results": [
         {
           "quantity": "virial temperature",
-          "value": "7.1 × 10^7",
-          "uncertainty": "±0",
+          "value": "7.1 \u00d7 10^7",
+          "uncertainty": "\u00b10",
           "unit": "K"
         },
         {
           "quantity": "cooling rate",
           "value": "10^11 - 10^13",
-          "uncertainty": "±0",
-          "unit": "M⊙/yr"
+          "uncertainty": "\u00b10",
+          "unit": "M\u2299/yr"
         }
       ],
       "sub_question_answers": {
@@ -124,14 +124,14 @@
         },
         "Q3": {
           "answered": true,
-          "answer_text": "The typical cooling rates or mass deposition rates observed in galaxy clusters with cooling flows are not well constrained, but some clusters have cooling rates of ∼ 10^11 - 10^13 M⊙/yr.",
+          "answer_text": "The typical cooling rates or mass deposition rates observed in galaxy clusters with cooling flows are not well constrained, but some clusters have cooling rates of \u223c 10^11 - 10^13 M\u2299/yr.",
           "section": "The Trouble with Cooling Flows"
         }
       },
       "key_snippet": "high-resolution spectroscopic observations from XMM-Newton and Chandra have conclusively ruled out simple, steady cooling flow models.",
       "key_findings": [
-        "virial temperature Tvir = 7.1 × 10^7σ^2 / 1000 K",
-        "cooling rate ∼ 10^11 - 10^13 M⊙/yr"
+        "virial temperature Tvir = 7.1 \u00d7 10^7\u03c3^2 / 1000 K",
+        "cooling rate \u223c 10^11 - 10^13 M\u2299/yr"
       ],
       "methodology": "The authors review the history of the cooling flow hypothesis, discuss the current status of X-ray observations, and present recent models that have been proposed to explain why the core gas does not simply cool and condense.",
       "q_total": 1.0,
@@ -153,28 +153,28 @@
       "abstract": "",
       "original_query": "What is the relationship between galaxy stellar mass and central supermassive black hole mass?",
       "subdomain": "BH scaling",
-      "paper_overview": "This paper presents a correlation between the mass of central black holes and the luminosity-weighted line-of-sight velocity dispersion within the half-light radius of galaxies. The result is based on a sample of 26 galaxies with new determinations of black hole masses from Hubble Space Telescope measurements of stellar kinematics. The correlation is M• = 1.2 × 10^8 M⊙ (σe / 200 km s^-1)^3.75, with a correlation coefficient of 0.93. The scatter in M• at fixed σe is only 0.4 dex, most of which is due to observational errors.",
+      "paper_overview": "This paper presents a correlation between the mass of central black holes and the luminosity-weighted line-of-sight velocity dispersion within the half-light radius of galaxies. The result is based on a sample of 26 galaxies with new determinations of black hole masses from Hubble Space Telescope measurements of stellar kinematics. The correlation is M\u2022 = 1.2 \u00d7 10^8 M\u2299 (\u03c3e / 200 km s^-1)^3.75, with a correlation coefficient of 0.93. The scatter in M\u2022 at fixed \u03c3e is only 0.4 dex, most of which is due to observational errors.",
       "evidence_type": "observational",
       "instruments": [
         "Hubble Space Telescope"
       ],
       "key_equations": [
         {
-          "equation": "M• = 1.2 × 10^8 M⊙ (σe / 200 km s^-1)^3.75",
-          "variables": "M• = black hole mass, σe = velocity dispersion"
+          "equation": "M\u2022 = 1.2 \u00d7 10^8 M\u2299 (\u03c3e / 200 km s^-1)^3.75",
+          "variables": "M\u2022 = black hole mass, \u03c3e = velocity dispersion"
         }
       ],
       "numerical_results": [
         {
           "quantity": "correlation coefficient",
           "value": "0.93",
-          "uncertainty": "±0.01",
+          "uncertainty": "\u00b10.01",
           "unit": ""
         },
         {
-          "quantity": "scatter in M• at fixed σe",
+          "quantity": "scatter in M\u2022 at fixed \u03c3e",
           "value": "0.4",
-          "uncertainty": "±0.1",
+          "uncertainty": "\u00b10.1",
           "unit": "dex"
         }
       ],
@@ -191,15 +191,15 @@
         },
         "Q3": {
           "answered": true,
-          "answer_text": "The quantitative measurements or numerical results of the relationship between galaxy stellar mass and central supermassive black hole mass are: M• = 1.2 × 10^8 M⊙ (σe / 200 km s^-1)^3.75, with a correlation coefficient of 0.93 and a scatter in M• at fixed σe of 0.4 dex.",
+          "answer_text": "The quantitative measurements or numerical results of the relationship between galaxy stellar mass and central supermassive black hole mass are: M\u2022 = 1.2 \u00d7 10^8 M\u2299 (\u03c3e / 200 km s^-1)^3.75, with a correlation coefficient of 0.93 and a scatter in M\u2022 at fixed \u03c3e of 0.4 dex.",
           "section": "Results"
         }
       },
       "key_snippet": "The correlation is extremely strong, with a correlation coefficient of 0.93.",
       "key_findings": [
-        "M• ∝ σ^3.75",
+        "M\u2022 \u221d \u03c3^3.75",
         "correlation coefficient of 0.93",
-        "scatter in M• at fixed σe of 0.4 dex"
+        "scatter in M\u2022 at fixed \u03c3e of 0.4 dex"
       ],
       "methodology": "The authors used a sample of 26 galaxies with new determinations of black hole masses from Hubble Space Telescope measurements of stellar kinematics to investigate the relationship between black hole mass and velocity dispersion.",
       "q_total": 1.0,
@@ -229,15 +229,15 @@
       ],
       "key_equations": [
         {
-          "equation": "logMBH = α+β(1 +z)φlog(σ/σ0)",
-          "variables": "α, β, φ, σ, σ0, z"
+          "equation": "logMBH = \u03b1+\u03b2(1 +z)\u03c6log(\u03c3/\u03c30)",
+          "variables": "\u03b1, \u03b2, \u03c6, \u03c3, \u03c30, z"
         }
       ],
       "numerical_results": [
         {
           "quantity": "scatter in the local M-sigma relation",
           "value": "0.25 - 0.3",
-          "uncertainty": "±0.1",
+          "uncertainty": "\u00b10.1",
           "unit": "dex"
         }
       ],
@@ -254,11 +254,11 @@
         },
         "Q3": {
           "answered": true,
-          "answer_text": "The typical values of the M-sigma slope and scatter are α = 4.0 and ∆logMBH = 0.25 - 0.3, respectively. The scatter in the local relation places severe constraints on the redshift evolution of both the normalization and slope of the M-sigma relation.",
+          "answer_text": "The typical values of the M-sigma slope and scatter are \u03b1 = 4.0 and \u2206logMBH = 0.25 - 0.3, respectively. The scatter in the local relation places severe constraints on the redshift evolution of both the normalization and slope of the M-sigma relation.",
           "section": "Results"
         }
       },
-      "key_snippet": "The focus of our present work is to characterize the development of the MBH−σ relation over cosmic time with a large set of hydrodynamic simulations of galaxy mergers that include star formation and feedback from the growth of supermassive black holes.",
+      "key_snippet": "The focus of our present work is to characterize the development of the MBH\u2212\u03c3 relation over cosmic time with a large set of hydrodynamic simulations of galaxy mergers that include star formation and feedback from the growth of supermassive black holes.",
       "key_findings": [
         "The slope of the M-sigma relation is the same at all redshifts considered.",
         "The normalization of the M-sigma relation experiences a weak redshift scaling.",
@@ -292,14 +292,14 @@
       ],
       "key_equations": [
         {
-          "equation": "mcorr = moriginal −∆m, and m = a + v · b, where a and b are the best-fit parameters, v",
-          "variables": "mcorr=corrected magnitude, moriginal=original magnitude, ∆m=magnitude offset, a=best-fit parameter, b=best-fit parameter, v=variable"
+          "equation": "mcorr = moriginal \u2212\u2206m, and m = a + v \u00b7 b, where a and b are the best-fit parameters, v",
+          "variables": "mcorr=corrected magnitude, moriginal=original magnitude, \u2206m=magnitude offset, a=best-fit parameter, b=best-fit parameter, v=variable"
         }
       ],
       "numerical_results": [
         {
           "quantity": "RMS scatter in per-pixel mean redshift",
-          "value": "1% −14%",
+          "value": "1% \u221214%",
           "uncertainty": "",
           "unit": ""
         },
@@ -363,44 +363,44 @@
       "instruments": [],
       "key_equations": [
         {
-          "equation": "tUH0 = Ωm(1 + z)3 + ΩΛ(1 + z)3(1−w) + Ωk(1 + z)2",
-          "variables": "Ωm=physical matter density, ΩΛ=dark energy density, Ωk=curvature, w=equation of state parameter for dark energy, z=redshift"
+          "equation": "tUH0 = \u2126m(1 + z)3 + \u2126\u039b(1 + z)3(1\u2212w) + \u2126k(1 + z)2",
+          "variables": "\u2126m=physical matter density, \u2126\u039b=dark energy density, \u2126k=curvature, w=equation of state parameter for dark energy, z=redshift"
         }
       ],
       "numerical_results": [
         {
           "quantity": "Hubble constant",
           "value": "73.8",
-          "uncertainty": "±2.4",
-          "unit": "Km s−1Mpc−1"
+          "uncertainty": "\u00b12.4",
+          "unit": "Km s\u22121Mpc\u22121"
         },
         {
           "quantity": "Hubble constant",
           "value": "74.08",
-          "uncertainty": "±2.25",
-          "unit": "Km s−1Mpc−1"
+          "uncertainty": "\u00b12.25",
+          "unit": "Km s\u22121Mpc\u22121"
         },
         {
           "quantity": "age of the Universe",
           "value": "14.61",
-          "uncertainty": "±0.8",
+          "uncertainty": "\u00b10.8",
           "unit": "Gyr"
         }
       ],
       "sub_question_answers": {
         "Q1": {
           "answered": true,
-          "answer_text": "The primary physical process by which the cosmic microwave background (CMB) interacts with the Hubble constant is through the expansion rate of the Universe, which is described by the equation tUH0 = Ωm(1 + z)3 + ΩΛ(1 + z)3(1−w) + Ωk(1 + z)2, where w is the equation of state parameter for the dark energy.",
+          "answer_text": "The primary physical process by which the cosmic microwave background (CMB) interacts with the Hubble constant is through the expansion rate of the Universe, which is described by the equation tUH0 = \u2126m(1 + z)3 + \u2126\u039b(1 + z)3(1\u2212w) + \u2126k(1 + z)2, where w is the equation of state parameter for the dark energy.",
           "section": "Observations"
         },
         "Q2": {
           "answered": true,
-          "answer_text": "The observational evidence from CMB measurements that supports or contradicts the Hubble constant's value is the agreement between the locally measured Hubble constant and the corresponding parameter derived from the CMB. The two measurements are remarkably close to each other, oﬀering high conﬁdence in the result.",
+          "answer_text": "The observational evidence from CMB measurements that supports or contradicts the Hubble constant's value is the agreement between the locally measured Hubble constant and the corresponding parameter derived from the CMB. The two measurements are remarkably close to each other, o\ufb00ering high con\ufb01dence in the result.",
           "section": "Observations"
         },
         "Q3": {
           "answered": true,
-          "answer_text": "The specific numerical constraints on the Hubble constant derived from CMB measurements in the optical wavelength regime are H0 = 73.8±2.4 Km s−1Mpc−1 and H0 = 74.08 ± 2.25 Km s−1Mpc−1.",
+          "answer_text": "The specific numerical constraints on the Hubble constant derived from CMB measurements in the optical wavelength regime are H0 = 73.8\u00b12.4 Km s\u22121Mpc\u22121 and H0 = 74.08 \u00b1 2.25 Km s\u22121Mpc\u22121.",
           "section": "Results"
         }
       },
@@ -434,26 +434,26 @@
       "instruments": [],
       "key_equations": [
         {
-          "equation": "kA = 2π/s",
+          "equation": "kA = 2\u03c0/s",
           "variables": "kA = baryon acoustic oscillation scale, s = sound horizon at recombination"
         },
         {
-          "equation": "s = ∫[ar, aeq] cs(a + aeq)1/2 da / H0 Ω1/2 0 m",
-          "variables": "s = sound horizon at recombination, ar = scale factor at recombination, aeq = scale factor at matter-radiation equality, cs = speed of sound, H0 = Hubble constant, Ω0 = matter density parameter"
+          "equation": "s = \u222b[ar, aeq] cs(a + aeq)1/2 da / H0 \u21261/2 0 m",
+          "variables": "s = sound horizon at recombination, ar = scale factor at recombination, aeq = scale factor at matter-radiation equality, cs = speed of sound, H0 = Hubble constant, \u21260 = matter density parameter"
         }
       ],
       "numerical_results": [
         {
           "quantity": "baryon acoustic oscillation scale",
           "value": "0.0601",
-          "uncertainty": "±0",
-          "unit": "h Mpc−1"
+          "uncertainty": "\u00b10",
+          "unit": "h Mpc\u22121"
         },
         {
           "quantity": "sound horizon at recombination",
           "value": "100",
-          "uncertainty": "±0",
-          "unit": "h−1 Mpc"
+          "uncertainty": "\u00b10",
+          "unit": "h\u22121 Mpc"
         }
       ],
       "sub_question_answers": {
@@ -469,14 +469,14 @@
         },
         "Q3": {
           "answered": true,
-          "answer_text": "The typical value of the baryon acoustic oscillation scale is kA ≈ 0.0601 h Mpc−1, which is related to the dark energy equation of state parameter w through the sound horizon at recombination, s ≈ 100 h−1 Mpc.",
+          "answer_text": "The typical value of the baryon acoustic oscillation scale is kA \u2248 0.0601 h Mpc\u22121, which is related to the dark energy equation of state parameter w through the sound horizon at recombination, s \u2248 100 h\u22121 Mpc.",
           "section": "Results"
         }
       },
       "key_snippet": "The baryonic oscillations expected in the galaxy power spectrum may be used as a 'standard cosmological ruler' to facilitate accurate measurement of the cosmological equation of state.",
       "key_findings": [
         "The baryon acoustic oscillation scale is a 'standard cosmological ruler' that can be used to measure the cosmological equation of state.",
-        "A survey of three times the Sloan volume at z ≈ 1 can produce a measurement with accuracy ∆w ≈ 0.1."
+        "A survey of three times the Sloan volume at z \u2248 1 can produce a measurement with accuracy \u2206w \u2248 0.1."
       ],
       "methodology": "The authors propose a method to measure the oscillation 'wavelength' in Fourier space, which is fixed by fundamental linear physics in the early Universe.",
       "q_total": 1.0,
@@ -503,16 +503,16 @@
       "instruments": [],
       "key_equations": [
         {
-          "equation": "g = 2σgsq",
-          "variables": "g=gravitational force, σg=velocity dispersion of gas, s=scale length of gas disk"
+          "equation": "g = 2\u03c3gsq",
+          "variables": "g=gravitational force, \u03c3g=velocity dispersion of gas, s=scale length of gas disk"
         }
       ],
       "numerical_results": [
         {
           "quantity": "gas accretion rate",
           "value": "9",
-          "uncertainty": "±0",
-          "unit": "M⊙yr−1"
+          "uncertainty": "\u00b10",
+          "unit": "M\u2299yr\u22121"
         }
       ],
       "sub_question_answers": {
@@ -528,11 +528,11 @@
         },
         "Q3": {
           "answered": true,
-          "answer_text": "The quantitative measurements of the quenching efficiency or timescales for star formation quenching in massive early-type galaxies at high redshift are not explicitly provided in the paper. However, it is mentioned that the average gas accretion rate across the virial radius of the studied galaxy during the morphological quenching phase is 9 M⊙yr−1.",
+          "answer_text": "The quantitative measurements of the quenching efficiency or timescales for star formation quenching in massive early-type galaxies at high redshift are not explicitly provided in the paper. However, it is mentioned that the average gas accretion rate across the virial radius of the studied galaxy during the morphological quenching phase is 9 M\u2299yr\u22121.",
           "section": "RESULTS"
         }
       },
-      "key_snippet": "The morphological transformation of spirals into ellipticals thus has to be accompanied by a “quenching” of their star formation, which shifts them to the Red Sequence.",
+      "key_snippet": "The morphological transformation of spirals into ellipticals thus has to be accompanied by a \u201cquenching\u201d of their star formation, which shifts them to the Red Sequence.",
       "key_findings": [
         "The morphological quenching mechanism can explain the appearance of red early-type galaxies in less massive halos.",
         "The dense gas disks observed in some red ellipticals may be the relics of the morphological quenching mechanism."
@@ -562,25 +562,25 @@
       "instruments": [],
       "key_equations": [
         {
-          "equation": "m = mmergers(zn−1→n)/Ms(zn), where R = Msatellite/Mgalaxy and where the subscripts indicate the mass ratio of the merger",
-          "variables": "m = mass ratio of the merger, zn−1 = redshift of the previous galaxy, zn = redshift of the current galaxy, Ms(zn) = stellar mass of the current galaxy"
+          "equation": "m = mmergers(zn\u22121\u2192n)/Ms(zn), where R = Msatellite/Mgalaxy and where the subscripts indicate the mass ratio of the merger",
+          "variables": "m = mass ratio of the merger, zn\u22121 = redshift of the previous galaxy, zn = redshift of the current galaxy, Ms(zn) = stellar mass of the current galaxy"
         },
         {
-          "equation": "ρ = 3M0.5/(4πabc)",
-          "variables": "ρ = density, M0.5 = sum of all the masses of the star particles contained within the half mass radius, a > b > c = lengths of the semi-principal axes of the galaxy"
+          "equation": "\u03c1 = 3M0.5/(4\u03c0abc)",
+          "variables": "\u03c1 = density, M0.5 = sum of all the masses of the star particles contained within the half mass radius, a > b > c = lengths of the semi-principal axes of the galaxy"
         }
       ],
       "numerical_results": [
         {
           "quantity": "gas accretion rate",
           "value": "35%",
-          "uncertainty": "±0%",
+          "uncertainty": "\u00b10%",
           "unit": ""
         },
         {
           "quantity": "stellar mass assembly timescale",
           "value": "4.5 Gyr",
-          "uncertainty": "±0.5 Gyr",
+          "uncertainty": "\u00b10.5 Gyr",
           "unit": ""
         }
       ],
@@ -592,12 +592,12 @@
         },
         "Q2": {
           "answered": true,
-          "answer_text": "The observational signatures or indicators used to measure gas accretion rates and their impact on galaxy evolution are the probability distribution function (PDF) of the number of galaxy mergers of a given mass ratio, δm, undergone between redshifts 5.2 ≥ z ≥ 1.2, and the evolution of the smooth accretion and merger contributions to the mass budget of galaxies across the peak of cosmic star formation history.",
+          "answer_text": "The observational signatures or indicators used to measure gas accretion rates and their impact on galaxy evolution are the probability distribution function (PDF) of the number of galaxy mergers of a given mass ratio, \u03b4m, undergone between redshifts 5.2 \u2265 z \u2265 1.2, and the evolution of the smooth accretion and merger contributions to the mass budget of galaxies across the peak of cosmic star formation history.",
           "section": "Observations"
         },
         "Q3": {
           "answered": true,
-          "answer_text": "The average gas accretion rates and corresponding stellar mass assembly timescales for galaxies at different redshifts are not explicitly stated in the paper. However, it is mentioned that at z = 1.2, ∼45% of the galactic stellar mass can be attributed to in situ formation from smooth accretion of gas.",
+          "answer_text": "The average gas accretion rates and corresponding stellar mass assembly timescales for galaxies at different redshifts are not explicitly stated in the paper. However, it is mentioned that at z = 1.2, \u223c45% of the galactic stellar mass can be attributed to in situ formation from smooth accretion of gas.",
           "section": "Results"
         }
       },
@@ -635,43 +635,43 @@
       ],
       "key_equations": [
         {
-          "equation": "gp = a0,g + a1,g ∗(gp −rp),",
+          "equation": "gp = a0,g + a1,g \u2217(gp \u2212rp),",
           "variables": "gp=galaxy photometry, rp=reference photometry, a0,g=a0 coefficient for galaxy photometry, a1,g=a1 coefficient for galaxy photometry"
         },
         {
-          "equation": "rp = a0,r + a1,r ∗(rp −ip),",
+          "equation": "rp = a0,r + a1,r \u2217(rp \u2212ip),",
           "variables": "rp=reference photometry, ip=instrumental photometry, a0,r=a0 coefficient for reference photometry, a1,r=a1 coefficient for reference photometry"
         },
         {
-          "equation": "ip = a0,i + a1,i ∗(ip −zp),",
+          "equation": "ip = a0,i + a1,i \u2217(ip \u2212zp),",
           "variables": "ip=instrumental photometry, zp=zero-point, a0,i=a0 coefficient for instrumental photometry, a1,i=a1 coefficient for instrumental photometry"
         },
         {
-          "equation": "zp = a0,z + a1,z ∗(ip −zp),",
+          "equation": "zp = a0,z + a1,z \u2217(ip \u2212zp),",
           "variables": "zp=zero-point, ip=instrumental photometry, a0,z=a0 coefficient for zero-point, a1,z=a1 coefficient for zero-point"
         },
         {
-          "equation": "yp = a0,y + a1,y ∗(zp −yp),",
+          "equation": "yp = a0,y + a1,y \u2217(zp \u2212yp),",
           "variables": "yp=Y-band photometry, zp=zero-point, a0,y=a0 coefficient for Y-band photometry, a1,y=a1 coefficient for Y-band photometry"
         }
       ],
       "numerical_results": [
         {
-          "quantity": "5σ depth",
+          "quantity": "5\u03c3 depth",
           "value": "25.0",
-          "uncertainty": "±0.1",
+          "uncertainty": "\u00b10.1",
           "unit": "mag"
         },
         {
           "quantity": "seeing FWHM",
           "value": "0.662",
-          "uncertainty": "±0.01",
+          "uncertainty": "\u00b10.01",
           "unit": "arcsec"
         },
         {
           "quantity": "exposure time",
           "value": "234",
-          "uncertainty": "±10",
+          "uncertainty": "\u00b110",
           "unit": "min"
         }
       ],
@@ -713,11 +713,11 @@
     },
     "2402.08696": {
       "arxiv_id": "2402.08696",
-      "title": "The Firefly Sparkle is a strongly lensed galaxy at zspec = 8.304 ± 0.001, exhibi",
+      "title": "The Firefly Sparkle is a strongly lensed galaxy at zspec = 8.304 \u00b1 0.001, exhibi",
       "abstract": "",
       "original_query": "What are the properties of Milky Way progenitor galaxies observed with JWST at high redshift?",
       "subdomain": "galaxy formation",
-      "paper_overview": "The Firefly Sparkle is a strongly lensed galaxy at zspec = 8.304 ± 0.001, exhibiting a network of massive star clusters cocooned in a diffuse arc. The galaxy is a possible Milky Way-like progenitor captured during its earliest and most gas-rich stage of formation. The mass distribution of the galaxy is concentrated in ten distinct clusters, with individual cluster masses that straddle the boundary between low-mass galaxies and high-mass globular clusters.",
+      "paper_overview": "The Firefly Sparkle is a strongly lensed galaxy at zspec = 8.304 \u00b1 0.001, exhibiting a network of massive star clusters cocooned in a diffuse arc. The galaxy is a possible Milky Way-like progenitor captured during its earliest and most gas-rich stage of formation. The mass distribution of the galaxy is concentrated in ten distinct clusters, with individual cluster masses that straddle the boundary between low-mass galaxies and high-mass globular clusters.",
       "evidence_type": "observational",
       "instruments": [
         "JWST",
@@ -730,15 +730,15 @@
           "variables": "SFR = star formation rate"
         },
         {
-          "equation": "ρh ≡3M/(8πr3h)",
+          "equation": "\u03c1h \u22613M/(8\u03c0r3h)",
           "variables": "M = mass, r = radius"
         }
       ],
       "numerical_results": [
         {
           "quantity": "cluster mass",
-          "value": "105.3 −105.8",
-          "uncertainty": "M⊙",
+          "value": "105.3 \u2212105.8",
+          "uncertainty": "M\u2299",
           "unit": ""
         },
         {
@@ -749,7 +749,7 @@
         },
         {
           "quantity": "initial mass function slope",
-          "value": "0.78 < α < 2.0",
+          "value": "0.78 < \u03b1 < 2.0",
           "uncertainty": "",
           "unit": ""
         }
@@ -762,22 +762,22 @@
         },
         "Q2": {
           "answered": true,
-          "answer_text": "The observational evidence from JWST that supports the identification of Milky Way progenitor galaxies at high redshift is the detection of a strongly lensed galaxy at zspec = 8.304 ± 0.001, exhibiting a network of massive star clusters cocooned in a diffuse arc.",
+          "answer_text": "The observational evidence from JWST that supports the identification of Milky Way progenitor galaxies at high redshift is the detection of a strongly lensed galaxy at zspec = 8.304 \u00b1 0.001, exhibiting a network of massive star clusters cocooned in a diffuse arc.",
           "section": "Observations"
         },
         "Q3": {
           "answered": true,
-          "answer_text": "The quantitative measurements of galaxy properties for Milky Way progenitor galaxies observed with JWST at high redshift are: the mass distribution of the galaxy is concentrated in ten distinct clusters, with individual cluster masses (M∗,cluster ∼105.3 −105.8M⊙) that straddle the boundary between low-mass galaxies and high-mass globular clusters.",
+          "answer_text": "The quantitative measurements of galaxy properties for Milky Way progenitor galaxies observed with JWST at high redshift are: the mass distribution of the galaxy is concentrated in ten distinct clusters, with individual cluster masses (M\u2217,cluster \u223c105.3 \u2212105.8M\u2299) that straddle the boundary between low-mass galaxies and high-mass globular clusters.",
           "section": "Observations"
         }
       },
       "key_snippet": "The Firefly Sparkle exhibits the hallmarks expected of a future Milky Way-type galaxy captured during its earliest and most gas-rich stage of formation.",
       "key_findings": [
-        "The Firefly Sparkle is a strongly lensed galaxy at zspec = 8.304 ± 0.001, exhibiting a network of massive star clusters cocooned in a diffuse arc.",
+        "The Firefly Sparkle is a strongly lensed galaxy at zspec = 8.304 \u00b1 0.001, exhibiting a network of massive star clusters cocooned in a diffuse arc.",
         "The mass distribution of the galaxy is concentrated in ten distinct clusters, with individual cluster masses that straddle the boundary between low-mass galaxies and high-mass globular clusters.",
         "The cluster ages suggest that they are gravitationally bound with star formation histories showing a recent starburst possibly triggered by the interaction with a companion galaxy at the same redshift."
       ],
-      "methodology": "The authors used JWST observations to study the Firefly Sparkle, a strongly lensed galaxy at zspec = 8.304 ± 0.001. They analyzed the galaxy's mass distribution, star formation history, and initial mass function slope.",
+      "methodology": "The authors used JWST observations to study the Firefly Sparkle, a strongly lensed galaxy at zspec = 8.304 \u00b1 0.001. They analyzed the galaxy's mass distribution, star formation history, and initial mass function slope.",
       "q_total": 1.0,
       "q_f": 1.0,
       "q_c": 1.0,
@@ -805,25 +805,25 @@
       ],
       "key_equations": [
         {
-          "equation": "mej = αdynmdyn + flossmdisk",
-          "variables": "mej=mass ejected, αdyn=dynamic ejecta fraction, m=mass, dyn=dynamic ejecta, floss=mass loss fraction, mdisk=mass of the disk"
+          "equation": "mej = \u03b1dynmdyn + flossmdisk",
+          "variables": "mej=mass ejected, \u03b1dyn=dynamic ejecta fraction, m=mass, dyn=dynamic ejecta, floss=mass loss fraction, mdisk=mass of the disk"
         },
         {
-          "equation": "mcap = 0.03M⊙on (RNSBH = RBNS)",
-          "variables": "mcap=mass of the cap, M⊙=mass of the sun, RNSBH=radius of the NSBH, RBNS=radius of the BNS"
+          "equation": "mcap = 0.03M\u2299on (RNSBH = RBNS)",
+          "variables": "mcap=mass of the cap, M\u2299=mass of the sun, RNSBH=radius of the NSBH, RBNS=radius of the BNS"
         }
       ],
       "numerical_results": [
         {
           "quantity": "BNS ejecta fraction",
           "value": "1",
-          "uncertainty": "±0",
+          "uncertainty": "\u00b10",
           "unit": ""
         },
         {
           "quantity": "NSBH ejecta fraction",
           "value": "0",
-          "uncertainty": "±0",
+          "uncertainty": "\u00b10",
           "unit": ""
         }
       ],
@@ -840,7 +840,7 @@
         },
         "Q3": {
           "answered": true,
-          "answer_text": "The estimated yields or abundances of heavy elements produced through the r-process in binary neutron star mergers are as follows: If black holes have preferentially small spins, BNSs can produce at least twice of the amount of r-process elements than NSBHs. If black hole spins are small and there is a dearth of low mass (< 5M⊙) black holes within NSBH binaries, BNSs can account for the near totality of the r-process elements from binaries.",
+          "answer_text": "The estimated yields or abundances of heavy elements produced through the r-process in binary neutron star mergers are as follows: If black holes have preferentially small spins, BNSs can produce at least twice of the amount of r-process elements than NSBHs. If black hole spins are small and there is a dearth of low mass (< 5M\u2299) black holes within NSBH binaries, BNSs can account for the near totality of the r-process elements from binaries.",
           "section": "DISCUSSION"
         }
       },
@@ -877,25 +877,25 @@
       ],
       "key_equations": [
         {
-          "equation": "n = 11/3 and q = 1/3 for the so-called “inertial range” in Kolmogorov turbulence",
+          "equation": "n = 11/3 and q = 1/3 for the so-called \u201cinertial range\u201d in Kolmogorov turbulence",
           "variables": "n=power-law index, q=flux-scaling index"
         },
         {
-          "equation": "M = ¯ρ exp(2µx)",
-          "variables": "M=mass, ¯ρ=mean density, µ=shape parameter"
+          "equation": "M = \u00af\u03c1 exp(2\u00b5x)",
+          "variables": "M=mass, \u00af\u03c1=mean density, \u00b5=shape parameter"
         }
       ],
       "numerical_results": [
         {
           "quantity": "mass function median",
           "value": "0.2",
-          "uncertainty": "±0.1",
+          "uncertainty": "\u00b10.1",
           "unit": "M"
         },
         {
           "quantity": "mass function dispersion",
           "value": "0.5",
-          "uncertainty": "±0.2",
+          "uncertainty": "\u00b10.2",
           "unit": "M"
         }
       ],
@@ -942,7 +942,7 @@
       "abstract": "",
       "original_query": "How are ultra-high-energy cosmic rays accelerated in astrophysical sources?",
       "subdomain": "high energy",
-      "paper_overview": "The origin of ultra-high-energy cosmic rays is unknown, but numerous hints in data and theory suggest that the bulk of cosmic rays at these energies have extragalactic origin. The observation of the spectrum steepening consistent with the Greisen-Zatsepin-Kuzmin cutoﬀ, together with the global isotropy of the arrival directions, suggests that the UHE particles are not confined by the Milky-Way magnetic field. A toy model of particle acceleration in the immediate vicinity of supermassive black holes is proposed to explain the observed spectrum of UHECRs.",
+      "paper_overview": "The origin of ultra-high-energy cosmic rays is unknown, but numerous hints in data and theory suggest that the bulk of cosmic rays at these energies have extragalactic origin. The observation of the spectrum steepening consistent with the Greisen-Zatsepin-Kuzmin cuto\ufb00, together with the global isotropy of the arrival directions, suggests that the UHE particles are not confined by the Milky-Way magnetic field. A toy model of particle acceleration in the immediate vicinity of supermassive black holes is proposed to explain the observed spectrum of UHECRs.",
       "evidence_type": "observational",
       "instruments": [
         "Pierre Auger Observatory",
@@ -954,21 +954,21 @@
           "variables": "Ecurv=curvature radiation energy"
         },
         {
-          "equation": "Lγ = η·L0",
-          "variables": "Lγ=gamma-ray luminosity, η=efficiency, L0=total luminosity"
+          "equation": "L\u03b3 = \u03b7\u00b7L0",
+          "variables": "L\u03b3=gamma-ray luminosity, \u03b7=efficiency, L0=total luminosity"
         }
       ],
       "numerical_results": [
         {
           "quantity": "number density of sources",
-          "value": "10−4",
-          "uncertainty": "±0",
+          "value": "10\u22124",
+          "uncertainty": "\u00b10",
           "unit": "per cubic Megaparsec"
         },
         {
           "quantity": "SMBH mass",
-          "value": "1.23×1022 eV",
-          "uncertainty": "±0",
+          "value": "1.23\u00d71022 eV",
+          "uncertainty": "\u00b10",
           "unit": "erg"
         }
       ],
@@ -980,7 +980,7 @@
         },
         "Q2": {
           "answered": true,
-          "answer_text": "The observational evidence or data that supports the acceleration of ultra-high-energy cosmic rays in astrophysical sources includes the observation of the spectrum steepening consistent with the Greisen-Zatsepin-Kuzmin cutoﬀ, the global isotropy of the arrival directions, and the lack of clustering of arrival directions at small scales.",
+          "answer_text": "The observational evidence or data that supports the acceleration of ultra-high-energy cosmic rays in astrophysical sources includes the observation of the spectrum steepening consistent with the Greisen-Zatsepin-Kuzmin cuto\ufb00, the global isotropy of the arrival directions, and the lack of clustering of arrival directions at small scales.",
           "section": "INTRODUCTION"
         },
         "Q3": {
@@ -989,10 +989,10 @@
           "section": "INTRODUCTION"
         }
       },
-      "key_snippet": "The observation of the spectrum steepening consistent with the Greisen-Zatsepin-Kuzmin cutoﬀ, together with the global isotropy of the arrival directions, suggests that the UHE particles are not confined by the Milky-Way magnetic field.",
+      "key_snippet": "The observation of the spectrum steepening consistent with the Greisen-Zatsepin-Kuzmin cuto\ufb00, together with the global isotropy of the arrival directions, suggests that the UHE particles are not confined by the Milky-Way magnetic field.",
       "key_findings": [
         "The acceleration capabilities of a source are determined by a single parameter, the SMBH mass.",
-        "The observation of the spectrum steepening consistent with the Greisen-Zatsepin-Kuzmin cutoﬀ supports the acceleration of ultra-high-energy cosmic rays in astrophysical sources.",
+        "The observation of the spectrum steepening consistent with the Greisen-Zatsepin-Kuzmin cuto\ufb00 supports the acceleration of ultra-high-energy cosmic rays in astrophysical sources.",
         "The lack of clustering of arrival directions at small scales constrains the number density of sources."
       ],
       "methodology": "The paper proposes a toy model of particle acceleration in the immediate vicinity of supermassive black holes to explain the observed spectrum of UHECRs. The model is based on the assumption that the acceleration capabilities of a source are determined by a single parameter, the SMBH mass.",
@@ -1031,19 +1031,19 @@
         {
           "quantity": "jet power",
           "value": "1.2e44",
-          "uncertainty": "±0.3e44",
+          "uncertainty": "\u00b10.3e44",
           "unit": "erg/s"
         },
         {
           "quantity": "metallicity",
           "value": "0.5",
-          "uncertainty": "±0.2",
+          "uncertainty": "\u00b10.2",
           "unit": "Z_sun"
         },
         {
           "quantity": "star formation rate",
           "value": "5",
-          "uncertainty": "±2",
+          "uncertainty": "\u00b12",
           "unit": "M_sun/yr"
         }
       ],
@@ -1099,15 +1099,15 @@
           "variables": "M=black hole mass"
         },
         {
-          "equation": "bµ = Bνhµ",
-          "variables": "Bν= magnetic field, hµ=height"
+          "equation": "b\u00b5 = B\u03bdh\u00b5",
+          "variables": "B\u03bd= magnetic field, h\u00b5=height"
         }
       ],
       "numerical_results": [
         {
           "quantity": "jet power",
           "value": "1.2e44",
-          "uncertainty": "±0.3e44",
+          "uncertainty": "\u00b10.3e44",
           "unit": "erg/s"
         }
       ],
@@ -1124,7 +1124,7 @@
         },
         "Q3": {
           "answered": true,
-          "answer_text": "The paper does not provide any typical values of the accretion rate or disk viscosity parameter (α) in black hole accretion disks that are affected by magnetohydrodynamic instabilities. However, the authors do mention that the disk's corona (including any wind or jet) introduces deviations from NT in the specific angular momentum that are comparable to those contributed by the disk component.",
+          "answer_text": "The paper does not provide any typical values of the accretion rate or disk viscosity parameter (\u03b1) in black hole accretion disks that are affected by magnetohydrodynamic instabilities. However, the authors do mention that the disk's corona (including any wind or jet) introduces deviations from NT in the specific angular momentum that are comparable to those contributed by the disk component.",
           "section": "Results"
         }
       },
@@ -1161,39 +1161,39 @@
       ],
       "key_equations": [
         {
-          "equation": "˙M ≈0.91×10^(-8)R^1.21(Bp/10mG)^0.93 MJ yr^(-1)",
+          "equation": "\u02d9M \u22480.91\u00d710^(-8)R^1.21(Bp/10mG)^0.93 MJ yr^(-1)",
           "variables": "R = disk radius, Bp = strength of the large-scale poloidal magnetic field"
         }
       ],
       "numerical_results": [
         {
           "quantity": "wind-driven accretion rate",
-          "value": "0.91×10^(-8)R^1.21(Bp/10mG)^0.93",
-          "uncertainty": "±0.01",
+          "value": "0.91\u00d710^(-8)R^1.21(Bp/10mG)^0.93",
+          "uncertainty": "\u00b10.01",
           "unit": "MJ yr^(-1)"
         }
       ],
       "sub_question_answers": {
         "Q1": {
           "answered": true,
-          "answer_text": "The magnetorotational instability drives angular momentum transport in protoplanetary disks through the interaction between magnetic fields and fluid vortices. The interaction between the magnetic fields and fluid vortices leads to the growth of the magnetorotational instability, which in turn drives the transport of angular momentum. This process is described by the equation for the rate of change of angular momentum, which is given by dJ/dt = -αPΩJ, where α is the dimensionless parameter representing the efficiency of angular momentum transport, P is the pressure, Ω is the angular velocity, and J is the angular momentum. The value of α is determined by the strength of the magnetic field and the properties of the fluid.",
+          "answer_text": "The magnetorotational instability drives angular momentum transport in protoplanetary disks through the interaction between magnetic fields and fluid vortices. The interaction between the magnetic fields and fluid vortices leads to the growth of the magnetorotational instability, which in turn drives the transport of angular momentum. This process is described by the equation for the rate of change of angular momentum, which is given by dJ/dt = -\u03b1P\u03a9J, where \u03b1 is the dimensionless parameter representing the efficiency of angular momentum transport, P is the pressure, \u03a9 is the angular velocity, and J is the angular momentum. The value of \u03b1 is determined by the strength of the magnetic field and the properties of the fluid.",
           "section": "Methods"
         },
         "Q2": {
           "answered": true,
-          "answer_text": "The observational signatures or features in protoplanetary disks indicative of magnetorotational instability-driven angular momentum transport are the presence of jets and molecular outflows. The velocity of the outflow ranges from a few hundred km s^(-1) for the axial high-velocity component to about 10^(-50) km s^(-1) for the low-velocity component. The outflow is strongly collimated at large distances, with typical opening angles of just a few degrees, while large opening angles (20-30°) are inferred at scales of 10 AU or less.",
+          "answer_text": "The observational signatures or features in protoplanetary disks indicative of magnetorotational instability-driven angular momentum transport are the presence of jets and molecular outflows. The velocity of the outflow ranges from a few hundred km s^(-1) for the axial high-velocity component to about 10^(-50) km s^(-1) for the low-velocity component. The outflow is strongly collimated at large distances, with typical opening angles of just a few degrees, while large opening angles (20-30\u00b0) are inferred at scales of 10 AU or less.",
           "section": "INTRODUCTION"
         },
         "Q3": {
           "answered": true,
-          "answer_text": "The characteristic timescales or spatial scales of magnetorotational instability-driven angular momentum transport in protoplanetary disks are determined by the strength of the magnetic field and the properties of the fluid. The timescale for the growth of the magnetorotational instability is given by τ = 1/Ω, where Ω is the angular velocity. The spatial scale of the instability is given by L = 2π/Ω.",
+          "answer_text": "The characteristic timescales or spatial scales of magnetorotational instability-driven angular momentum transport in protoplanetary disks are determined by the strength of the magnetic field and the properties of the fluid. The timescale for the growth of the magnetorotational instability is given by \u03c4 = 1/\u03a9, where \u03a9 is the angular velocity. The spatial scale of the instability is given by L = 2\u03c0/\u03a9.",
           "section": "Results"
         }
       },
-      "key_snippet": "The wind-driven accretion rate can be approximated as ˙M ≈0.91×10^(-8)R^1.21(Bp/10mG)^0.93 MJ yr^(-1), where Bp is the strength of the large-scale poloidal magnetic field threading the disk.",
+      "key_snippet": "The wind-driven accretion rate can be approximated as \u02d9M \u22480.91\u00d710^(-8)R^1.21(Bp/10mG)^0.93 MJ yr^(-1), where Bp is the strength of the large-scale poloidal magnetic field threading the disk.",
       "key_findings": [
         "The laminar wind solution exists in the inner region of the disk from ~0.3 AU to about 5-10 AU for typical protoplanetary disk accretion rates.",
-        "The wind-driven accretion rate can be approximated as ˙M ≈0.91×10^(-8)R^1.21(Bp/10mG)^0.93 MJ yr^(-1)"
+        "The wind-driven accretion rate can be approximated as \u02d9M \u22480.91\u00d710^(-8)R^1.21(Bp/10mG)^0.93 MJ yr^(-1)"
       ],
       "methodology": "The authors used local shearing-box simulations to study the radial dependence of the laminar wind solution in protoplanetary disks.",
       "q_total": 1.0,
@@ -1227,28 +1227,28 @@
           "variables": "qPAH=PAH mass fraction, MW3.1 60=parameter in Draine & Li 2007"
         },
         {
-          "equation": "Lλ = Bλ (Iλ′)",
-          "variables": "Lλ=emitted luminosity, Bλ=Planck function, Iλ′=incident intensity"
+          "equation": "L\u03bb = B\u03bb (I\u03bb\u2032)",
+          "variables": "L\u03bb=emitted luminosity, B\u03bb=Planck function, I\u03bb\u2032=incident intensity"
         }
       ],
       "numerical_results": [
         {
           "quantity": "dust column density",
           "value": "1.0",
-          "uncertainty": "±0.1",
+          "uncertainty": "\u00b10.1",
           "unit": "g/cm^2"
         },
         {
           "quantity": "infrared emission",
           "value": "10^5",
-          "uncertainty": "±10^4",
+          "uncertainty": "\u00b110^4",
           "unit": "erg/s/cm^2"
         }
       ],
       "sub_question_answers": {
         "Q1": {
           "answered": true,
-          "answer_text": "The role of dust opacity in modifying the radiative transfer of infrared radiation in star-forming regions is to absorb and scatter the radiation, affecting the dust temperature and resulting IR emission. The dust models used for the diffuse ISM are based on the work of Weingartner & Draine (2001), including the updates in Draine & Li (2007). The model includes graphite and silicate grains with a distribution of sizes, and carbonaceous grains with sizes (a < 100 ˚A) are assumed to have characteristics of Polycyclic Aromatic Hydrocarbons (PAHs).",
+          "answer_text": "The role of dust opacity in modifying the radiative transfer of infrared radiation in star-forming regions is to absorb and scatter the radiation, affecting the dust temperature and resulting IR emission. The dust models used for the diffuse ISM are based on the work of Weingartner & Draine (2001), including the updates in Draine & Li (2007). The model includes graphite and silicate grains with a distribution of sizes, and carbonaceous grains with sizes (a < 100 \u02daA) are assumed to have characteristics of Polycyclic Aromatic Hydrocarbons (PAHs).",
           "section": "Methods"
         },
         "Q2": {
@@ -1265,7 +1265,7 @@
       "key_snippet": "The only possible exception is the 160 micron/850 micron colour, which the simulations underestimate by a factor of order 5 compared to the SINGS sample.",
       "key_findings": [
         "The model output shows a good match with observed galaxies in colours ranging from GALEX far-UV to SCUBA submillimeter wavelengths.",
-        "The model includes graphite and silicate grains with a distribution of sizes, and carbonaceous grains with sizes (a < 100 ˚A) are assumed to have characteristics of Polycyclic Aromatic Hydrocarbons (PAHs)."
+        "The model includes graphite and silicate grains with a distribution of sizes, and carbonaceous grains with sizes (a < 100 \u02daA) are assumed to have characteristics of Polycyclic Aromatic Hydrocarbons (PAHs)."
       ],
       "methodology": "The model uses a sub-resolution approximation to include the relevant processes on scales below the resolution, and the Monte Carlo radiation transfer code Sunrise to handle the transfer of radiation on galaxy scales.",
       "q_total": 1.0,
@@ -1303,7 +1303,7 @@
         {
           "quantity": "jet power",
           "value": "1.2e44",
-          "uncertainty": "±0.3e44",
+          "uncertainty": "\u00b10.3e44",
           "unit": "erg/s"
         }
       ],
@@ -1320,7 +1320,7 @@
         },
         "Q3": {
           "answered": true,
-          "answer_text": "The typical values of the accretion rate or disk viscosity parameter (α) in black hole accretion disks that are affected by magnetohydrodynamic instabilities are not explicitly stated in the paper. However, the authors mention that the MRI drives powerful MHD turbulence, which mediates the outward transport of angular momentum, allowing accretion to proceed.",
+          "answer_text": "The typical values of the accretion rate or disk viscosity parameter (\u03b1) in black hole accretion disks that are affected by magnetohydrodynamic instabilities are not explicitly stated in the paper. However, the authors mention that the MRI drives powerful MHD turbulence, which mediates the outward transport of angular momentum, allowing accretion to proceed.",
           "section": "Results"
         }
       },
@@ -1360,8 +1360,8 @@
           "variables": "w=Lyman-alpha flux, R=Lyman-alpha scattering coefficient, i=incident angle, r=distance"
         },
         {
-          "equation": "Vedge = Vpeak + ∆V (km s−1)",
-          "variables": "Vedge=edge velocity, Vpeak=peak velocity, ∆V=velocity dispersion"
+          "equation": "Vedge = Vpeak + \u2206V (km s\u22121)",
+          "variables": "Vedge=edge velocity, Vpeak=peak velocity, \u2206V=velocity dispersion"
         }
       ],
       "numerical_results": [
@@ -1395,7 +1395,7 @@
           "section": "RESULTS"
         }
       },
-      "key_snippet": "Lyα photons are endlessly scattered oﬀby neutral hydrogen atoms until they happen to be scattered into wing frequencies, which occurs quite rarely.",
+      "key_snippet": "Ly\u03b1 photons are endlessly scattered o\ufb00by neutral hydrogen atoms until they happen to be scattered into wing frequencies, which occurs quite rarely.",
       "key_findings": [
         "The outflowing halo model with Lyman-alpha scattering successfully reproduces the spectra and surface brightness profiles of eight star-forming galaxies at z = 3-6 observed with MUSE."
       ],
@@ -1424,7 +1424,7 @@
       "instruments": [],
       "key_equations": [
         {
-          "equation": "T9 = (E∗51)1/4(r/3.16 × 104km)−3/4",
+          "equation": "T9 = (E\u221751)1/4(r/3.16 \u00d7 104km)\u22123/4",
           "variables": "P=pressure, V=cavity volume"
         }
       ],
@@ -1450,16 +1450,16 @@
         },
         "Q2": {
           "answered": true,
-          "answer_text": "The observed abundance patterns in metal-poor stars that can be attributed to core-collapse supernovae nucleosynthesis are the large Zn/Fe ratios typically observed in EMP stars (Primas et al. 2000; Depagne 2003; Cayrel et al. 2003), which have not been explained with conventional supernova yields, except for the suggestion that Zn could be produced in the neutrino-powered wind (Höﬀman et al. 1996).",
+          "answer_text": "The observed abundance patterns in metal-poor stars that can be attributed to core-collapse supernovae nucleosynthesis are the large Zn/Fe ratios typically observed in EMP stars (Primas et al. 2000; Depagne 2003; Cayrel et al. 2003), which have not been explained with conventional supernova yields, except for the suggestion that Zn could be produced in the neutrino-powered wind (H\u00f6\ufb00man et al. 1996).",
           "section": "INTRODUCTION"
         },
         "Q3": {
           "answered": true,
-          "answer_text": "The quantitative abundance ratios of specific elements (e.g., Fe, Ni, Zn) in metal-poor stars that are consistent with core-collapse supernovae nucleosynthesis models are [Zn/Fe] ∼0.3 - 0.8 (Primas et al. 2000; Depagne 2003; Cayrel et al. 2003) and [Fe/H] ≃log10(Fe/E51)+C.",
+          "answer_text": "The quantitative abundance ratios of specific elements (e.g., Fe, Ni, Zn) in metal-poor stars that are consistent with core-collapse supernovae nucleosynthesis models are [Zn/Fe] \u223c0.3 - 0.8 (Primas et al. 2000; Depagne 2003; Cayrel et al. 2003) and [Fe/H] \u2243log10(Fe/E51)+C.",
           "section": "RESULTS"
         }
       },
-      "key_snippet": "The large Zn/Fe ratios typically observed in EMP stars have not been explained with conventional supernova yields, except for the suggestion that Zn could be produced in the neutrino-powered wind (Höﬀman et al. 1996).",
+      "key_snippet": "The large Zn/Fe ratios typically observed in EMP stars have not been explained with conventional supernova yields, except for the suggestion that Zn could be produced in the neutrino-powered wind (H\u00f6\ufb00man et al. 1996).",
       "key_findings": [
         "The large Zn/Fe ratios typically observed in EMP stars can be explained by introducing higher explosion energies and mixing-fallback in the core-collapse SN models of M ~ 20 - 130 Msun."
       ],
@@ -1488,28 +1488,28 @@
       "instruments": [],
       "key_equations": [
         {
-          "equation": "Z M2 \n⟨Fi⟩=\n1 \nMp Xi,ini \nXi(Mr) dMr,",
+          "equation": "Z M2 \n\u27e8Fi\u27e9=\n1 \nMp Xi,ini \nXi(Mr) dMr,",
           "variables": "Z=metallicity, M2=upper Lagrangian mass coordinate, Mp=total mass of the PPLs, Xi,ini=initial abundance of the p-nucleus, Xi(Mr)=mass fraction of p-nucleus at mass coordinate Mr"
         }
       ],
       "numerical_results": [
         {
           "quantity": "temperature range",
-          "value": "1.8 × 10^9 K",
-          "uncertainty": "±0 K",
+          "value": "1.8 \u00d7 10^9 K",
+          "uncertainty": "\u00b10 K",
           "unit": "K"
         },
         {
           "quantity": "temperature range",
-          "value": "3.5 × 10^9 K",
-          "uncertainty": "±0 K",
+          "value": "3.5 \u00d7 10^9 K",
+          "uncertainty": "\u00b10 K",
           "unit": "K"
         }
       ],
       "sub_question_answers": {
         "Q1": {
           "answered": true,
-          "answer_text": "The primary nuclear reaction or process responsible for the production of p-process elements in stellar explosions is the photodisintegration of heavy seeds in layers heated at temperatures ranging between 1.8 and 3.5 × 10^9 K.",
+          "answer_text": "The primary nuclear reaction or process responsible for the production of p-process elements in stellar explosions is the photodisintegration of heavy seeds in layers heated at temperatures ranging between 1.8 and 3.5 \u00d7 10^9 K.",
           "section": "DATA"
         },
         "Q2": {
@@ -1528,7 +1528,7 @@
         "The contribution of core-collapse supernovae from massive stars to the solar p-nuclei has been underestimated.",
         "The contribution from massive stars with sub-solar metallicities may even dominate."
       ],
-      "methodology": "The authors used the Geneva stellar evolution code to compute 25 M⊙ stellar models at a metallicity of Z = 10^−3 with different initial rotation velocities and rates for the 17O(α,γ)21Ne reaction.",
+      "methodology": "The authors used the Geneva stellar evolution code to compute 25 M\u2299 stellar models at a metallicity of Z = 10^\u22123 with different initial rotation velocities and rates for the 17O(\u03b1,\u03b3)21Ne reaction.",
       "q_total": 1.0,
       "q_f": 1.0,
       "q_c": 1.0,
@@ -1555,7 +1555,7 @@
       ],
       "key_equations": [
         {
-          "equation": "zspec = 4.1±0.7",
+          "equation": "zspec = 4.1\u00b10.7",
           "variables": "zspec = spectroscopic redshift"
         },
         {
@@ -1567,7 +1567,7 @@
         {
           "quantity": "spectroscopic redshift",
           "value": "4.1",
-          "uncertainty": "±0.7",
+          "uncertainty": "\u00b10.7",
           "unit": ""
         },
         {
@@ -1580,23 +1580,23 @@
       "sub_question_answers": {
         "Q1": {
           "answered": true,
-          "answer_text": "The primary physical process driving the emission lines observed in the spectra of galaxies at z > 10 by JWST NIRSpec is the Balmer decrement (Hα/Hβ), which is used to quantify the dust attenuation.",
+          "answer_text": "The primary physical process driving the emission lines observed in the spectra of galaxies at z > 10 by JWST NIRSpec is the Balmer decrement (H\u03b1/H\u03b2), which is used to quantify the dust attenuation.",
           "section": "DATA"
         },
         "Q2": {
           "answered": true,
-          "answer_text": "The key spectral features and patterns observed in the JWST NIRSpec spectra of galaxies at z > 10 include the presence of Hα emission lines, equivalent widths spanning the range 68Å < EWHα < 550Å, and prominent breaks in their spectra at rest-frame λrest ≃4000Å.",
+          "answer_text": "The key spectral features and patterns observed in the JWST NIRSpec spectra of galaxies at z > 10 include the presence of H\u03b1 emission lines, equivalent widths spanning the range 68\u00c5 < EWH\u03b1 < 550\u00c5, and prominent breaks in their spectra at rest-frame \u03bbrest \u22434000\u00c5.",
           "section": "DATA"
         },
         "Q3": {
           "answered": true,
-          "answer_text": "The measured flux ratios or equivalent widths of specific emission lines in the JWST NIRSpec spectra of galaxies at z > 10 are: EWHα = 68Å to 550Å.",
+          "answer_text": "The measured flux ratios or equivalent widths of specific emission lines in the JWST NIRSpec spectra of galaxies at z > 10 are: EWH\u03b1 = 68\u00c5 to 550\u00c5.",
           "section": "DATA"
         }
       },
-      "key_snippet": "The spectral features demonstrate that, while the majority of HST-dark galaxies are dusty, a substantial fraction, 13+9−6%, are quiescent.",
+      "key_snippet": "The spectral features demonstrate that, while the majority of HST-dark galaxies are dusty, a substantial fraction, 13+9\u22126%, are quiescent.",
       "key_findings": [
-        "HST-dark galaxies are predominantly massive, with 85% of the galaxies in the sample having masses log(M∗/M⊙) > 9.8"
+        "HST-dark galaxies are predominantly massive, with 85% of the galaxies in the sample having masses log(M\u2217/M\u2299) > 9.8"
       ],
       "methodology": "The paper presents the first NIRSpec spectra of 23 HST-dark galaxies, unveiling their nature and physical properties. The sample includes both dusty and quiescent galaxies with spectroscopic data from NIRSpec/PRISM, providing accurate spectroscopic redshifts.",
       "q_total": 1.0,
@@ -1618,7 +1618,7 @@
       "abstract": "",
       "original_query": "How do JWST MIRI observations constrain dust properties in nearby galaxies?",
       "subdomain": "JWST",
-      "paper_overview": "This paper presents an analysis of the stellar population and star formation history of 181 MIRI selected galaxies at redshift 0 −3.5 in the massive galaxy cluster field SMACS J0723.3–7327 using the James Webb Space Telescope's Mid-Infrared Instrument (MIRI). The analysis aims to constrain dust properties in nearby galaxies and investigate the impact of dust on star formation and galaxy evolution. The paper uses a combination of observational data from JWST MIRI and photometric redshifts to derive physical properties of the galaxies. The results show that MIRI data provides tighter constraints on the AGN contribution, reducing the typical AGN contributions by ∼14%.",
+      "paper_overview": "This paper presents an analysis of the stellar population and star formation history of 181 MIRI selected galaxies at redshift 0 \u22123.5 in the massive galaxy cluster field SMACS J0723.3\u20137327 using the James Webb Space Telescope's Mid-Infrared Instrument (MIRI). The analysis aims to constrain dust properties in nearby galaxies and investigate the impact of dust on star formation and galaxy evolution. The paper uses a combination of observational data from JWST MIRI and photometric redshifts to derive physical properties of the galaxies. The results show that MIRI data provides tighter constraints on the AGN contribution, reducing the typical AGN contributions by \u223c14%.",
       "evidence_type": "observational",
       "instruments": [
         "JWST MIRI",
@@ -1643,19 +1643,19 @@
         {
           "quantity": "mass fraction of PAHs",
           "value": "0.14",
-          "uncertainty": "±0.11",
+          "uncertainty": "\u00b10.11",
           "unit": ""
         },
         {
           "quantity": "radiation parameter (U)",
           "value": "0.1",
-          "uncertainty": "±0.06",
+          "uncertainty": "\u00b10.06",
           "unit": ""
         },
         {
           "quantity": "AGN fraction",
           "value": "0.1",
-          "uncertainty": "±0.06",
+          "uncertainty": "\u00b10.06",
           "unit": ""
         }
       ],
@@ -1672,13 +1672,13 @@
         },
         "Q3": {
           "answered": true,
-          "answer_text": "The quantitative values of dust properties constrained by JWST MIRI observations in nearby galaxies include the mass fraction of polycyclic aromatic hydrocarbons (PAHs), which is found to be ∼0.14±0.11, and the radiation parameter (U), which is found to be ∼0.1.",
+          "answer_text": "The quantitative values of dust properties constrained by JWST MIRI observations in nearby galaxies include the mass fraction of polycyclic aromatic hydrocarbons (PAHs), which is found to be \u223c0.14\u00b10.11, and the radiation parameter (U), which is found to be \u223c0.1.",
           "section": "Results"
         }
       },
       "key_snippet": "The advanced capabilities of MIRI thus enable more precise investigations into the impact of dust on star formation and galaxy evolution, as well as the analysis of PAH features in the mid-infrared.",
       "key_findings": [
-        "MIRI data provides tighter constraints on the AGN contribution, reducing the typical AGN contributions by ∼14%",
+        "MIRI data provides tighter constraints on the AGN contribution, reducing the typical AGN contributions by \u223c14%",
         "The median photo-z's of galaxies with MIRI data are found to have a small 0.1% difference from spectroscopic redshifts and reducing the error by 20%"
       ],
       "methodology": "The analysis uses a combination of observational data from JWST MIRI and photometric redshifts to derive physical properties of the galaxies. The results are obtained by fitting the spectral energy distributions of each source to derive photometric redshifts in various different ways.",
@@ -1716,14 +1716,14 @@
         {
           "quantity": "orbital time",
           "value": "80 Myr",
-          "uncertainty": "±0",
+          "uncertainty": "\u00b10",
           "unit": "Myr"
         },
         {
           "quantity": "maximum circular rotation speed",
-          "value": "163 km s−1",
-          "uncertainty": "±0",
-          "unit": "km s−1"
+          "value": "163 km s\u22121",
+          "uncertainty": "\u00b10",
+          "unit": "km s\u22121"
         }
       ],
       "sub_question_answers": {
@@ -1739,7 +1739,7 @@
         },
         "Q3": {
           "answered": true,
-          "answer_text": "The quantitative measurements of molecular gas kinematics in galaxy centers derived from ALMA observations include the orbital time at the outer edge of the molecular arms, which is 80 Myr, and the maximum circular rotation speed of 163 km s−1.",
+          "answer_text": "The quantitative measurements of molecular gas kinematics in galaxy centers derived from ALMA observations include the orbital time at the outer edge of the molecular arms, which is 80 Myr, and the maximum circular rotation speed of 163 km s\u22121.",
           "section": "Discussion"
         }
       },
@@ -1775,7 +1775,7 @@
       ],
       "key_equations": [
         {
-          "equation": "VLSR = −3.15",
+          "equation": "VLSR = \u22123.15",
           "variables": "VLSR=velocity of local standard of rest"
         },
         {
@@ -1796,13 +1796,13 @@
         },
         {
           "quantity": "resolution",
-          "value": "∼7 au",
+          "value": "\u223c7 au",
           "uncertainty": "",
           "unit": "au"
         },
         {
           "quantity": "angular resolution",
-          "value": "0.′′04",
+          "value": "0.\u2032\u203204",
           "uncertainty": "",
           "unit": ""
         }
@@ -1848,7 +1848,7 @@
       "abstract": "",
       "original_query": "How do JWST MIRI observations constrain dust properties in nearby galaxies?",
       "subdomain": "JWST",
-      "paper_overview": "The paper presents JWST MIRI observations of the nearby supernova SN 1993J, aiming to constrain dust properties in nearby galaxies. The observations reveal a significant amount of dust (∼0.01 M⊙) ∼30 years after explosion. The results provide evidence for dust condensation in CCSNe, supporting their role in the cosmic dust budget.",
+      "paper_overview": "The paper presents JWST MIRI observations of the nearby supernova SN 1993J, aiming to constrain dust properties in nearby galaxies. The observations reveal a significant amount of dust (\u223c0.01 M\u2299) \u223c30 years after explosion. The results provide evidence for dust condensation in CCSNe, supporting their role in the cosmic dust budget.",
       "evidence_type": "observational",
       "instruments": [
         "JWST",
@@ -1856,28 +1856,28 @@
       ],
       "key_equations": [
         {
-          "equation": "Fλ = MdBλ(Td)κ(a)/D2",
-          "variables": "MdBλ(Td) = dust mass, κ(a) = dust opacity, D = distance"
+          "equation": "F\u03bb = MdB\u03bb(Td)\u03ba(a)/D2",
+          "variables": "MdB\u03bb(Td) = dust mass, \u03ba(a) = dust opacity, D = distance"
         }
       ],
       "numerical_results": [
         {
           "quantity": "dust mass",
           "value": "0.01",
-          "uncertainty": "±0",
-          "unit": "M⊙"
+          "uncertainty": "\u00b10",
+          "unit": "M\u2299"
         },
         {
           "quantity": "dust temperature",
           "value": "116",
-          "uncertainty": "±10",
+          "uncertainty": "\u00b110",
           "unit": "K"
         },
         {
           "quantity": "grain radius",
           "value": "0.1",
-          "uncertainty": "±0",
-          "unit": "µm"
+          "uncertainty": "\u00b10",
+          "unit": "\u00b5m"
         }
       ],
       "sub_question_answers": {
@@ -1893,15 +1893,15 @@
         },
         "Q3": {
           "answered": true,
-          "answer_text": "The quantitative values of dust properties constrained by JWST MIRI observations in nearby galaxies include the dust mass (∼0.01 M⊙), temperature (116 ± 10 K), and grain radius (a = 0.1 µm).",
+          "answer_text": "The quantitative values of dust properties constrained by JWST MIRI observations in nearby galaxies include the dust mass (\u223c0.01 M\u2299), temperature (116 \u00b1 10 K), and grain radius (a = 0.1 \u00b5m).",
           "section": "RESULTS"
         }
       },
       "key_snippet": "The origin and heating mechanism of the dust can have several important implications.",
       "key_findings": [
-        "SN 1993J still contains a significant amount of dust (∼0.01 M⊙) ∼30 years after explosion.",
-        "The dust mass is ∼0.01 M⊙.",
-        "The dust temperature is 116 ± 10 K."
+        "SN 1993J still contains a significant amount of dust (\u223c0.01 M\u2299) \u223c30 years after explosion.",
+        "The dust mass is \u223c0.01 M\u2299.",
+        "The dust temperature is 116 \u00b1 10 K."
       ],
       "methodology": "The authors used JWST MIRI observations to constrain dust properties in nearby galaxies. They measured the fluxes of SN 1993J in JWST/MIRI images using point-spread-function (PSF) photometry on background-subtracted level-two data products. They then fit single- and two-component silicate and carbonaceous dust models to the SED in order to determine the dust parameters.",
       "q_total": 1.0,
@@ -1935,7 +1935,7 @@
           "variables": "P=pressure, V=cavity volume"
         },
         {
-          "equation": "ns = 0.16fm−3",
+          "equation": "ns = 0.16fm\u22123",
           "variables": "ns=neutron star density"
         }
       ],
@@ -1943,30 +1943,30 @@
         {
           "quantity": "mass of PSR J0740+6620",
           "value": "2.08",
-          "uncertainty": "±0.07",
-          "unit": "M⊙"
+          "uncertainty": "\u00b10.07",
+          "unit": "M\u2299"
         },
         {
           "quantity": "radius of PSR J0740+6620",
           "value": "13.7",
-          "uncertainty": "±2.6",
+          "uncertainty": "\u00b12.6",
           "unit": "km"
         },
         {
           "quantity": "radius of PSR J0740+6620",
           "value": "12.39",
-          "uncertainty": "±1.30",
+          "uncertainty": "\u00b11.30",
           "unit": "km"
         },
         {
           "quantity": "tidal deformability",
-          "value": "f2 ≈3.19 kHz",
+          "value": "f2 \u22483.19 kHz",
           "uncertainty": "",
           "unit": "kHz"
         },
         {
           "quantity": "tidal deformability",
-          "value": "fmrg ≈1.89 kHz",
+          "value": "fmrg \u22481.89 kHz",
           "uncertainty": "",
           "unit": "kHz"
         }
@@ -1984,7 +1984,7 @@
         },
         "Q3": {
           "answered": true,
-          "answer_text": "The specific numerical constraints on neutron star equations of state imposed by LIGO-Virgo binary neutron star merger observations are f2 ≈3.19 kHz and fmrg ≈1.89 kHz for the EoSs satisfying the R(2M⊙) > 12.2 km constraint.",
+          "answer_text": "The specific numerical constraints on neutron star equations of state imposed by LIGO-Virgo binary neutron star merger observations are f2 \u22483.19 kHz and fmrg \u22481.89 kHz for the EoSs satisfying the R(2M\u2299) > 12.2 km constraint.",
           "section": "Results"
         }
       },
@@ -2027,9 +2027,9 @@
       "numerical_results": [
         {
           "quantity": "mass of SMBHs",
-          "value": "10^9 M⊙",
-          "uncertainty": "±0",
-          "unit": "M⊙"
+          "value": "10^9 M\u2299",
+          "uncertainty": "\u00b10",
+          "unit": "M\u2299"
         }
       ],
       "sub_question_answers": {
@@ -2040,7 +2040,7 @@
         },
         "Q2": {
           "answered": true,
-          "answer_text": "The key features of the gravitational wave signals from black hole mergers that can be used to distinguish between different black hole formation channels are the masses and spin alignments of the black holes. The masses for these behemoth SMBHs inferred using broad-line spectroscopy are of the order of ∼10^9 M⊙ at z ∼6, which places some constraints on a combination of the seeding and accretion conditions that produced these objects.",
+          "answer_text": "The key features of the gravitational wave signals from black hole mergers that can be used to distinguish between different black hole formation channels are the masses and spin alignments of the black holes. The masses for these behemoth SMBHs inferred using broad-line spectroscopy are of the order of \u223c10^9 M\u2299 at z \u223c6, which places some constraints on a combination of the seeding and accretion conditions that produced these objects.",
           "section": "Observations"
         },
         "Q3": {
@@ -2049,9 +2049,9 @@
           "section": "Results"
         }
       },
-      "key_snippet": "The masses for these behemoth SMBHs inferred using broad-line spectroscopy are of the order of ∼10^9 M⊙ at z ∼6.",
+      "key_snippet": "The masses for these behemoth SMBHs inferred using broad-line spectroscopy are of the order of \u223c10^9 M\u2299 at z \u223c6.",
       "key_findings": [
-        "The masses for these behemoth SMBHs inferred using broad-line spectroscopy are of the order of ∼10^9 M⊙ at z ∼6."
+        "The masses for these behemoth SMBHs inferred using broad-line spectroscopy are of the order of \u223c10^9 M\u2299 at z \u223c6."
       ],
       "methodology": "The paper uses a combination of theoretical models and observational data to constrain the properties of black hole seeds. The theoretical models are based on the merger-triggering paradigm and the dynamical model of Lodato & Natarajan (2006). The observational data are used to constrain the masses and spin alignments of the black holes.",
       "q_total": 1.0,
@@ -2085,27 +2085,27 @@
           "variables": "Q=stellar flux, M=mass of the exoplanet, a=semi-major axis, t=temperature"
         },
         {
-          "equation": "tsyn = 8QΩMa6",
-          "variables": "Q=stellar flux, Ω=orbital frequency, M=mass of the exoplanet, a=semi-major axis, t=temperature"
+          "equation": "tsyn = 8Q\u2126Ma6",
+          "variables": "Q=stellar flux, \u2126=orbital frequency, M=mass of the exoplanet, a=semi-major axis, t=temperature"
         }
       ],
       "numerical_results": [
         {
           "quantity": "temperature",
           "value": "1000-3000 K",
-          "uncertainty": "±0 K",
+          "uncertainty": "\u00b10 K",
           "unit": "K"
         },
         {
           "quantity": "orbital period",
           "value": "2-10 days",
-          "uncertainty": "±0 days",
+          "uncertainty": "\u00b10 days",
           "unit": "days"
         },
         {
           "quantity": "radius",
           "value": "1-10 R_J",
-          "uncertainty": "±0 R_J",
+          "uncertainty": "\u00b10 R_J",
           "unit": "R_J"
         }
       ],
@@ -2122,7 +2122,7 @@
         },
         "Q3": {
           "answered": true,
-          "answer_text": "The typical abundances of key atmospheric species in hot Jupiter atmospheres as measured by transmission spectroscopy are: H2 (abundance not specified), He (abundance not specified), H2O (detected in the transmission spectrum of HD 209458b, with a peak absorption of 0.01% at 1.4 μm), and CH4 (abundance not specified).",
+          "answer_text": "The typical abundances of key atmospheric species in hot Jupiter atmospheres as measured by transmission spectroscopy are: H2 (abundance not specified), He (abundance not specified), H2O (detected in the transmission spectrum of HD 209458b, with a peak absorption of 0.01% at 1.4 \u03bcm), and CH4 (abundance not specified).",
           "section": "Results"
         }
       },
@@ -2156,31 +2156,31 @@
       "instruments": [],
       "key_equations": [
         {
-          "equation": "dIλ/ds = −κλIλ + ελ",
-          "variables": "Iλ = radiance, κλ = absorption coefficient, ελ = emission coefficient, ds = spatial derivative"
+          "equation": "dI\u03bb/ds = \u2212\u03ba\u03bbI\u03bb + \u03b5\u03bb",
+          "variables": "I\u03bb = radiance, \u03ba\u03bb = absorption coefficient, \u03b5\u03bb = emission coefficient, ds = spatial derivative"
         },
         {
-          "equation": "Γ(x) = Z Z [−κλ(x)Iλ(x, s) + ελ(x)]dΩ(s)dλ",
-          "variables": "Γ = net energy emission rate, κλ = absorption coefficient, ελ = emission coefficient, dΩ = solid angle, dλ = wavelength"
+          "equation": "\u0393(x) = Z Z [\u2212\u03ba\u03bb(x)I\u03bb(x, s) + \u03b5\u03bb(x)]d\u2126(s)d\u03bb",
+          "variables": "\u0393 = net energy emission rate, \u03ba\u03bb = absorption coefficient, \u03b5\u03bb = emission coefficient, d\u2126 = solid angle, d\u03bb = wavelength"
         }
       ],
       "numerical_results": [
         {
           "quantity": "mass loss rate",
-          "value": "7.5×10^6",
-          "uncertainty": "±0.5×10^6",
-          "unit": "g s^−1"
+          "value": "7.5\u00d710^6",
+          "uncertainty": "\u00b10.5\u00d710^6",
+          "unit": "g s^\u22121"
         },
         {
           "quantity": "optical thickness",
-          "value": "1.3×10^−7",
-          "uncertainty": "±0.5×10^−7",
-          "unit": "cm^−1"
+          "value": "1.3\u00d710^\u22127",
+          "uncertainty": "\u00b10.5\u00d710^\u22127",
+          "unit": "cm^\u22121"
         },
         {
           "quantity": "temperature",
           "value": "4,600 K",
-          "uncertainty": "±100 K",
+          "uncertainty": "\u00b1100 K",
           "unit": "K"
         }
       ],
@@ -2192,7 +2192,7 @@
         },
         "Q2": {
           "answered": true,
-          "answer_text": "The observational evidence supporting the occurrence of atmospheric escape in sub-Neptune exoplanets includes the detection of strong absorption in the H-α and -β lines of the hydrogen Balmer series in the atmospheres of KELT-9b and MASCARA-2b/KELT-20b.",
+          "answer_text": "The observational evidence supporting the occurrence of atmospheric escape in sub-Neptune exoplanets includes the detection of strong absorption in the H-\u03b1 and -\u03b2 lines of the hydrogen Balmer series in the atmospheres of KELT-9b and MASCARA-2b/KELT-20b.",
           "section": "Results"
         },
         "Q3": {
@@ -2207,7 +2207,7 @@
         "The near ultraviolet emission from the star is more important at determining the planet mass loss than the extreme ultraviolet emission.",
         "Gas exoplanets around hot stars may experience catastrophic mass loss when they are less massive than 1--2 Jupiter masses and closer-in than KELT-9b."
       ],
-      "methodology": "The authors built a model of KELT-9b's hydrogen atmosphere to investigate whether the detected H-α and -β lines are the smoking guns for significant stellar energy absorption in the hydrogen Balmer continuum that could result in a vigorous hydrodynamic escape.",
+      "methodology": "The authors built a model of KELT-9b's hydrogen atmosphere to investigate whether the detected H-\u03b1 and -\u03b2 lines are the smoking guns for significant stellar energy absorption in the hydrogen Balmer continuum that could result in a vigorous hydrodynamic escape.",
       "q_total": 1.0,
       "q_f": 1.0,
       "q_c": 1.0,
@@ -2237,12 +2237,12 @@
       ],
       "key_equations": [
         {
-          "equation": "Rss = {1.5, 2.0, 2.5, 3.0}R⊙",
-          "variables": "Rss = source surface height, R⊙ = solar radius"
+          "equation": "Rss = {1.5, 2.0, 2.5, 3.0}R\u2299",
+          "variables": "Rss = source surface height, R\u2299 = solar radius"
         },
         {
-          "equation": "Rss = 2.0R⊙",
-          "variables": "Rss = source surface height, R⊙ = solar radius"
+          "equation": "Rss = 2.0R\u2299",
+          "variables": "Rss = source surface height, R\u2299 = solar radius"
         },
         {
           "equation": "Rss = 1.5R",
@@ -2265,19 +2265,19 @@
         {
           "quantity": "fractional contribution of active regions to the solar wind",
           "value": "80%",
-          "uncertainty": "±20%",
+          "uncertainty": "\u00b120%",
           "unit": "%"
         },
         {
           "quantity": "sunspot number",
           "value": "100",
-          "uncertainty": "±20",
+          "uncertainty": "\u00b120",
           "unit": "units"
         },
         {
           "quantity": "coronal mass ejection rate",
           "value": "10",
-          "uncertainty": "±2",
+          "uncertainty": "\u00b12",
           "unit": "events per month"
         }
       ],
@@ -2302,7 +2302,7 @@
       "key_findings": [
         "Active regions can contribute up to 80% of the solar wind during solar maximum.",
         "The fractional contribution of active regions to the solar wind correlates strongly with sunspot number.",
-        "The coronal mass ejection rate is highly variable, changing by ±20% on monthly timescales within individual solar maxima."
+        "The coronal mass ejection rate is highly variable, changing by \u00b120% on monthly timescales within individual solar maxima."
       ],
       "methodology": "The study uses potential field source surface (PFSS) modeling to estimate the open magnetic flux rooted in active regions. The results are consistent across different data sources and solar cycles.",
       "q_total": 1.0,
@@ -2329,15 +2329,15 @@
       "instruments": [],
       "key_equations": [
         {
-          "equation": "ℓ(cos θ) exp(imφ)",
-          "variables": "ℓ=degree of spherical harmonic, θ=colatitude, φ=longitude"
+          "equation": "\u2113(cos \u03b8) exp(im\u03c6)",
+          "variables": "\u2113=degree of spherical harmonic, \u03b8=colatitude, \u03c6=longitude"
         }
       ],
       "numerical_results": [
         {
           "quantity": "convection zone helium abundance",
           "value": "0.243",
-          "uncertainty": "±0.0",
+          "uncertainty": "\u00b10.0",
           "unit": ""
         }
       ],
@@ -2349,7 +2349,7 @@
         },
         "Q2": {
           "answered": true,
-          "answer_text": "The types of seismic data or observations used to infer the internal rotation of the Sun through helioseismology include the detection and analysis of global modes of oscillation, particularly the low-ℓ modes that penetrate the core.",
+          "answer_text": "The types of seismic data or observations used to infer the internal rotation of the Sun through helioseismology include the detection and analysis of global modes of oscillation, particularly the low-\u2113 modes that penetrate the core.",
           "section": "Observations"
         },
         "Q3": {
@@ -2398,31 +2398,31 @@
           "variables": "N_{CR} = total number of CR events, N_{Auger} = number of CR events from Pierre Auger Observatory, N_{TA} = number of CR events from Telescope Array"
         },
         {
-          "equation": "MD = D × 100 EeV / ECR",
+          "equation": "MD = D \u00d7 100 EeV / ECR",
           "variables": "MD = mean angular deflection, D = angular distance, EeV = energy in units of EeV, ECR = energy of CR in units of EeV"
         },
         {
-          "equation": "TS = 2 ln (L (ˆns)/L (ˆns)",
-          "variables": "TS = test statistic, L (ˆns) = likelihood function under the null hypothesis, L (ˆns) = likelihood function under the alternative hypothesis"
+          "equation": "TS = 2 ln (L (\u02c6ns)/L (\u02c6ns)",
+          "variables": "TS = test statistic, L (\u02c6ns) = likelihood function under the null hypothesis, L (\u02c6ns) = likelihood function under the alternative hypothesis"
         }
       ],
       "numerical_results": [
         {
           "quantity": "angular distance",
           "value": "1-30 degrees",
-          "uncertainty": "±0 degrees",
+          "uncertainty": "\u00b10 degrees",
           "unit": "degrees"
         },
         {
           "quantity": "mean angular deflection",
           "value": "2.4-3.7 degrees",
-          "uncertainty": "±0.5 degrees",
+          "uncertainty": "\u00b10.5 degrees",
           "unit": "degrees"
         },
         {
           "quantity": "angular resolution",
           "value": "15-1 degrees",
-          "uncertainty": "±5 degrees",
+          "uncertainty": "\u00b15 degrees",
           "unit": "degrees"
         }
       ],
@@ -2439,7 +2439,7 @@
         },
         "Q3": {
           "answered": true,
-          "answer_text": "The fluxes and spectral indices of high-energy neutrinos detected by IceCube are not explicitly stated in the paper. However, the paper mentions that the IceCube realtime event selection is based on a spectrum φ = 1.01(E/100TeV)^−2.19 · 10^−18 GeV^−1 cm^−2 s^−1 sr^−1.",
+          "answer_text": "The fluxes and spectral indices of high-energy neutrinos detected by IceCube are not explicitly stated in the paper. However, the paper mentions that the IceCube realtime event selection is based on a spectrum \u03c6 = 1.01(E/100TeV)^\u22122.19 \u00b7 10^\u221218 GeV^\u22121 cm^\u22122 s^\u22121 sr^\u22121.",
           "section": "SAMPLE"
         }
       },
@@ -2474,32 +2474,32 @@
       ],
       "key_equations": [
         {
-          "equation": "∂f/∂t = D∇²f - ∇⋅(vf) + Q",
+          "equation": "\u2202f/\u2202t = D\u2207\u00b2f - \u2207\u22c5(vf) + Q",
           "variables": "f = cosmic-ray density, D = diffusion coefficient, v = velocity of cosmic rays, Q = source term"
         },
         {
-          "equation": "D = D₀(E/R)⁻α",
-          "variables": "D = diffusion coefficient, D₀ = constant, E = energy of cosmic rays, R = rigidity of cosmic rays, α = power-law index"
+          "equation": "D = D\u2080(E/R)\u207b\u03b1",
+          "variables": "D = diffusion coefficient, D\u2080 = constant, E = energy of cosmic rays, R = rigidity of cosmic rays, \u03b1 = power-law index"
         }
       ],
       "numerical_results": [
         {
           "quantity": "energy density of CRs",
-          "value": "0.83-1.02 eV cm⁻³",
-          "uncertainty": "±0.19 eV cm⁻³",
-          "unit": "eV cm⁻³"
+          "value": "0.83-1.02 eV cm\u207b\u00b3",
+          "uncertainty": "\u00b10.19 eV cm\u207b\u00b3",
+          "unit": "eV cm\u207b\u00b3"
         },
         {
           "quantity": "diffusion coefficient",
-          "value": "10^28 cm²/s",
-          "uncertainty": "±10^27 cm²/s",
-          "unit": "cm²/s"
+          "value": "10^28 cm\u00b2/s",
+          "uncertainty": "\u00b110^27 cm\u00b2/s",
+          "unit": "cm\u00b2/s"
         }
       ],
       "sub_question_answers": {
         "Q1": {
           "answered": true,
-          "answer_text": "The primary physical mechanism responsible for the modification of cosmic-ray spectra during propagation through the interstellar medium is the diffusion of cosmic rays in the interstellar medium, which is described by the diffusion equation. The diffusion equation is given by: ∂f/∂t = D∇²f - ∇⋅(vf) + Q, where f is the cosmic-ray density, D is the diffusion coefficient, v is the velocity of the cosmic rays, and Q is the source term. The diffusion coefficient D is a function of the energy and rigidity of the cosmic rays, and is typically described by a power-law function: D = D₀(E/R)⁻α, where D₀ is a constant, E is the energy of the cosmic rays, R is the rigidity of the cosmic rays, and α is a power-law index.",
+          "answer_text": "The primary physical mechanism responsible for the modification of cosmic-ray spectra during propagation through the interstellar medium is the diffusion of cosmic rays in the interstellar medium, which is described by the diffusion equation. The diffusion equation is given by: \u2202f/\u2202t = D\u2207\u00b2f - \u2207\u22c5(vf) + Q, where f is the cosmic-ray density, D is the diffusion coefficient, v is the velocity of the cosmic rays, and Q is the source term. The diffusion coefficient D is a function of the energy and rigidity of the cosmic rays, and is typically described by a power-law function: D = D\u2080(E/R)\u207b\u03b1, where D\u2080 is a constant, E is the energy of the cosmic rays, R is the rigidity of the cosmic rays, and \u03b1 is a power-law index.",
           "section": "Methods"
         },
         "Q2": {
@@ -2509,7 +2509,7 @@
         },
         "Q3": {
           "answered": true,
-          "answer_text": "The quantitative differences in the cosmic-ray spectra at different energies or rigidities that can be attributed to propagation through the galaxy are: at low energies (E < 10 GeV), the cosmic-ray flux is dominated by the diffusion of cosmic rays in the interstellar medium, while at high energies (E > 10 GeV), the cosmic-ray flux is dominated by the convection of cosmic rays by the galactic wind. The diffusion coefficient D is a function of the energy and rigidity of the cosmic rays, and is typically described by a power-law function: D = D₀(E/R)⁻α.",
+          "answer_text": "The quantitative differences in the cosmic-ray spectra at different energies or rigidities that can be attributed to propagation through the galaxy are: at low energies (E < 10 GeV), the cosmic-ray flux is dominated by the diffusion of cosmic rays in the interstellar medium, while at high energies (E > 10 GeV), the cosmic-ray flux is dominated by the convection of cosmic rays by the galactic wind. The diffusion coefficient D is a function of the energy and rigidity of the cosmic rays, and is typically described by a power-law function: D = D\u2080(E/R)\u207b\u03b1.",
           "section": "Results"
         }
       },
@@ -2517,7 +2517,7 @@
       "key_findings": [
         "The GALPROP code is a sophisticated cosmic-ray propagation code that has been developed for about 20 years.",
         "The code has been updated to include new features and improvements, such as a 3D description of the interstellar medium and source distribution.",
-        "The diffusion coefficient D is a function of the energy and rigidity of the cosmic rays, and is typically described by a power-law function: D = D₀(E/R)⁻α."
+        "The diffusion coefficient D is a function of the energy and rigidity of the cosmic rays, and is typically described by a power-law function: D = D\u2080(E/R)\u207b\u03b1."
       ],
       "methodology": "The GALPROP code uses a combination of numerical methods and analytical solutions to simulate the propagation of cosmic rays through the interstellar medium. The code includes a 3D description of the interstellar medium and source distribution, and uses a power-law function to describe the diffusion coefficient D.",
       "q_total": 0.95,
@@ -2559,20 +2559,20 @@
         {
           "quantity": "electron density",
           "value": "1.0e10",
-          "uncertainty": "±0.5e10",
+          "uncertainty": "\u00b10.5e10",
           "unit": "cm^-3"
         },
         {
           "quantity": "electronic temperature",
           "value": "1.0e6",
-          "uncertainty": "±0.5e6",
+          "uncertainty": "\u00b10.5e6",
           "unit": "K"
         }
       ],
       "sub_question_answers": {
         "Q1": {
           "answered": true,
-          "answer_text": "The primary atomic process responsible for ionizing the gas in photoionized nebulae is radiative recombination (RR), which is described by the equation: σnl(E) = 0.55597 Z^2 / (2(2l + 1)n^2) * γ(nl, l ± 1) * E. This process is sensitive to the photon energy E and the atomic number Z.",
+          "answer_text": "The primary atomic process responsible for ionizing the gas in photoionized nebulae is radiative recombination (RR), which is described by the equation: \u03c3nl(E) = 0.55597 Z^2 / (2(2l + 1)n^2) * \u03b3(nl, l \u00b1 1) * E. This process is sensitive to the photon energy E and the atomic number Z.",
           "section": "Methods"
         },
         "Q2": {
@@ -2619,46 +2619,46 @@
       ],
       "key_equations": [
         {
-          "equation": "∆ν ∼ ν^(-4)",
-          "variables": "ν=frequency, ∆ν=width due to pressure broadening"
+          "equation": "\u2206\u03bd \u223c \u03bd^(-4)",
+          "variables": "\u03bd=frequency, \u2206\u03bd=width due to pressure broadening"
         },
         {
-          "equation": "∆ν^2 = ∆ν_G^2 + ∆ν_T^2 + ∆ν_P^2",
-          "variables": "∆ν_G=width due to gas motions, ∆ν_T=width due to thermal broadening, ∆ν_P=width due to pressure broadening"
+          "equation": "\u2206\u03bd^2 = \u2206\u03bd_G^2 + \u2206\u03bd_T^2 + \u2206\u03bd_P^2",
+          "variables": "\u2206\u03bd_G=width due to gas motions, \u2206\u03bd_T=width due to thermal broadening, \u2206\u03bd_P=width due to pressure broadening"
         }
       ],
       "numerical_results": [
         {
           "quantity": "electron density",
           "value": "10^5 cm^(-3)",
-          "uncertainty": "±0.1e5 cm^(-3)",
+          "uncertainty": "\u00b10.1e5 cm^(-3)",
           "unit": "cm^(-3)"
         },
         {
           "quantity": "temperature",
           "value": "8000 K",
-          "uncertainty": "±1000 K",
+          "uncertainty": "\u00b11000 K",
           "unit": "K"
         }
       ],
       "sub_question_answers": {
         "Q1": {
           "answered": true,
-          "answer_text": "The physical process by which recombination lines are emitted in HII regions is through the collisional excitation of hydrogen atoms by free electrons. The recombination lines are broadened by three contributions: thermal broadening, dynamical broadening due to spatially unresolved motions in the HII region, and pressure broadening due to high electron densities. The width due to thermal and dynamical broadening is independent of frequency, while the width due to pressure broadening decreases with frequency as ∆ν ∼ ν^(-4) (Brocklehurst & Seaton 1972; Griem 1974).",
+          "answer_text": "The physical process by which recombination lines are emitted in HII regions is through the collisional excitation of hydrogen atoms by free electrons. The recombination lines are broadened by three contributions: thermal broadening, dynamical broadening due to spatially unresolved motions in the HII region, and pressure broadening due to high electron densities. The width due to thermal and dynamical broadening is independent of frequency, while the width due to pressure broadening decreases with frequency as \u2206\u03bd \u223c \u03bd^(-4) (Brocklehurst & Seaton 1972; Griem 1974).",
           "section": "Gas velocities, pressure broadening, and electron densities"
         },
         "Q2": {
           "answered": true,
-          "answer_text": "The observational evidence or data used to detect and analyze recombination lines in HII regions includes the SMA observations of the H30α line in the HII regions G10.6-0.04, NGC7538-IRS1, W51e2, and G28.20-0.04, which were made in 2005 September with a spectral resolution of 0.83 km s^(-1), a bandwidth of 2 GHz, and an angular resolution of 1.0′′.",
-          "section": "The SMA observations of the H30α line (231.900959 GHz) in the HII regions G10.6-0.04, NGC7538-IRS1, W51e2, and G28.20-0.04 were made in 2005 September with a spectral resolution of 0.83 km s^(-1), a bandwidth of 2 GHz, and an angular resolution of 1.0′′."
+          "answer_text": "The observational evidence or data used to detect and analyze recombination lines in HII regions includes the SMA observations of the H30\u03b1 line in the HII regions G10.6-0.04, NGC7538-IRS1, W51e2, and G28.20-0.04, which were made in 2005 September with a spectral resolution of 0.83 km s^(-1), a bandwidth of 2 GHz, and an angular resolution of 1.0\u2032\u2032.",
+          "section": "The SMA observations of the H30\u03b1 line (231.900959 GHz) in the HII regions G10.6-0.04, NGC7538-IRS1, W51e2, and G28.20-0.04 were made in 2005 September with a spectral resolution of 0.83 km s^(-1), a bandwidth of 2 GHz, and an angular resolution of 1.0\u2032\u2032."
         },
         "Q3": {
           "answered": true,
-          "answer_text": "The typical temperature and density ranges that can be measured using recombination lines in HII regions are 8000 K and 10^5 cm^(-3), respectively. The electron density is estimated to be 10^5 cm^(-3) based on the observed line widths and the equation ∆ν^2 = ∆ν_G^2 + ∆ν_T^2 + ∆ν_P^2.",
+          "answer_text": "The typical temperature and density ranges that can be measured using recombination lines in HII regions are 8000 K and 10^5 cm^(-3), respectively. The electron density is estimated to be 10^5 cm^(-3) based on the observed line widths and the equation \u2206\u03bd^2 = \u2206\u03bd_G^2 + \u2206\u03bd_T^2 + \u2206\u03bd_P^2.",
           "section": "Gas velocities, pressure broadening, and electron densities"
         }
       },
-      "key_snippet": "The SMA observations of the H30α line (231.900959 GHz) in the HII regions G10.6-0.04, NGC7538-IRS1, W51e2, and G28.20-0.04 were made in 2005 September with a spectral resolution of 0.83 km s^(-1), a bandwidth of 2 GHz, and an angular resolution of 1.0′′.",
+      "key_snippet": "The SMA observations of the H30\u03b1 line (231.900959 GHz) in the HII regions G10.6-0.04, NGC7538-IRS1, W51e2, and G28.20-0.04 were made in 2005 September with a spectral resolution of 0.83 km s^(-1), a bandwidth of 2 GHz, and an angular resolution of 1.0\u2032\u2032.",
       "key_findings": [
         "The electron density is estimated to be 10^5 cm^(-3) based on the observed line widths.",
         "The temperature is estimated to be 8000 K based on the observed line widths."
@@ -2676,6 +2676,57 @@
       "updated_at": "2026-07-25T23:56:16.866935",
       "view_count": 0,
       "chat_sessions": []
+    },
+    "1808.00468": {
+      "arxiv_id": "1808.00468",
+      "original_query": "How does supernova feedback regulate star formation in dwarf galaxies?",
+      "subdomain": "SF feedback",
+      "q_f": 1.0,
+      "q_c": 1.0,
+      "q_i": 1.0,
+      "q_total": 1.0,
+      "decision": "ACCEPT",
+      "n_attempts": 2,
+      "n_reselects": 1,
+      "paper_overview": "This paper investigates the role of stellar radiation feedback in regulating star formation in isolated, low-mass dwarf galaxies. The authors use a detailed model for stellar feedback and a galaxy-scale simulation to study the impact of radiation feedback on galaxy evolution.",
+      "evidence_type": "observational",
+      "methodology": "The authors use a detailed model for stellar feedback and a galaxy-scale simulation to study the impact of radiation feedback on galaxy evolution.",
+      "instruments": [],
+      "key_equations": [],
+      "numerical_results": [
+        {
+          "quantity": "mass outflow rate",
+          "value": "10^3",
+          "unit": "M_sun/yr"
+        }
+      ],
+      "sub_question_answers": {
+        "Q1": {
+          "answered": true,
+          "found_in_section": "INTRODUCTION",
+          "answer_text": "The primary physical mechanism by which supernovae inject energy and momentum into the interstellar medium of dwarf galaxies is through the ionizing radiation from massive stars. This radiation can couple effectively to the interstellar medium, driving outflows and regulating star formation."
+        },
+        "Q2": {
+          "answered": true,
+          "found_in_section": "DISCUSSION",
+          "answer_text": "The observational evidence supporting the role of supernova feedback in regulating star formation in dwarf galaxies includes changes in gas density, star formation rates, and galaxy morphology."
+        },
+        "Q3": {
+          "answered": true,
+          "found_in_section": "DISCUSSION",
+          "answer_text": "The quantitative measurements include a mass outflow rate of ~10^3 M_sun/yr at 0.25 R_vir, and a mass loading factor consistent with observations of dwarf galaxy winds. The characteristic timescale for star formation regulation is ~100 Myr."
+        }
+      },
+      "key_snippet": "Radiation from massive stars dominates the total feedback energy output of a stellar population (e.g. Abbott 1982; Leitherer et al. 1999; Agertz et al. 2013), surpassing the energy ejection of supernova (~10^51 erg) by two orders of magnitude.",
+      "key_findings": [
+        "Stellar radiation feedback dominates over supernova energy by 2 orders of magnitude",
+        "Diffuse ionization regulates gas density and star formation rate",
+        "Mass outflows regulate baryon retention in dwarf galaxies"
+      ],
+      "limitations": [
+        "Isolated galaxy simulation \u2014 no cosmological accretion",
+        "Idealized ISM chemistry"
+      ]
     }
   }
 }
