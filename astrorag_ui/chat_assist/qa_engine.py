@@ -4,15 +4,16 @@ Research-grade QA engine.
 Given a paper's library entry and a user question, this module:
 1. Infers the question's intent (methodology / results / etc.)
 2. Retrieves the most relevant paper context for that intent
-3. Selects the appropriate system prompt
-4. Calls the LLM with much larger max_tokens for detailed answers
-5. Returns the answer plus metadata about how it was produced
+3. On table-intent questions, fetches PDF and extracts tables on demand
+4. Selects the appropriate system prompt
+5. Calls the LLM with larger max_tokens for detailed answers
+6. Returns the answer plus metadata about how it was produced
 """
 
 from __future__ import annotations
 
 import os
-from   dataclasses import dataclass
+from   dataclasses import dataclass, field
 
 
 try:
@@ -22,9 +23,14 @@ except ImportError:
     HAS_GROQ = False
 
 
-from chat_assist.context_retrieval  import retrieve_paper_context, PaperContext
+from chat_assist.context_retrieval  import retrieve_paper_context
 from chat_assist.question_templates import infer_intent
 from chat_assist.system_prompts     import get_prompt_for_intent
+from chat_assist.pdf_tables         import (
+    get_paper_tables,
+    rank_tables_by_question,
+    is_table_intent,
+)
 
 
 @dataclass
@@ -36,16 +42,12 @@ class AnswerResult:
     context_chars:  int
     model_used:     str
     error:          str = ""
+    tables:         list[dict] = field(default_factory=list)
 
 
 class ResearchPaperQA:
     """
     Enhanced QA engine for research-depth paper analysis.
-
-    Usage:
-        qa = ResearchPaperQA(library_entry=entry_dict)
-        result = qa.ask("Walk me through the derivation of E_cav = 4PV")
-        print(result.answer)
     """
 
     def __init__(
@@ -78,15 +80,60 @@ class ResearchPaperQA:
         # ── infer intent ─────────────────────────────
         intent = infer_intent(question)
 
+        # ── table intent: fetch and extract on demand ─
+        rendered_tables: list[dict] = []
+
+        if intent == "tables" or is_table_intent(question):
+            if isinstance(self.entry, dict):
+                arxiv_id = self.entry.get("arxiv_id", "")
+            else:
+                arxiv_id = getattr(self.entry, "arxiv_id", "")
+
+            if arxiv_id:
+                table_set = get_paper_tables(arxiv_id)
+                if not table_set.error and table_set.n_tables > 0:
+                    top_tables = rank_tables_by_question(
+                        table_set.tables, question, top_k=3,
+                    )
+                    for tbl, score in top_tables:
+                        rendered_tables.append({
+                            "page_num":  tbl.page_num,
+                            "table_num": tbl.table_num,
+                            "caption":   tbl.caption,
+                            "n_rows":    tbl.n_rows,
+                            "n_cols":    tbl.n_cols,
+                            "markdown":  tbl.to_markdown(),
+                            "relevance": round(score, 3),
+                        })
+
         # ── build context ────────────────────────────
         context = retrieve_paper_context(self.entry, question, intent)
         context_block = context.to_prompt_block(max_chars=8000)
 
+        # append rendered tables to context if we retrieved any
+        if rendered_tables:
+            tbl_block = ["\n=== TABLES EXTRACTED FROM THE PDF ===\n"]
+            for t in rendered_tables[:3]:
+                tbl_block.append(
+                    f"[Table {t['table_num']} on page {t['page_num']}] "
+                    f"{t['caption'] or '(no caption)'}\n"
+                    f"{t['markdown']}\n"
+                )
+            context_block = context_block + "\n" + "\n".join(tbl_block)
+
         # ── choose system prompt ─────────────────────
         system_prompt = get_prompt_for_intent(intent)
 
+        if rendered_tables:
+            system_prompt = system_prompt + (
+                "\n\nADDITIONAL INSTRUCTION: The user is asking about tables. "
+                "Tables extracted directly from the PDF are provided below in "
+                "markdown format. Refer to them by page and table number. "
+                "You may summarize their content or point out what they contain, "
+                "but the tables themselves will be shown to the user separately."
+            )
+
         # ── build conversation ───────────────────────
-        # Include prior turns so the assistant maintains conversation flow.
         messages = [
             {"role": "system", "content": system_prompt},
             {
@@ -103,18 +150,20 @@ class ResearchPaperQA:
                 "content": (
                     "Understood. I have the paper's overview, equations, "
                     "numerical results, methodology summary, and sub-question "
-                    "answers. Ask your research question."
+                    "answers"
+                    + (", plus tables extracted directly from the PDF" if rendered_tables else "")
+                    + ". Ask your research question."
                 ),
             },
         ]
 
-        # append prior history
-        for m in self.history[-6:]:  # last 3 turns to keep context tight
+        # append prior history (last 3 turns to keep prompt tight)
+        for m in self.history[-6:]:
             messages.append({"role": m["role"], "content": m["content"]})
 
         messages.append({"role": "user", "content": question})
 
-        # ── call LLM ─────────────────────────────────
+        # ── resolve API key ──────────────────────────
         api_key = os.environ.get("GROQ_API_KEY", "")
         if not api_key:
             try:
@@ -127,15 +176,17 @@ class ResearchPaperQA:
             return AnswerResult(
                 answer="", intent=intent, context_chars=len(context_block),
                 model_used=self.model, error="GROQ_API_KEY not configured",
+                tables=rendered_tables,
             )
 
+        # ── call LLM ─────────────────────────────────
         try:
             client = Groq(api_key=api_key)
             response = client.chat.completions.create(
                 model       = self.model,
                 messages    = messages,
-                temperature = 0.2,       # slight creativity for reasoning
-                max_tokens  = 1800,      # much larger for detailed answers
+                temperature = 0.2,
+                max_tokens  = 1800,
             )
             answer = response.choices[0].message.content.strip()
             return AnswerResult(
@@ -143,9 +194,10 @@ class ResearchPaperQA:
                 intent         = intent,
                 context_chars  = len(context_block),
                 model_used     = self.model,
+                tables         = rendered_tables,
             )
         except Exception as e:
-            # fall back to production 8B if 70B fails or hits rate limit
+            # fallback to 8B on rate-limit or error
             try:
                 client = Groq(api_key=api_key)
                 response = client.chat.completions.create(
@@ -160,6 +212,7 @@ class ResearchPaperQA:
                     intent         = intent,
                     context_chars  = len(context_block),
                     model_used     = "llama-3.1-8b-instant (fallback)",
+                    tables         = rendered_tables,
                 )
             except Exception as e2:
                 return AnswerResult(
@@ -167,4 +220,5 @@ class ResearchPaperQA:
                     context_chars=len(context_block),
                     model_used=self.model,
                     error=f"{type(e).__name__}: {e}",
+                    tables=rendered_tables,
                 )

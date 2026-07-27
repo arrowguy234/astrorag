@@ -5,6 +5,7 @@ Uses the chat_assist module for:
 - Research-oriented system prompt (methodology, derivation, critique focus)
 - Question template library grouped by category
 - Section-aware paper context retrieval
+- On-demand PDF table extraction
 - Larger max_tokens for detailed answers
 - Automatic 70B model for depth, with 8B fallback
 """
@@ -145,7 +146,10 @@ st.divider()
 # question templates panel
 # ══════════════════════════════════════════════════════════
 
-with st.expander("📚 Research question templates (click to insert)", expanded=len(st.session_state.chat_messages) == 0):
+with st.expander(
+    "📚 Research question templates (click to insert)",
+    expanded = len(st.session_state.chat_messages) == 0,
+):
     st.caption(
         "These are the questions researchers actually ask. Click any to "
         "load into your input box — you can edit before sending."
@@ -165,7 +169,7 @@ with st.expander("📚 Research question templates (click to insert)", expanded=
                 }.get(tmpl.depth, "")
                 if st.button(
                     f"{depth_badge} {tmpl.text}",
-                    key = f"tmpl_{category}_{i}",
+                    key   = f"tmpl_{category}_{i}",
                     width = "stretch",
                 ):
                     st.session_state["chat_prefilled"] = tmpl.text
@@ -191,12 +195,14 @@ Ready to analyze **arXiv:{selected_arxiv}** in depth.
 - **Comparisons:** relate this paper's approach to others (when cited)
 - **Critical analysis:** limitations, failure modes, alternative interpretations
 - **Extensions:** what would resolve open questions, follow-up observations
+- **Tables:** extract tables from the PDF on demand
 
 **I will:**
 - ✓ Cite section names when I make claims
 - ✓ Distinguish what the paper explicitly states from what I'm inferring
 - ✓ Clearly say "the paper does not address this" when it doesn't
 - ✓ Show reasoning and derivations when asked
+- ✓ Fetch tables from the PDF when you ask about them
 
 Use the **question templates above** for depth, or type your own question.
 """)
@@ -208,13 +214,29 @@ for msg in st.session_state.chat_messages:
     with st.chat_message(msg["role"], avatar=avatar):
         st.markdown(msg["content"])
 
+        # replay any tables
+        if msg.get("tables"):
+            st.divider()
+            st.markdown(f"### 📋 Tables ({len(msg['tables'])})")
+            for t in msg["tables"]:
+                caption = t.get("caption") or "_(no caption detected)_"
+                st.markdown(
+                    f"**Table {t['table_num']} on page {t['page_num']}** — "
+                    f"{caption}"
+                )
+                st.markdown(t["markdown"])
+                st.caption(f"{t['n_rows']} rows × {t['n_cols']} columns")
+                st.divider()
+
         # show metadata if present
         if msg.get("metadata"):
             m = msg["metadata"]
             st.caption(
                 f"_Intent: **{m['intent']}** &nbsp;•&nbsp; "
                 f"Context: {m['context_chars']} chars &nbsp;•&nbsp; "
-                f"Model: {m['model_used']}_"
+                f"Model: {m['model_used']}"
+                + (f" &nbsp;•&nbsp; Tables: {m.get('n_tables', 0)}" if m.get('n_tables') else "")
+                + "_"
             )
 
 
@@ -227,7 +249,6 @@ question = st.chat_input(
     f"Ask a research question about arXiv:{selected_arxiv}...",
 )
 
-# handle prefilled from template
 if prefilled and not question:
     question = prefilled
 
@@ -258,22 +279,45 @@ if question:
             metadata = None
         else:
             st.markdown(result.answer)
+
+            if result.tables:
+                st.divider()
+                st.markdown(
+                    f"### 📋 Tables from the PDF ({len(result.tables)} found)"
+                )
+                for t in result.tables:
+                    caption = t.get("caption") or "_(no caption detected)_"
+                    st.markdown(
+                        f"**Table {t['table_num']} on page {t['page_num']}** — "
+                        f"{caption}"
+                    )
+                    st.markdown(t["markdown"])
+                    st.caption(
+                        f"{t['n_rows']} rows × {t['n_cols']} columns "
+                        f"&nbsp;•&nbsp; relevance {t['relevance']}"
+                    )
+                    st.divider()
+
             st.caption(
                 f"_Intent: **{result.intent}** &nbsp;•&nbsp; "
                 f"Context: {result.context_chars} chars &nbsp;•&nbsp; "
-                f"Model: {result.model_used}_"
+                f"Model: {result.model_used}"
+                + (f" &nbsp;•&nbsp; Tables: {len(result.tables)}" if result.tables else "")
+                + "_"
             )
             answer = result.answer
             metadata = {
                 "intent":        result.intent,
                 "context_chars": result.context_chars,
                 "model_used":    result.model_used,
+                "n_tables":      len(result.tables),
             }
 
     st.session_state.chat_messages.append({
         "role":     "assistant",
         "content":  answer,
         "metadata": metadata,
+        "tables":   result.tables if hasattr(result, "tables") else [],
     })
 
 
@@ -287,7 +331,8 @@ with st.sidebar:
         "This chat is optimized for deep, technical questions about "
         "the selected paper — not casual summaries. Each answer is "
         "grounded in the paper's summary, equations, numerical values, "
-        "and methodology."
+        "and methodology. Ask about tables and the PDF is fetched on "
+        "demand."
     )
 
     st.divider()
@@ -327,7 +372,7 @@ with st.sidebar:
         st.download_button(
             "Download chat.json",
             chat_json,
-            file_name=f"chat_{selected_arxiv}.json",
-            mime="application/json",
-            width="stretch",
+            file_name = f"chat_{selected_arxiv}.json",
+            mime      = "application/json",
+            width     = "stretch",
         )

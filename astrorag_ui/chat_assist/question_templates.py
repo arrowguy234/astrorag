@@ -125,6 +125,24 @@ QUESTION_TEMPLATES: dict[str, list[QuestionTemplate]] = {
             "What follow-up observations does the paper suggest?",
             "extension", "medium"),
     ],
+
+    "📋 Tables": [
+        QuestionTemplate(
+            "Show me all tables in this paper.",
+            "tables", "basic"),
+        QuestionTemplate(
+            "Show me the sample properties table.",
+            "tables", "medium"),
+        QuestionTemplate(
+            "Show me the measurements table with uncertainties.",
+            "tables", "medium"),
+        QuestionTemplate(
+            "Extract the results table.",
+            "tables", "basic"),
+        QuestionTemplate(
+            "Show me the observations log.",
+            "tables", "medium"),
+    ],
 }
 
 
@@ -141,11 +159,12 @@ def all_templates() -> list[QuestionTemplate]:
 
 
 def infer_intent(question: str) -> str:
-    """
-    Heuristic intent classification from question text.
-    Used to select the right refined system prompt.
-    """
+    """Heuristic intent classification from question text."""
     q = question.lower()
+
+    if any(kw in q for kw in ["table", "tables", "sample properties",
+                              "list of", "show me the"]):
+        return "tables"
 
     if any(kw in q for kw in ["method", "sample", "selection", "calibration",
                               "systematic", "assumption", "pipeline",
