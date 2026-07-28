@@ -4,7 +4,9 @@ Research-grade QA engine.
 Given a paper's library entry and a user question, this module:
 1. Infers the question's intent (methodology / results / etc.)
 2. Retrieves the most relevant paper context for that intent
-3. On table-intent questions, fetches PDF and extracts tables on demand
+3. On table-intent questions, extracts tables from the arXiv LaTeX source
+   (falling back to PDF-geometry extraction if the source is unavailable
+   or yields nothing)
 4. Selects the appropriate system prompt
 5. Calls the LLM with larger max_tokens for detailed answers
 6. Returns the answer plus metadata about how it was produced
@@ -26,11 +28,9 @@ except ImportError:
 from chat_assist.context_retrieval  import retrieve_paper_context
 from chat_assist.question_templates import infer_intent
 from chat_assist.system_prompts     import get_prompt_for_intent
-from chat_assist.pdf_tables         import (
-    get_paper_tables,
-    rank_tables_by_question,
-    is_table_intent,
-)
+from chat_assist.pdf_tables         import rank_tables_by_question, is_table_intent
+from chat_assist.pdf_tables         import get_paper_tables as get_paper_tables_pdf
+from chat_assist.latex_tables       import get_paper_tables_from_source
 
 
 @dataclass
@@ -80,7 +80,7 @@ class ResearchPaperQA:
         # ── infer intent ─────────────────────────────
         intent = infer_intent(question)
 
-        # ── table intent: fetch and extract on demand ─
+        # ── table intent: extract from LaTeX source, fall back to PDF ─
         rendered_tables: list[dict] = []
 
         if intent == "tables" or is_table_intent(question):
@@ -90,7 +90,10 @@ class ResearchPaperQA:
                 arxiv_id = getattr(self.entry, "arxiv_id", "")
 
             if arxiv_id:
-                table_set = get_paper_tables(arxiv_id)
+                table_set = get_paper_tables_from_source(arxiv_id)
+                if table_set.error or table_set.n_tables == 0:
+                    table_set = get_paper_tables_pdf(arxiv_id)
+
                 if not table_set.error and table_set.n_tables > 0:
                     top_tables = rank_tables_by_question(
                         table_set.tables, question, top_k=3,
@@ -112,10 +115,11 @@ class ResearchPaperQA:
 
         # append rendered tables to context if we retrieved any
         if rendered_tables:
-            tbl_block = ["\n=== TABLES EXTRACTED FROM THE PDF ===\n"]
+            tbl_block = ["\n=== TABLES EXTRACTED FROM THE PAPER ===\n"]
             for t in rendered_tables[:3]:
+                page_note = f" on page {t['page_num']}" if t['page_num'] else ""
                 tbl_block.append(
-                    f"[Table {t['table_num']} on page {t['page_num']}] "
+                    f"[Table {t['table_num']}{page_note}] "
                     f"{t['caption'] or '(no caption)'}\n"
                     f"{t['markdown']}\n"
                 )
@@ -127,8 +131,8 @@ class ResearchPaperQA:
         if rendered_tables:
             system_prompt = system_prompt + (
                 "\n\nADDITIONAL INSTRUCTION: The user is asking about tables. "
-                "Tables extracted directly from the PDF are provided below in "
-                "markdown format. Refer to them by page and table number. "
+                "Tables extracted directly from the paper's source are provided "
+                "below in markdown format. Refer to them by table number. "
                 "You may summarize their content or point out what they contain, "
                 "but the tables themselves will be shown to the user separately."
             )
@@ -151,7 +155,7 @@ class ResearchPaperQA:
                     "Understood. I have the paper's overview, equations, "
                     "numerical results, methodology summary, and sub-question "
                     "answers"
-                    + (", plus tables extracted directly from the PDF" if rendered_tables else "")
+                    + (", plus tables extracted from the paper's source" if rendered_tables else "")
                     + ". Ask your research question."
                 ),
             },
