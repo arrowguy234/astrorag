@@ -126,22 +126,22 @@ QUESTION_TEMPLATES: dict[str, list[QuestionTemplate]] = {
             "extension", "medium"),
     ],
 
-    # "📋 Tables": [
-    #     QuestionTemplate(
-    #         "Show me all tables in this paper.",
-    #         "tables", "basic"),
-    #     QuestionTemplate(
-    #         "Show me the sample properties table.",
-    #         "tables", "medium"),
-    #     QuestionTemplate(
-    #         "Show me the measurements table with uncertainties.",
-    #         "tables", "medium"),
-    #     QuestionTemplate(
-    #         "Extract the results table.",
-    #         "tables", "basic"),
-    #     QuestionTemplate(
-    #         "Show me the observations log.",
-    #         "tables", "medium"),
+    "📋 Tables": [
+        QuestionTemplate(
+            "Show me all tables in this paper.",
+            "tables", "basic"),
+        QuestionTemplate(
+            "Show me the sample properties table.",
+            "tables", "medium"),
+        QuestionTemplate(
+            "Show me the measurements table with uncertainties.",
+            "tables", "medium"),
+        QuestionTemplate(
+            "Extract the results table.",
+            "tables", "basic"),
+        QuestionTemplate(
+            "Show me the observations log.",
+            "tables", "medium"),
     ],
 }
 
