@@ -1,17 +1,23 @@
 """
 On-demand table retrieval from arXiv PDFs.
 
-When the user asks a table-related question about a paper, this module:
-1. Fetches the PDF from arxiv.org
-2. Extracts tables using pdfplumber (structure-preserving)
-3. Returns them as markdown-formatted strings
-4. Optionally scores tables by relevance to the user's question
+Fetches the PDF, extracts candidate tables with pdfplumber, and applies a
+content-quality filter before returning anything. Astrophysics papers are
+dense with multi-panel figures whose vector-drawn axis boxes get picked up
+by pdfplumber's line-based table detector as false-positive "tables" —
+these are filtered out based on empty-cell ratio, cross-cell word
+repetition (figure panels tile the same labels across many cells), average
+cell length (figure captions bleeding in produce long fragments), value
+uniqueness, sub-panel labels like "(a)"/"(b)", arithmetic-sequence numeric
+grids (spectral/velocity axis channels), and repeated short source-code
+labels tiled as a figure legend rather than a genuine per-row ID column.
 """
 
 from __future__ import annotations
 
 import io
 import re
+from   collections import Counter
 from   dataclasses import dataclass, field
 
 import requests
@@ -41,7 +47,6 @@ class ExtractedTable:
     caption:       str = ""
 
     def to_markdown(self, max_col_width: int = 30) -> str:
-        """Render the table as GitHub-flavored markdown."""
         if not self.rows:
             return "_(empty table)_"
 
@@ -75,13 +80,14 @@ class ExtractedTable:
 
 @dataclass
 class TableSet:
-    """All tables found in a paper."""
+    """All tables found in a paper (post-filter)."""
 
     arxiv_id:      str
     n_tables:      int
     tables:        list[ExtractedTable] = field(default_factory=list)
     error:         str = ""
     n_pages:       int = 0
+    n_rejected:    int = 0   # candidates dropped by the quality filter
 
 
 # ══════════════════════════════════════════════════════════
@@ -89,7 +95,6 @@ class TableSet:
 # ══════════════════════════════════════════════════════════
 
 def _normalize_arxiv_id_for_url(arxiv_id: str) -> str:
-    """Convert an arxiv ID to the format used in URLs."""
     if arxiv_id.startswith("astro-ph-"):
         return "astro-ph/" + arxiv_id[len("astro-ph-"):]
     if arxiv_id.startswith("hep-ph-"):
@@ -105,11 +110,10 @@ def _arxiv_pdf_url(arxiv_id: str) -> str:
 
 
 # ══════════════════════════════════════════════════════════
-# fetch and extract
+# fetch
 # ══════════════════════════════════════════════════════════
 
 def fetch_pdf_bytes(arxiv_id: str, timeout: int = 30) -> bytes | None:
-    """Fetch the raw PDF bytes from arxiv.org."""
     url = _arxiv_pdf_url(arxiv_id)
     try:
         resp = requests.get(
@@ -124,17 +128,122 @@ def fetch_pdf_bytes(arxiv_id: str, timeout: int = 30) -> bytes | None:
     return None
 
 
+# ══════════════════════════════════════════════════════════
+# quality filter — reject figure-grid false positives
+# ══════════════════════════════════════════════════════════
+
+_WORD_RE = re.compile(r"[A-Za-z]{4,}")
+
+
+def _looks_like_real_table(header: list[str], rows: list[list[str]]) -> bool:
+    """
+    Heuristic filter distinguishing genuine data tables from pdfplumber
+    false positives on multi-panel figure axis grids.
+
+    Rejects tables that show any of the following patterns typical of
+    figure-grid misdetections:
+      1. high fraction of empty cells (plot interiors are mostly blank)
+      2. long average cell length (figure captions bleeding into cells)
+      3. a single word repeated across a large fraction of cells (figure
+         panel labels like "eclipses" or a planet name tiled many times)
+      4. low value uniqueness (repeated identical cell content)
+      5. sub-panel labels — "(a)", "(b)", "a", "b" tiled across cells
+      6. arithmetic-sequence numeric grid — spectral/velocity channel axes
+         tabulate near-uniformly-spaced float values across many cells
+      7. repeated short source-code labels (e.g. "N43") tiled as a figure
+         legend rather than a genuine per-row ID column
+    """
+    try:
+        all_cells = list(header) + [c for row in rows for c in row]
+        non_empty = [c.strip() for c in all_cells if c and c.strip()]
+        total = len(all_cells)
+
+        if total == 0 or not non_empty:
+            return False
+
+        # 1. empty-cell ratio
+        empty_fraction = 1 - (len(non_empty) / total)
+        if empty_fraction > 0.35:
+            return False
+
+        # 2. average cell length — long fragments suggest caption bleed-through
+        avg_len = sum(len(c) for c in non_empty) / len(non_empty)
+        if avg_len > 35:
+            return False
+
+        # 3. cross-cell word repetition — figure panels tile the same labels
+        tokens = []
+        for c in non_empty:
+            tokens.extend(t.lower() for t in _WORD_RE.findall(c))
+        if tokens:
+            counts = Counter(tokens)
+            _, most_common_n = counts.most_common(1)[0]
+            if most_common_n / len(non_empty) > 0.40:
+                return False
+
+        # 4. value uniqueness — real tables rarely repeat identical cells
+        unique_ratio = len(set(non_empty)) / len(non_empty)
+        if unique_ratio < 0.5:
+            return False
+
+        # 5. sub-panel labels — "(a)", "(b)", "a", "b" etc. tiled across cells
+        panel_label_re = re.compile(r"^\(?[a-hA-H]\)?$")
+        n_panel_labels = sum(1 for c in non_empty if panel_label_re.match(c))
+        if n_panel_labels / len(non_empty) > 0.3:
+            return False
+
+        # 6. arithmetic-sequence numeric grid — spectral/velocity channel axes
+        #    tabulate near-uniformly-spaced float values across many cells
+        numeric_vals = []
+        for c in non_empty:
+            try:
+                numeric_vals.append(float(c))
+            except ValueError:
+                continue
+        if len(numeric_vals) >= 8 and len(numeric_vals) / len(non_empty) > 0.7:
+            sorted_vals = sorted(numeric_vals)
+            diffs = [sorted_vals[i + 1] - sorted_vals[i] for i in range(len(sorted_vals) - 1)]
+            if diffs:
+                mean_diff = sum(diffs) / len(diffs)
+                if mean_diff > 0:
+                    variance = sum((d - mean_diff) ** 2 for d in diffs) / len(diffs)
+                    cv = (variance ** 0.5) / mean_diff  # coefficient of variation
+                    if cv < 0.15:  # very uniform spacing → axis, not data
+                        return False
+
+        # 7. short alnum source-code labels repeated across cells (e.g. "N43",
+        #    "N51" tiled as a figure legend rather than a real ID column)
+        code_re = re.compile(r"^[A-Z]{1,3}\d{1,4}[a-zA-Z]?$")
+        code_cells = [c for c in non_empty if code_re.match(c)]
+        if code_cells:
+            code_counts = Counter(code_cells)
+            most_common_code, most_common_code_n = code_counts.most_common(1)[0]
+            if most_common_code_n >= 2 and len(code_cells) / len(non_empty) > 0.5:
+                if most_common_code_n / len(code_cells) > 0.25:
+                    return False
+
+        return True
+
+    except Exception:
+        # fail closed — reject on any unexpected error rather than risk
+        # showing garbled content
+        return False
+
+
+# ══════════════════════════════════════════════════════════
+# extraction
+# ══════════════════════════════════════════════════════════
+
 def extract_tables_from_bytes(pdf_bytes: bytes,
                               arxiv_id: str = "") -> TableSet:
-    """Extract all tables from a PDF byte buffer."""
     if not HAS_PDFPLUMBER:
         return TableSet(
-            arxiv_id=arxiv_id,
-            n_tables=0,
+            arxiv_id=arxiv_id, n_tables=0,
             error="pdfplumber not installed",
         )
 
     tables_out: list[ExtractedTable] = []
+    n_rejected = 0
 
     try:
         with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
@@ -164,6 +273,11 @@ def extract_tables_from_bytes(pdf_bytes: bytes,
                     if n_cols < 2 or n_rows < 1:
                         continue
 
+                    # apply the quality filter
+                    if not _looks_like_real_table(header, rows):
+                        n_rejected += 1
+                        continue
+
                     caption = _find_caption_on_page(page, tbl_idx)
 
                     tables_out.append(ExtractedTable(
@@ -177,21 +291,20 @@ def extract_tables_from_bytes(pdf_bytes: bytes,
                     ))
     except Exception as e:
         return TableSet(
-            arxiv_id=arxiv_id,
-            n_tables=0,
+            arxiv_id=arxiv_id, n_tables=0,
             error=f"{type(e).__name__}: {e}",
         )
 
     return TableSet(
-        arxiv_id = arxiv_id,
-        n_tables = len(tables_out),
-        tables   = tables_out,
-        n_pages  = n_pages,
+        arxiv_id   = arxiv_id,
+        n_tables   = len(tables_out),
+        tables     = tables_out,
+        n_pages    = n_pages,
+        n_rejected = n_rejected,
     )
 
 
 def _find_caption_on_page(page, table_idx: int) -> str:
-    """Best-effort: find a 'Table N.' caption on the page."""
     try:
         text = page.extract_text() or ""
         patterns = [
@@ -212,12 +325,10 @@ def _find_caption_on_page(page, table_idx: int) -> str:
 # ══════════════════════════════════════════════════════════
 
 def get_paper_tables(arxiv_id: str) -> TableSet:
-    """Fetch and extract tables for a paper."""
     pdf_bytes = fetch_pdf_bytes(arxiv_id)
     if pdf_bytes is None:
         return TableSet(
-            arxiv_id=arxiv_id,
-            n_tables=0,
+            arxiv_id=arxiv_id, n_tables=0,
             error=f"Could not fetch PDF for arXiv:{arxiv_id}",
         )
     return extract_tables_from_bytes(pdf_bytes, arxiv_id=arxiv_id)
@@ -228,7 +339,6 @@ def get_paper_tables(arxiv_id: str) -> TableSet:
 # ══════════════════════════════════════════════════════════
 
 def score_table_relevance(table: ExtractedTable, question: str) -> float:
-    """Score how relevant a table is to a user question (0-1)."""
     q_tokens = set(re.findall(r"[a-z0-9]+", question.lower()))
     q_tokens = {t for t in q_tokens if len(t) > 2}
     if not q_tokens:
@@ -248,7 +358,6 @@ def score_table_relevance(table: ExtractedTable, question: str) -> float:
 def rank_tables_by_question(tables: list[ExtractedTable],
                             question: str,
                             top_k: int = 3) -> list[tuple[ExtractedTable, float]]:
-    """Return the top-K most relevant tables, with scores."""
     scored = [(t, score_table_relevance(t, question)) for t in tables]
     scored.sort(key=lambda x: -x[1])
     return scored[:top_k]
@@ -269,6 +378,5 @@ _TABLE_INTENT_KEYWORDS = [
 
 
 def is_table_intent(question: str) -> bool:
-    """Heuristic: does this question ask for a table?"""
     q = question.lower()
     return any(kw in q for kw in _TABLE_INTENT_KEYWORDS)
